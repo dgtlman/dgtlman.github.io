@@ -41,7 +41,7 @@ header>h1 {
 
 p {
     font-family: var(--paragraph-font);
-    color: ; var(--secondary-color)
+    color: var(--secondary-color);
     padding: 1em
 }
 
@@ -99,6 +99,6 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover {
-    color: ; var(--secondary-color)
+    color: var(--secondary-color);
     background-color: var(--accent2-color)
 }
