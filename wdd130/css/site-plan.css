@@ -32,7 +32,7 @@ header {
     padding: 1em;
     text-align: center;
     color: var(--accent2-color);
-    background-color: 
+    background-color: var(--secondary-color)
 }
 
 header>h1 {
