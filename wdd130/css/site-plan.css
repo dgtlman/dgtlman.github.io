@@ -78,7 +78,7 @@ p {
 }
 
 nav {
-    background-color: ; var(--secondary-color)
+    background-color: var(--secondary-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em
