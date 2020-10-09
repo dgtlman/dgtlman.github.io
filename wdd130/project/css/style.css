@@ -32,10 +32,10 @@ nav a {
 }
 
 nav a:link, nav a:visited {
-	color: white
+	color: gray
 }
 
 nav a:hover {
-	color: gray;
+	color: orange;
 	background-color: white
 }
