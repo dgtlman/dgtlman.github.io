@@ -19,28 +19,22 @@ p {
 	padding: 1em
 }
 
-nav {
-	background-color: orange;
-	line-height: 3em;
-	text-align: center;
-	font-size: 1.2em
+/* unvisited link */
+a:link {
+  color: lightgray;
 }
 
-nav>ul {
-	list-style-type: none;
-	display: flex
+/* visited link */
+a:visited {
+  color: lightgray;
 }
 
-nav a {
-	padding: 1em;
-	min-width: 70px
+/* mouse over link */
+a:hover {
+  color: darkgray;
 }
 
-nav a:link, nav a:visited {
-	color: white
-}
-
-nav a:hover {
-	color: gray;
-	background-color: white
+/* selected link */
+a:active {
+  color: lightgray;
 }
