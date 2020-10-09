@@ -10,7 +10,8 @@ header, main, footer {
 
 p {
 	font-family: Helvetica, Arial, sans-serif;
-	color: #9BA7C0;
+	background: #9BA7C0;
+	color: #094074;
 	padding: 1em
 }
 
