@@ -1,0 +1,23 @@
+:root {
+	--primary-color: #094074;
+	--secondary-color: #512500;
+	--accent1-color: #9BA7C0;
+	--accent2-color: #618B4A;
+	--heading-font: Georgia, serif;
+	--paragraph-font: Helvetica, Arial, sans-serif
+}
+
+html {
+	background-color: var(--primary-color)
+}
+
+header, main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+p {
+	font-family: var(--paragraph-font);
+	color: var(--secondary-color);
+	padding: 1em
+}
