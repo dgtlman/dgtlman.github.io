@@ -3,13 +3,13 @@ html {
 }
 
 body {
-	max-width: 500px;
+	max-width: 650px;
 	background: white;
 	margin: 0 auto
 }
 
 header, main, footer {
-  max-width: 500px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
