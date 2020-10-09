@@ -14,11 +14,11 @@ html {
 	background-color: #094074
 }
 
-/*body {
+body {
 	margin: 0 auto;
 	padding: 1em
 	background-color: #EEEBD3;
-}*/
+}
 
 header, main, footer {
 	max-width: 960px;
