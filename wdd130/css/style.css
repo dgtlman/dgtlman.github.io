@@ -1,0 +1,14 @@
+html {
+	background-color: #094074
+}
+
+header, main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #9BA7C0;
+	padding: 1em
+}
