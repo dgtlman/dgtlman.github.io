@@ -1,8 +1,9 @@
 html {
-	background-color: #094074
+	background-color: red
 }
 
 header, main, footer {
+    color: white;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -11,4 +12,30 @@ p {
 	font-family: Helvetica, Arial, sans-serif;
 	color: #9BA7C0;
 	padding: 1em
+}
+
+nav {
+	background-color: orange;
+	line-height: 3em;
+	text-align: center;
+	font-size: 1.2em
+}
+
+nav>ul {
+	list-style-type: none;
+	display: flex
+}
+
+nav a {
+	padding: 1em;
+	min-width: 70px
+}
+
+nav a:link, nav a:visited {
+	color: white
+}
+
+nav a:hover {
+	color: gray;
+	background-color: white
 }
