@@ -18,7 +18,7 @@ body {
 	margin: 0 auto;
 	padding: 1em
 	background-color: #EEEBD3;
-	box-align: center
+	margin: 0 auto;
 }
 
 header, main, footer {

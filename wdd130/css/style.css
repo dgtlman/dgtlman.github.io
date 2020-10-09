@@ -5,7 +5,7 @@ html {
 body {
 	max-width: 500px;
 	background: white;
-	box-align: center
+	margin: 0 auto
 }
 
 header, main, footer {
