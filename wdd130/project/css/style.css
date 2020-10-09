@@ -20,5 +20,12 @@ margin: 0 auto;
 box-align: center
 background-color: #EEEBD3;
 font-family: Helvetica, Arial, sans-serif;
-color: white;
+color: #8C1C13;
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	background: #A98743;
+	color: #094074;
+	padding: 1em
 }
