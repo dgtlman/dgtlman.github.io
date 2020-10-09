@@ -16,7 +16,6 @@ html {
 
 body {
 	margin: 0 auto;
-	
 	padding: 1em
 }
 
@@ -29,8 +28,8 @@ header, main, footer {
 
 p {
 	font-family: Helvetica, Arial, sans-serif;
-	background: #9BA7C0;
-	color: #094074;
+	background: #A98743;
+	color: #8C1C13;
 	padding: 1em
 }
 
