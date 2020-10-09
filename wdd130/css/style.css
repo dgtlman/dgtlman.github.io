@@ -12,16 +12,12 @@ header, main, footer {
   margin: 0 auto;
 }
 
-div {
-	
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: Helvetica, Arial, sans-serif;
 	color: white
 }
 
-p {
+main, p {
 	font-family: Helvetica, Arial, sans-serif;
 	color: lightgray;
 	padding: 1em
