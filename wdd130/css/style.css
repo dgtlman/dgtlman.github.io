@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #A31621
 }
 
-main, p, ul, li, script {
+main, footer, p, ul, li, script {
 	font-family: Helvetica, Arial, sans-serif;
 	color: lightgray;
 	padding: 1em
