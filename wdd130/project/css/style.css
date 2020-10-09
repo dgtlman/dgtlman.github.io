@@ -26,6 +26,8 @@ header, main, footer {
 	margin: 0 auto;
 	box-align: center
 	background-color: #EEEBD3;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000;
 }
 
 p {
