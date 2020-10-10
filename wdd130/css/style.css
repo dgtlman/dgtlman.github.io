@@ -42,7 +42,7 @@ header {
 	color: var(--gray-color);
 }*/
 
-p {
+p, ul, li {
 	font-family: var(--paragraph-font);
 	color: var(--gray-color);
 	/*padding: 1em;*/
