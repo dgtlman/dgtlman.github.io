@@ -1,13 +1,10 @@
-/*comments
-color link - https://coolors.co/0e1c36-fffffc-a27e8e-8c1c13
-
-*/
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
 
 :root {
-	--red-color: #8C1C13;
-	--blue-color: #0E1C36;
-	--gray-color: #A27E8E;
-	--white-color: #FFFFFC;
+	--primary-color: #396e94;
+	--secondary-color: #8D8741;
+	--accent1-color: #a43312;
+	--accent2-color: white;
 	--accent3-color: #541418;
 	--accent4-color: #47BDDF;
 	--main-text-color: black; 
@@ -18,11 +15,11 @@ color link - https://coolors.co/0e1c36-fffffc-a27e8e-8c1c13
 }
 
 html {
-	background-color: var(--red-color);
+	background-color: var(--primary-color);
 }
 
 body {
-	max-width: 600px;
+	max-width: 900px;
 	margin: 0 auto;
 	background-color: white;
 	padding: 1em;
@@ -39,18 +36,18 @@ h4,
 h5,
 h6 {
 	font-family: var(--heading-font);
-	color:var(--blue-color) ;
+	color:var(--secondary-color) ;
 }
 
 header {
 	padding: 1em;
 	text-align: center;
-	color: var(--white-color);
-	background-color: var(--white-color);
+	color: var(--accent2-color);
+	background-color: var(--accent2-color);
 }
 
 header>h1 {
-	color: var(--gray-color);
+	color: var(--accent1-color);
 }
 
 p {
@@ -76,23 +73,23 @@ p {
 }
 
 .primary {
-	background-color: var(--red-color);
+	background-color: var(--primary-color);
 }
 
 .secondary {
-	background-color: var(--blue-color);
+	background-color: var(--secondary-color);
 }
 
 .accent1 {
-	background-color: var(--gray-color);
+	background-color: var(--accent1-color);
 }
 
 .accent2 {
-	background-color: var(--white-color);
+	background-color: var(--accent2-color);
 }
 
 nav {
-	background-color: var(--red-color);
+	background-color: var(--primary-color);
 	line-height: 3em;
 	text-align: center;
 	font-size: 1.2em;
@@ -115,5 +112,5 @@ nav a:visited {
 
 nav a:hover {
 	color: var(--accent4-color);
-	background-color: var(--red-color);
+	background-color: var(--primary-color);
 }
