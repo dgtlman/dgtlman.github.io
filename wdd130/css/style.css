@@ -90,11 +90,13 @@ nav {
 nav>ul {
 	list-style-type: none;
 	display: flex;
+	color: var(--gray-color);
 }
 
 nav a {
 	padding: 1em;
 	min-width: 70px;
+	color: var(--gray-color);
 }
 
 nav a:link,
