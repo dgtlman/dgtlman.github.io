@@ -28,7 +28,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: var(--heading-font);
-	color:var(--blue-color) ;
+	color:var(--red-color) ;
 }
 
 header {
@@ -38,9 +38,9 @@ header {
 	background-color: var(--white-color);
 }
 
-header>h1 {
+/*header>h1 {
 	color: var(--gray-color);
-}
+}*/
 
 p {
 	font-family: var(--paragraph-font);
