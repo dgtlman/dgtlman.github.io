@@ -38,11 +38,11 @@ header {
 	background-color: var(--white-color);
 }
 
-/*header>h1 {
-	color: var(--gray-color);
-}*/
+header>h1, h5 {
+	padding: 0em;;
+}
 
-p, ul, li {
+p, ul, li, script {
 	font-family: var(--paragraph-font);
 	color: var(--gray-color);
 	/*padding: 1em;*/
