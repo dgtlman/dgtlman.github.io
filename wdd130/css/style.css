@@ -3,17 +3,17 @@ color link - https://coolors.co/0e1c36-fffffc-a27e8e-8c1c13
 10/9/2020 @ 9:01pm
 */
 
-:root {
+/*:root {
 	--red-color: #8C1C13;
 	--blue-color: #0E1C36;
 	--gray-color: #A27E8E;
 	--white-color: #FFFFFC;
 	--heading-font: Helvetica, Arial, sans-serif;
 	--paragraph-font: Helvetica, Arial, sans-serif;  
-}
+}*/
 
 html {
-	background-color: var(--red-color);
+	background-color: #8C1C13;
 }
 
 body {
@@ -28,15 +28,15 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--heading-font);
-	color:var(--red-color) ;
+	font-family: Helvetica, Arial, sans-serif;
+	color:#8C1C13 ;
 }
 
 header {
 	padding: 1em;
 	text-align: center;
-	color: var(--gray-color);
-	background-color: var(--white-color);
+	color: #A27E8E;
+	background-color: #FFFFFC;
 }
 
 header>h1, h4 {
@@ -44,8 +44,8 @@ header>h1, h4 {
 }
 
 p, ul, li, script {
-	font-family: var(--paragraph-font);
-	color: var(--gray-color);
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A27E8E;
 	/*padding: 1em;*/
 }
 
@@ -69,66 +69,3 @@ a:active {
   color: --gray-color;
 }
 
-/*
-.colors {
-	width: 100%;
-	min-width: 350px;
-	margin: auto;
-	text-align: center;
-}
-
-.colors th {
-	background-color: #999;
-}
-
-.colors td {
-	width: 25%;
-	height: 3em;
-}
-
-.primary {
-	background-color: var(--red-color);
-}
-
-.secondary {
-	background-color: var(--blue-color);
-}
-
-.accent1 {
-	background-color: var(--gray-color);
-}
-
-.accent2 {
-	background-color: var(--gray-color);
-}
-*/
-
-/*nav {
-	background-color: var(--gray-color);
-	line-height: 3em;
-	text-align: center;
-	font-size: 1.2em;
-}
-
-nav>ul {
-	list-style-type: none;
-	display: flex;
-	color: var(--gray-color);
-}
-
-nav a {
-	padding: 1em;
-	min-width: 70px;
-	color: var(--gray-color);
-}
-
-nav a:link,
-nav a:visited {
-	color: var(--gray-color);
-}
-
-nav a:hover {
-	color: var(--white-color);
-	background-color: var(--red-color);
-}
-*/
