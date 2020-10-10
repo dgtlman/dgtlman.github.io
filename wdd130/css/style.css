@@ -11,8 +11,8 @@ color link - https://coolors.co/0e1c36-fffffc-a27e8e-8c1c13
 	--accent3-color: #541418;
 	--accent4-color: #47BDDF;
 	--main-text-color: black; 
-	--heading-font: "IM Fell French Canon SC";
-	--paragraph-font: Lato, Helvetica, sans-serif;
+	--heading-font: Helvetica, Arial, sans-serif;
+	--paragraph-font: Helvetica, Arial, sans-serif;
 /*Colors I'm considering using: C7EEF5, 95FFFF, 558DCA, F07C41, 022249, White text
   FBEEC1, BC986A, DAAD86, 659DBD, 8D8741, white text*/    
 }
