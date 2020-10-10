@@ -47,7 +47,7 @@ p, ul, li, script {
 	color: var(--gray-color);
 	/*padding: 1em;*/
 }
-
+/*
 .colors {
 	width: 100%;
 	min-width: 350px;
@@ -79,9 +79,9 @@ p, ul, li, script {
 .accent2 {
 	background-color: var(--gray-color);
 }
-
+*/
 nav {
-	background-color: var(--red-color);
+	background-color: var(--gray-color);
 	line-height: 3em;
 	text-align: center;
 	font-size: 1.2em;
