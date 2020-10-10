@@ -17,7 +17,6 @@ html {
 header, main, footer {
 max-width: 960px;
 margin: 0 auto;
-box-align: center
 background-color: #EEEBD3;
 font-family: Helvetica, Arial, sans-serif;
 color: #8C1C13;
@@ -28,4 +27,37 @@ p {
 	background: #A98743;
 	color: #094074;
 	padding: 1em
+}
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	background: #A98743;
+	color: #094074;
+	padding: 1em
+}
+
+nav {
+	background-color: #F7C548;
+	line-height: 3em;
+	text-align: center;
+	font-size: 1.2em
+}
+
+nav>ul {
+	list-style-type: none;
+	display: flex
+}
+
+nav a {
+	padding: 1em;
+	min-width: 70px
+}
+
+nav a:link, nav a:visited {
+	color: #A98743
+}
+
+nav a:hover {
+	color: #F7C548;
+	background-color: #EEEBD3
 }
