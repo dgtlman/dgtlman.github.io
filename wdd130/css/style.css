@@ -49,6 +49,10 @@ p, ul, li, script {
 	/*padding: 1em;*/
 }
 
+ul, li,{
+	padding: .25em
+}
+
 /* unvisited link */
 a:link {
   color: #A27E8E;
