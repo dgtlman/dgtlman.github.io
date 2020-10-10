@@ -51,21 +51,21 @@ p, ul, li, script {
 
 /* unvisited link */
 a:link {
-  color: --gray-color;
+  color: #A27E8E;
 }
 
 /* visited link */
 a:visited {
-  color: --gray-color;
+  color: #A27E8E;
 }
 
 /* mouse over link */
 a:hover {
-  color: --red-color;
+  color: #8C1C13;
 }
 
 /* selected link */
 a:active {
-  color: --gray-color;
+  color: #A27E8E;
 }
 
