@@ -48,6 +48,27 @@ p, ul, li, script {
 	color: var(--gray-color);
 	/*padding: 1em;*/
 }
+
+/* unvisited link */
+a:link {
+  color: --gray-color;
+}
+
+/* visited link */
+a:visited {
+  color: --gray-color;
+}
+
+/* mouse over link */
+a:hover {
+  color: --red-color;
+}
+
+/* selected link */
+a:active {
+  color: --gray-color;
+}
+
 /*
 .colors {
 	width: 100%;
@@ -81,7 +102,8 @@ p, ul, li, script {
 	background-color: var(--gray-color);
 }
 */
-nav {
+
+/*nav {
 	background-color: var(--gray-color);
 	line-height: 3em;
 	text-align: center;
@@ -109,3 +131,4 @@ nav a:hover {
 	color: var(--white-color);
 	background-color: var(--red-color);
 }
+*/
