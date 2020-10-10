@@ -38,7 +38,7 @@ header {
 	background-color: var(--white-color);
 }
 
-header>h1, h5 {
+header>h1, h4 {
 	padding: 0em;;
 }
 
