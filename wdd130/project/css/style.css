@@ -22,6 +22,10 @@ font-family: Helvetica, Arial, sans-serif;
 color: #8C1C13;
 }
 
+header{
+	display: flex
+}
+
 p {
 	font-family: Helvetica, Arial, sans-serif;
 	background: #A98743;
@@ -38,7 +42,7 @@ p {
 
 nav {
 	background-color: #F7C548;
-	line-height: 3em;
+	line-height: 2em;
 	text-align: center;
 	font-size: 1.2em
 }
