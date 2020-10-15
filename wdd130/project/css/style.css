@@ -26,12 +26,10 @@ header{
 	display: flex
 }
 
-p {
-	font-family: Helvetica, Arial, sans-serif;
-	background: #A98743;
-	color: #094074;
-	padding: 1em
+.logo{
+	padding: 0
 }
+
 
 p {
 	font-family: Helvetica, Arial, sans-serif;
@@ -44,7 +42,7 @@ nav {
 	background-color: #F7C548;
 	line-height: 2em;
 	text-align: center;
-	font-size: 1.2em
+	font-size: 1em
 }
 
 nav>ul {
