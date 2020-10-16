@@ -1,0 +1,65 @@
+/* site colors
+
+link - https://coolors.co/094074-eeebd3-a98743-f7c548-8c1c13
+indigo Dye - #094074
+beige - #EEEBD3
+metallic sunburst - #A98743
+maize crayola - #F7C548
+dark red - #8C1C13
+
+*/
+
+
+html {
+	background-color: #094074
+}
+
+header, main, footer {
+max-width: 960px;
+margin: 0 auto;
+background-color: #EEEBD3;
+font-family: Helvetica, Arial, sans-serif;
+color: #8C1C13;
+}
+
+header{
+	display: flex;
+}
+
+.logo{
+	padding: 0
+}
+
+
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	background: #A98743;
+	color: #094074;
+	padding: 1em
+}
+
+nav {
+	background-color: #F7C548;
+	line-height: 2em;
+	text-align: center;
+	font-size: 1em
+}
+
+nav>ul {
+	list-style-type: none;
+	display: flex
+}
+
+nav a {
+	padding: 1em;
+	min-width: 70px
+}
+
+nav a:link, nav a:visited {
+	color: #A98743
+}
+
+nav a:hover {
+	color: #F7C548;
+	background-color: #EEEBD3
+}
