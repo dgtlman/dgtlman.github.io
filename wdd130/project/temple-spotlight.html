@@ -6,13 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Temple Inn & Suites, located in Bethesda, Maryland, builds & manages hotels near temples of The Church of Jesus Christ of Latter-day Saints."/>
 		<link rel="stylesheet" href="css/style.css"/>
-
 	</head>
+	
 	<body>
 		<header>
-			<img src="images/icon.png" alt="logo placeholder" height="75"/>
-			<h1>Temple Inn & Suites</h1>
-			<nav>
+			<picture>
+				<img src="images/icon.png" alt="logo placeholder"/>
+			</picture>
+			<section class="heading">
+				<h1>Temple Inn & Suites</h1>
+				<div class="motto">Your Sweet Home by the Temple</div>
+			</section>
+			<nav class="main-nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="amenities.html">Amenities</a></li>
@@ -27,22 +32,32 @@
 				<img src="images/banner.jpg" alt="salt lake city temple during conference" width="960">
 			</div>
 			<section>
-			<h2>Temple Spotlight</h2>
-			<p>placeholder page for temple spotlight</p>
+			<h2 class="main-heading">Temple Spotlight</h2>
+			<p class="color-block">placeholder page for temple spotlight</p>
 			
 			<img src="https://placeimg.com/640/480/tech" alt="banner placeholder"/>
 			</section>
 		</main>
 		
 		<footer>
-			<img src="https://fakeimg.pl/960x2/?text=line" alt="footer line">
-			<p>Temple Inn & Suites Headquarters<br>355 Wisconsin Avenue<br>Bethesda, MD 20814<br>215.829.9999<br>info@templeinn.com</p>
-			<div class="social">
-			<a href="https://twitter.com/tisproject" target="_blank"> <img src="images/twitter.png" alt="twitter icon" height="75"></a>
-			<a href="https://instagram.com/tisproject" target="_blank"><img src="images/instagram.png" alt="instagram icon" height="75"></a>
-			<a href="https://facebook.com/groups/tisproject" target="_blank"><img src="images/facebook.png" alt="facebook icon" height="75"></a>
-			</div>
-			<p>Copyright 2020 Temple Inn & Suites | All Rights Reserved | Privacy & Cookie Statement | Eric Garofalo</p>
+			<section class="footer-flex">
+				<div class="address">
+					<p>Temple Inn & Suites Headquarters<br>355 Wisconsin Avenue<br>Bethesda, MD 20814<br>215.829.9999<br>info@templeinn.com</p>
+				</div>
+				<div class="social">
+					<a href="https://twitter.com/tisproject" target="_blank"> <img src="images/twitter.png" alt="twitter icon" height="50"></a>
+					<a href="https://instagram.com/tisproject" target="_blank"><img src="images/instagram.png" alt="instagram icon" height="50"></a>
+					<a href="https://facebook.com/groups/tisproject" target="_blank"><img src="images/facebook.png" alt="facebook icon" height="50"></a>
+				</div>
+			</section>
+			<section class="fine-print">
+				<p>Copyright 2020 Temple Inn & Suites | All Rights Reserved | Privacy & Cookie Statement | Eric Garofalo | 
+					<script>
+					   let date = document.lastModified;
+					   document.write("update: "+date);
+					</script>
+				</p>
+			</section>
 		</footer>
 	</body>
 </html>
