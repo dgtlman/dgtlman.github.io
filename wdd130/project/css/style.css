@@ -142,12 +142,18 @@ header img {
 	padding: 1em; 
 }
 
+/* banner image style */
+.banner {
+	width: auto;
+	height: auto;
+}
+
 main img {
 	width: 460px;
 	height: auto;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	padding-left: 15px;
+	padding-left: 2px;
 	padding-right: 5px;
 }
 
