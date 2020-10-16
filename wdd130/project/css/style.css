@@ -142,6 +142,16 @@ header img {
 	padding: 1em; 
 }
 
+main img {
+	width: 460px;
+	height: auto;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	padding-right: 5px;
+}
+
+
 /* --------------------------------- */
 /* ----- footer section styles ----- */
 /* --------------------------------- */
