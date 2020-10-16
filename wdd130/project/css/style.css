@@ -78,7 +78,7 @@ header img {
 /* style text below temple inn & suites */
 .motto {
 	font-style: italic;
-	color: #F7C548;
+	color: #A98743;
 	font-size: 1rem;
 	letter-spacing: 1.25pt;
 	padding-left: .25em;
@@ -153,8 +153,8 @@ main img {
 	height: auto;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	padding-left: 2px;
-	padding-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
@@ -190,6 +190,7 @@ footer{
 
 /* style text of just bottom line */
 .fine-print {
+	color: #094074;
 	vertical-align: bottom;
 	font-size: .85rem;
 	letter-spacing: .25pt;
