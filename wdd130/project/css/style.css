@@ -34,7 +34,7 @@ body {
 
 header, main, footer {
 	max-width: 960px;
-	/*margin: 0 auto; */
+	margin: 0 auto;
 	background-color: #EEEBD3;
 	font-family: Futura, Helvetica, Arial, sans-serif;
 	color: #8C1C13;
@@ -139,7 +139,7 @@ header img {
 	font-family: Futura, Helvetica, Arial, sans-serif;
 	background: #A98743;
 	color: #EEEBD3;
-	/* padding: 1em; */
+	padding: 1em;
 }
 
 /* banner image style */
