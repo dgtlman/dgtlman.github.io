@@ -9,7 +9,7 @@ maize crayola - #F7C548
 dark red - #8C1C13
 
 -- site fonts --
-formal --  font-family: Palatino, Trebuchet MS, serif;
+formal --  font-family: Palatino, "Trebuchet MS", serif;
 standard - font-family: Futura, Helvetica, Arial, sans-serif;
 
 */
@@ -34,7 +34,7 @@ body {
 
 header, main, footer {
 	max-width: 960px;
-	margin: 0 auto;
+	/*margin: 0 auto; */
 	background-color: #EEEBD3;
 	font-family: Futura, Helvetica, Arial, sans-serif;
 	color: #8C1C13;
@@ -69,7 +69,7 @@ header img {
 
 /* heading style */
 .heading h1 {
-	font-family: Palatino, Trebuchet MS, serif;
+	font-family: Palatino, "Trebuchet MS", serif;
 	font-size: 1.9rem;
 	color: #094074;
 	margin: 0;
@@ -126,7 +126,7 @@ header img {
 
 /* heading style */
 .main-heading {
-	font-family: Palatino, Trebuchet MS, serif;
+	font-family: Palatino, "Trebuchet MS", serif;
 	font-size: 1.5rem;
 	color: #8C1C13;
 	margin: 0;
@@ -139,7 +139,7 @@ header img {
 	font-family: Futura, Helvetica, Arial, sans-serif;
 	background: #A98743;
 	color: #EEEBD3;
-	padding: 1em; 
+	/* padding: 1em; */
 }
 
 /* banner image style */
@@ -182,8 +182,8 @@ footer{
 }
 
 .social {
-	padding-top: px;
-	width: 25;
+	padding-top: 0;
+	width: 25em;
 	height: auto;
 	text-align: right;
 }
