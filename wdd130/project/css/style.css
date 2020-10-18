@@ -127,6 +127,11 @@ header img {
 	font-size: 1em
 }
 
+nav .current{
+	color: #86A5D9;
+
+}
+
 /* ------------------------------- */
 /* ----- main section styles ----- */
 /* ------------------------------- */
