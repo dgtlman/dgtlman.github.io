@@ -1,9 +1,6 @@
-/*comments
-color link - https://coolors.co/0e1c36-fffffc-var(--gray-color)-8c1c13
+/* comments
+color link - https://coolors.co/0e1c36-fffffc-#A27E8E-8c1c13
 10/9/2020 @ 9:01pm
-
-testing variables
-*/
 
 *:root {
 	--red-color: #8C1C13;
@@ -13,15 +10,12 @@ testing variables
 	--heading-font: Helvetica, Arial, sans-serif;
 	--paragraph-font: Helvetica, Arial, sans-serif;  
 }
-
-html {
-	background-color: var(--red-color);
-}
+*/
 
 body {
+	background-color: #8C1C13;
 	max-width: 600px;
 	margin: 0 auto;
-	background-color: white;
 	padding: 1em;
 }
 
@@ -30,15 +24,15 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: --heading-font;
-	color: var(--red-color) ;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFFFFC ;
 }
 
 header {
 	padding: 1em;
 	text-align: center;
-	color: var(--gray-color);
-	background-color: var(--white-color);
+	color: #FFFFFC;
+	background-color: #0E1C36;
 }
 
 header>h1, h4 {
@@ -51,32 +45,47 @@ header>h1, h4 {
 }
 
 p, ul, li, script {
-	font-family: --paragraph-font;
-	color: var(--gray-color);
+	font-family: Helvetica, Arial, sans-serif;
+	color: #A27E8E;
 	/*padding: 1em;*/
 }
 
-ul, li,{
-	padding: .25em
+ul, li {
+	margin: 10px;
+	padding-left: 0em;
 }
 
 /* unvisited link */
 a:link {
-  color: var(--gray-color);
+  color: #A27E8E;
 }
 
 /* visited link */
 a:visited {
-  color: var(--gray-color);
+  color: #A27E8E;
 }
 
 /* mouse over link */
 a:hover {
-  color: var(--red-color);
+  color: #8C1C13;
 }
 
 /* selected link */
 a:active {
-  color: var(--gray-color);
+  color: #A27E8E;
 }
 
+.bgcolor {
+	background-color: #FFFFFC;
+}
+
+main {
+padding: .5em;
+}
+
+footer {
+	color: #FFFFFC;
+	background-color: #0E1C36;
+	font-size: .9em;
+	padding: .5em;
+}
