@@ -50,7 +50,7 @@ header {
 	padding: 5px 0;
 	display: flex;
 	align-items:center;
-	justify-content:center;
+	justify-content:space-evenly;
 	background-color: #041E39;
 	color: #8C1C13;
 }
@@ -115,21 +115,18 @@ header img {
 
 .main-nav a:link, nav a:visited {
 	color: #A98743;
-	/* font-weight: bold; */
 }
 
 .main-nav a:hover {
 	background-color: #A98743;
 	color: #041E39;
-	/*font-weight: normal;*/
 	line-height: .25em;
 	text-align: center;
 	font-size: 1em
 }
 
-nav .current{
-	color: #86A5D9;
-
+.current{
+	color: #86A5D9
 }
 
 /* ------------------------------- */
@@ -174,7 +171,6 @@ main {
 	background: #A98743;
 	color: #EEEBD3;
 	padding: 1em;
-	
 }
 
 .main-450{
@@ -185,7 +181,6 @@ main {
 
 /* banner image style */
 .banner {
-	width: auto;
 	height: auto;
 	width: 960px;
 	padding: 0;
@@ -202,7 +197,6 @@ main img {
 
 .full{
 	padding: 1em;
-	
 }
 
 
@@ -214,7 +208,6 @@ footer{
 	width: auto;
 	background-color: #041E39;
 	color: #86A5D9
-	
 }
 
 /* flex address & social media */
@@ -241,7 +234,7 @@ footer{
 
 /* style text of just bottom line */
 .fine-print {
-	color: #094074;
+	color: #A98743;
 	vertical-align: bottom;
 	font-size: .85rem;
 	letter-spacing: .25pt;
