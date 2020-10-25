@@ -1,0 +1,9 @@
+// this is a simple javascript to add the update date and time
+// to a website. You can change the text inside " " to anything you want. 
+// as written below the output will be:
+// Updated: MM/DD/YYY HH:MM:SS (based on 24 hour clock)
+
+<script>
+    let date = document.lastModified;
+    document.write("Updated: " + date);
+</script>
