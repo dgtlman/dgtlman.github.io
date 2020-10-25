@@ -46,7 +46,7 @@ header>h1, h4 {
 
 p, ul, li, script {
 	font-family: Helvetica, Arial, sans-serif;
-	color: #A27E8E;
+	color: #8C1C13;
 	/*padding: 1em;*/
 }
 
@@ -57,22 +57,22 @@ ul, li {
 
 /* unvisited link */
 a:link {
-  color: #A27E8E;
+  color: #8C1C13;
 }
 
 /* visited link */
 a:visited {
-  color: #A27E8E;
+  color: #8C1C13;
 }
 
 /* mouse over link */
 a:hover {
-  color: #8C1C13;
+  color: #A27E8E;
 }
 
 /* selected link */
 a:active {
-  color: #A27E8E;
+  color: #8C1C13;
 }
 
 .bgcolor {
@@ -85,7 +85,7 @@ padding: .5em;
 
 footer {
 	color: #FFFFFC;
-	background-color: #0E1C36;
+	background-color: #FFFFFC;
 	font-size: .9em;
 	padding: .5em;
 }
