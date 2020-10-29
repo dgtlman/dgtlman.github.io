@@ -63,7 +63,8 @@ header {
 
 /* logo image style */
 header img {
-	width: 100px;
+	width: 75px;
+	padding-left: 5px;
 }
 
 /* heading style */
@@ -203,11 +204,19 @@ header img {
 }
 
 .top-left {
-  padding-left: 20px;
+	padding-left: 20px;
+  }
+
+.top-right {
+  padding-right: 20px;
 }
 
+.mid-left {
+	padding-left: 20px;
+  }
+
 .mid-right {
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .bottom {
@@ -245,7 +254,7 @@ figure {
 	padding-left: 15px;
 	padding-right: 15px;
     background-color: white;
-    box-shadow: 6px 6px 6px #A98743;
+	box-shadow: 6px 6px 6px #A98743;
 }
 
 figcaption {
@@ -304,7 +313,10 @@ footer {
 /* --------------------------------- */
 
 @media screen and (max-width: 550px) {
-	.______ {
+	.grid {
 	  display: block;
+	}
+	header img{
+		width: 50px;
 	}
   }
