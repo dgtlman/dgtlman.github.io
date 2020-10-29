@@ -198,8 +198,8 @@ header img {
 }
 
 .top-left, .top-right, .mid-left, .mid-right {
-  width: 50%:
-  display: flex;
+  /* width: 50%:
+  display: flex; */
 }
 
 .top-left {
