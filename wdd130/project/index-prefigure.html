@@ -8,7 +8,7 @@
       name="description"
       content="Temple Inn & Suites, located in Bethesda, Maryland, builds & manages hotels near temples of The Church of Jesus Christ of Latter-day Saints."
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-prefigure.css" />
   </head>
   <body>
     <header>
@@ -17,21 +17,15 @@
       </picture>
       <section class="heading">
         <h1>Temple Inn & Suites</h1>
-        <div class="motto">Your Sweet Home by the Temple</div>
+        <article class="motto">Your Sweet Home by the Temple</article>
       </section>
 
       <nav class="main-nav">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a class="inactive" href="amenities.html">Amenities</a></li>
-          <li>
-            <a class="inactive" href="temple-spotlight.html"
-              >Temple Spotlight</a
-            >
-          </li>
-          <li>
-            <a class="inactive" href="reservations.html">Reservations</a>
-          </li>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="amenities.html">Amenities</a></li>
+          <li><a href="temple-spotlight.html">Temple Spotlight</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
         </ul>
       </nav>
     </header>
@@ -127,17 +121,15 @@
       </div>
     </main>
 
-    <!-- old footer -->
-
     <footer>
-      <div class="footer-flex">
-        <div class="address">
+      <article class="footer-flex">
+        <article class="address">
           <p>
             Temple Inn & Suites Headquarters<br />355 Wisconsin Avenue,
             Bethesda, MD 20814<br />215.829.9999 | info@templeinn.com
           </p>
-        </div>
-        <div class="social">
+        </article>
+        <article class="social">
           <a href="https://twitter.com/tisproject" target="_blank">
             <img src="images/twitter.png" alt="twitter icon" height="50"
           /></a>
@@ -147,9 +139,9 @@
           <a href="https://facebook.com/groups/tisproject" target="_blank"
             ><img src="images/facebook.png" alt="facebook icon" height="50"
           /></a>
-        </div>
-      </div>
-      <div class="fine-print">
+        </article>
+      </article>
+      <article class="fine-print">
         <p>
           Copyright 2020 Temple Inn & Suites | All Rights Reserved | Privacy &
           Cookie Statement | Eric Garofalo |
@@ -158,7 +150,7 @@
             document.write("update: " + date);
           </script>
         </p>
-      </div>
+      </article>
     </footer>
   </body>
 </html>

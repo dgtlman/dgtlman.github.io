@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 /* global style list
 
@@ -17,7 +17,7 @@ little boy blue - #86A5D9
 -- site fonts --
 formal --  font-family: Palatino, "Trebuchet MS", serif;
 standard - font-family: Futura, Helvetica, Arial, sans-serif;
-polaroid - font-family: 'Shadows Into Light Two', currier;
+polaroid - font-family: 'Rock Salt', currier;
 
 */
 
@@ -29,8 +29,8 @@ polaroid - font-family: 'Shadows Into Light Two', currier;
 
 body {
 	background-color: #094074;
-	/* padding: 0; */
-	/* margin: 0; */
+	padding: 0;
+	margin: 0;
 	font-size: 16px;
 }
 
@@ -42,21 +42,8 @@ body {
 header, main, footer {
 	max-width: 960px;
 	margin: 0 auto;
-	align-items: center;
 	font-family: Futura, Helvetica, Arial, sans-serif;
 }
-
-main {
-	background-color: #EEEBD3;
-}
-
-footer {
-	background-color: #041E39;
-}
-
-/* .color-fix{
-	background-color: #041E39;
-} */
 
 /* --------------------------------- */
 /* ----- header section styles ----- */
@@ -65,27 +52,27 @@ footer {
 header {
 	padding: 5px 0;
 	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+	align-items:center;
+	justify-content:space-evenly;
 	background-color: #041E39;
-	/* color: #8C1C13; */
+	color: #8C1C13;
 }
 
 /* logo image style */
 header img {
 	width: 100px;
-	/* height: auto;
+	height: auto;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-left: 0px;
-	padding-right: 5px; */
+	padding-right: 5px;
 }
 
 /* not sure style */
-/* .headings {
+.headings {
 	display: flex;
 	flex-direction: column;
-} */
+}
 
 /* heading style */
 .heading h1 {
@@ -99,8 +86,8 @@ header img {
 .motto {
 	font-style: italic;
 	color: #A98743;
-	/* font-size: 1rem;
-	letter-spacing: 1.25pt; */
+	font-size: 1rem;
+	letter-spacing: 1.25pt;
 	padding-left: .25em;
 }
 
@@ -124,8 +111,8 @@ header img {
 	border-radius: 25px;
 	padding-top: .25em;
 	padding-bottom: .35em;
-	padding-left: 1.25em;
-	padding-right: 1.25em;
+	padding-left: 1em;
+	padding-right: 1em;
 	min-width: 70px
 }
 
@@ -135,8 +122,7 @@ header img {
 
 /* nav a:visited {
 	color: #A98743;
-}
-*/
+} */
 
 .main-nav a:hover {
 	background-color: #A98743;
@@ -147,91 +133,50 @@ header img {
 	text-decoration: none;
 }
 
-.active{
+.current{
 	/* background-color: #EEEBD3; */
 	color: #EEEBD3;
-	/* line-height: .25em;
+	line-height: .25em;
 	text-align: center;
 	font-size: 1em;
-	text-decoration: none; */
-}
-
-.inactive {
-	color: #A98743;
+	/* text-decoration: none; */
 }
 
 /* ------------------------------- */
 /* ----- main section styles ----- */
 /* ------------------------------- */
 
-/* main {
+main {
 	background-color: #EEEBD3;
 	color: #8C1C13;
-} */
+}
 
 /* heading style */
-
-.main-heading, .main-heading-center {
+.main-heading {
 	font-family: Palatino, "Trebuchet MS", serif;
 	font-size: 1.5rem;
 	color: #8C1C13;
-	/* margin: 0; */
+	margin: 0;
 	padding-top: 10px;
 	padding-left: 10px;
 }
 
 .main-heading-center {
+	font-family: Palatino, "Trebuchet MS", serif;
+	font-size: 1.5rem;
+	color: #8C1C13;
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 10px;
 	text-align: center;
 }
-/*
+
 .flexit {
 	display: flex;
 	padding: 1em;
 	height: auto;
 	justify-content: space-between;
 }
-*/
-
-
-
-/* --- main grid style --- */
-.grid {
-  display: grid;
-  max-width: 900px;
-  /* grid-template-columns: 1fr 1fr; */
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  justify-items: center;
-  align-items: end;
-}
-
-.top-left, .top-right, .mid-left, .mid-right {
-  width: 50%:
-  display: flex;
-  /* padding: 1em;
-  height: auto;
-  justify-content: space-between; */
-}
-
-.top-left {
-  padding-left: 20px;
-}
-
-.mid-right {
-  padding-right: 20px;
-}
-
-.bottom {
-  /* width: 100%; */
-  grid-column: 1 / 3;
-  padding-left: 20px;
-  padding-right: 20px;
-  /* height: 200px;
-  grid-column: 1 / 3;
-  background-color: blue; */
-}
-
-
 
 /* paragraph background style */
 .color-block {
@@ -251,10 +196,9 @@ header img {
 .banner {
 	height: auto;
 	width: 960px;
-	/* padding: 0; */
+	padding: 0;
 }
 
-/* --- image 3D polaroid effect ---*/
 .polaroid {
 	height: 280px;
 	width: auto;
@@ -263,33 +207,31 @@ header img {
 figure {
 	background: #EEEBD3;
 	background-color: white;
-	padding-top: 15px;
+
+	padding-top: 10px;
 	padding-bottom: 0;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
     background-color: white;
-    box-shadow: 6px 6px 6px #A98743;
+    box-shadow: 5px 5px 5px #041E39;
 }
 
 figcaption {
-	font-family: 'Shadows Into Light Two', currier;
-	color: #8C1C13;
-	font-size: 1.5em;
+	font-family: 'Rock Salt', currier;
     text-align: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
-/*
-.full {
-	padding: .5em;
+
+.full{
+	padding: 1em;
 }
-*/
 
 
 /* --------------------------------- */
 /* ----- footer section styles ----- */
 /* --------------------------------- */
 
-footer {
+footer{
 	width: auto;
 	background-color: #041E39;
 	color: #86A5D9
@@ -329,8 +271,6 @@ footer {
 	padding-left: 2px;
 	padding-right: 2px;
 }
-
-<-- end old footer styles --> */
 
 /* --------------------------------- */
 /* --- responsive styles > 550px --- */
