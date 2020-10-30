@@ -60,12 +60,13 @@ header {
 }
 
 /* logo image style */
-header img {
+/* header img { */
+.logo {
 	width: 100px;
 	height: auto;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	padding-left: 0px;
+	padding-left: 5px;
 	padding-right: 5px;
 }
 
@@ -212,31 +213,6 @@ main {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
-/* --- image 3D polaroid effect ---
-.polaroid {
-	height: 280px;
-	width: auto;
-}
-
-figure {
-	background: #EEEBD3;
-	background-color: white;
-	padding-top: 15px;
-	padding-bottom: 0;
-	padding-left: 15px;
-	padding-right: 15px;
-    background-color: white;
-    box-shadow: 6px 6px 6px #A98743;
-}
-
-figcaption {
-	font-family: 'Shadows Into Light Two', currier;
-	color: #8C1C13;
-	font-size: 1.5em;
-    text-align: center;
-	padding: 5px 10px;
-
 
 
 /* --------------------------------- */
