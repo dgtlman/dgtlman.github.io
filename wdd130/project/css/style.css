@@ -148,12 +148,6 @@ header img {
 	grid-row: 1;
 }
 
-/* .banner-box img, .hero {
-    grid-column: 1 / -1;
-    /* the -1 is just a fancy way to say "span all the columns" 
-    grid-row: 1;
-}*/
-
 .action {
     grid-column: 1;
     grid-row: 1;
@@ -191,7 +185,6 @@ header img {
 /* --- main grid style --- */
 .grid {
   display: grid;
-  /* max-width: 900px; */
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   justify-items: center;
@@ -199,8 +192,6 @@ header img {
 }
 
 .top-left, .top-right, .mid-left, .mid-right {
-  /* width: 50%:
-  display: flex; */
 }
 
 .top-left {
@@ -233,12 +224,6 @@ header img {
 	color: #EEEBD3;
 	padding: 1em;
 }
-
-/*.main-450{
-	width: 450px;
-	align-items:center;
-	justify-content:center;
-}*/
 
 /* --- image 3D polaroid effect ---*/
 .polaroid {
