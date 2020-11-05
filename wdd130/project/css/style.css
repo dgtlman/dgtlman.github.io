@@ -220,7 +220,8 @@ header img {
 /* paragraph background style */
 .color-block {
 	font-family: Futura, Helvetica, Arial, sans-serif;
-	background: #A98743;
+	/* background: #A98743; */
+	background: #8C1C13;
 	color: #EEEBD3;
 	padding: 1em;
 }
@@ -304,10 +305,15 @@ footer {
 	header img{
 		width: 50px;
 	}
+
 	.banner {
 		height: auto;
 		width: 550px;
 		grid-column: 1 / -1;
 		grid-row: 1;
 	}
+
+	/* .action, .action  button {
+		opacity: 0%;
+	} */
   }
