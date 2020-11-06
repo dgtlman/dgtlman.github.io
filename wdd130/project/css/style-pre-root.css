@@ -3,15 +3,16 @@
 /* global style list
 
 -- site colors --
-link - https://coolors.co/0b5498-05284c-a2b9e2-eeebd3-b99650-fbe09d-8c1c13
+link - https://coolors.co/094074-041e39-86a5d9-eeebd3-a98743-f7c548-8c1c13
 
-bg-color (usafa blue) - #0B5498
-head-foot (oxford blue) - #05284c
-light-blue (light blue steel) - #86A5D9
-red (dark red)- #8C1C13
-cream (beige) - #EEEBD3
-gold (camel) - #b99650
-banana (banana mania) - #FBE09D
+indigo Dye - #094074
+beige - #EEEBD3
+metallic sunburst - #A98743
+maize crayola - #F7C548
+dark red - #8C1C13
+oxford blue - #041E39
+little boy blue - #86A5D9
+
 
 -- site fonts --
 formal --  font-family: Palatino, "Trebuchet MS", serif;
@@ -21,22 +22,13 @@ polaroid - font-family: 'Shadows Into Light Two', currier;
 */
 
 :root {
-	
-	/* site colors: var(--color-name) */
-    --bg-color: #0B5498;
-	--head-foot: #05284c;
-	--light-blue: #86A5D9;
-	--white: white;
-	--cream: #EEEBD3;
-	--banana: #FBE09D;
-	--gold: #B99650;
-	--red: #8C1C13;
+    --bg-color: #396E94;
+    --head-foot: #E7C24F;
+    --accent1-color: #A43312;
+    --accent2-color: white;
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: Lato, Helvetica, sans-serif
 
-	/* site fonts var(--style-font) */
-    --heading-font: Palatino, "Trebuchet MS", serif;
-	--standard-font: Futura, Helvetica, Arial, sans-serif;
-	--polaroid-font: 'Shadows Into Light Two', currier;
-}
 
 /* ----------------------- */
 /* ----- body styles ----- */
@@ -44,7 +36,7 @@ polaroid - font-family: 'Shadows Into Light Two', currier;
 
 
 body {
-	background-color: var(--bg-color);
+	background-color: #094074;
 	font-size: 16px;
 }
 
@@ -57,7 +49,7 @@ header, main, footer {
 	max-width: 960px;
 	margin: 0 auto;
 	align-items: center;
-	font-family: var(--standard-font)
+	font-family: Futura, Helvetica, Arial, sans-serif;
 }
 
 
@@ -66,7 +58,7 @@ header, main, footer {
 /* --------------------------------- */
 
 main {
-	background-color: var(--cream);
+	background-color: #EEEBD3;
 }
 
 header {
@@ -74,7 +66,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	background-color: var(--head-foot);
+	background-color: #041E39;
 }
 
 /* logo image style */
@@ -85,16 +77,16 @@ header img {
 
 /* heading style */
 .heading h1 {
-	font-family: var(--heading-font)
+	font-family: Palatino, "Trebuchet MS", serif;
 	font-size: 1.9rem;
-	color: var(--light-blue);
+	color: #86A5D9;
 	margin: 0;
 }
 
 /* style text below temple inn & suites */
 .motto {
 	font-style: italic;
-	color: var(--banana);
+	color: #A98743;
 	padding-left: .25em;
 }
 
@@ -103,7 +95,7 @@ header img {
 /* --------------------------------- */
 
 .main-nav {
-	background-color: var(--head-foot);
+	background-color: #041E39;
 	line-height: .5em;
 	text-align: center;
 	font-size: 1em
@@ -124,12 +116,12 @@ header img {
 }
 
 .main-nav a:link {
-	color: var(--cream);
+	color: #A98743;
 }
 
 .main-nav a:hover {
-	background-color: var(--cream);
-	color: var(--light-blue);
+	background-color: #A98743;
+	color: #041E39;
 	line-height: .25em;
 	text-align: center;
 	font-size: 1em;
@@ -138,12 +130,12 @@ header img {
 
 /* -- sets color of active page user is on -- */
 .active{
-	color: var(--banana);
+	color: #EEEBD3;
 }
 
 /* -- sets color of other pages user is not on -- */
 .inactive {
-	color: var(--cream);
+	color: #A98743;
 }
 
 /* ------------------------------- */
@@ -169,7 +161,7 @@ header img {
     grid-row: 1;
 	background-color: rgba(238, 235, 211, 0.65);
 	font-size: .8em;
-	color: var(--red);
+	color: #8C1C13;
     margin: 3em 11em;
     padding: 1em;
     text-align: center;
@@ -178,21 +170,16 @@ header img {
 .action button {
     line-height: 2em;
 	width: 10em;
-	color: var(--cream);
-    background-color: var(--bg-color);
+	color: #EEEBD3;
+    background-color: #094074;
     font-size: 1.25em;
-}
-
-.action-paragraph{
-	font-weight: bold;
-	font-size: 1.2em;
 }
 
 /* heading style */
 .main-heading, .main-heading-center {
-	font-family: var(--heading-font)
+	font-family: Palatino, "Trebuchet MS", serif;
 	font-size: 1.5rem;
-	color: var(--red);
+	color: #8C1C13;
 	padding-top: 10px;
 	padding-left: 10px;
 }
@@ -240,9 +227,9 @@ header img {
 
 /* paragraph background style */
 .color-block {
-	font-family: var(--standard-font);
-	background: var(--red);
-	color: var(--banana);
+	font-family: Futura, Helvetica, Arial, sans-serif;
+	background: #8C1C13;
+	color: #A98743;
 	padding: 1em;
 }
 
@@ -253,19 +240,19 @@ header img {
 }
 
 figure {
-	background: var(--cream);
-	background-color: var(--white);
+	background: #EEEBD3;
+	background-color: white;
 	padding-top: 15px;
 	padding-bottom: 0;
 	padding-left: 15px;
 	padding-right: 15px;
-    background-color: var(--white);
-	box-shadow: 6px 6px 6px var(--gold);
+    background-color: white;
+	box-shadow: 6px 6px 6px #A98743;
 }
 
 figcaption {
-	font-family: var(--polaroid-font);
-	color: var(--red);
+	font-family: 'Shadows Into Light Two', currier;
+	color: #8C1C13;
 	font-size: 1.5em;
     text-align: center;
     padding: 5px 10px;
@@ -278,8 +265,8 @@ figcaption {
 
 footer {
 	width: auto;
-	background-color: var(--head-foot);
-	color: var(--light-blue)
+	background-color: #041E39;
+	color: #86A5D9
 }
 
 /* flex address & social media */
@@ -303,7 +290,7 @@ footer {
 
 /* style text of just bottom line */
 .fine-print {
-	color: var(--banana);
+	color: #A98743;
 	vertical-align: bottom;
 	font-size: .85rem;
 	letter-spacing: .25pt;
