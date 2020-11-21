@@ -57,7 +57,7 @@ header, main, footer {
 	max-width: 960px;
 	margin: 0 auto;
 	align-items: center;
-	font-family: var(--standard-font)
+	font-family: var(--standard-font);
 }
 
 
@@ -85,7 +85,7 @@ header img {
 
 /* heading style */
 .heading h1 {
-	font-family: var(--heading-font)
+	font-family: var(--heading-font);
 	font-size: 1.9rem;
 	color: var(--light-blue);
 	margin: 0;
@@ -165,32 +165,7 @@ header img {
 	grid-row: 1;
 }
 
-/*
-.action {
-    grid-column: 1;
-    grid-row: 1;
-	background-color: rgba(238, 235, 211, 0.65);
-	font-size: .8em;
-	color: var(--red);
-    margin: 3em 11em;
-    padding: 1em;
-    text-align: center;
-}
-
-.action button {
-    line-height: 2em;
-	width: 10em;
-	color: var(--cream);
-    background-color: var(--bg-color);
-    font-size: 1.25em;
-}
-
-.action-paragraph{
-	font-weight: bold;
-	font-size: 1.2em;
-}
-*/
-/*  */
+/* --- call to action on main page banner --- */
 .action {
     grid-column: 1;
     grid-row: 1;
@@ -202,7 +177,6 @@ header img {
     text-align: center;
 }
 
-
 .action button {
     line-height: 2em;
 	width: 10em;
@@ -211,7 +185,6 @@ header img {
     font-size: 1.25em;
 }
 
-
 .action-paragraph{
 	font-weight: bold;
 	font-size: 1.2em;
@@ -219,7 +192,7 @@ header img {
 
 /* heading style*/
 .main-heading, .main-heading-center {
-	font-family: var(--heading-font)
+	font-family: var(--heading-font);
 	font-size: 1.5rem;
 	color: var(--red);
 	padding-top: 10px;
@@ -357,7 +330,7 @@ a.sub-links:hover {
 	  padding-top: 0px;
 	  padding-bottom: 20px;
 	  grid-area: t;
-	  align-content: ;
+	  align-content: space-between;
 	}
 
   .ts-bottom-left {
@@ -389,7 +362,7 @@ a.sub-links:hover {
 
 	/* --- subpage main top style --- */
 	.sub-main {
-		font-family: var(--heading-font)
+		font-family: var(--heading-font);
 		font-size: 1.5rem;
 		color: var(--red);
 		padding-top: 10px;
@@ -405,22 +378,6 @@ a.sub-links:hover {
 		padding: .75em;
 	  }
 
-	
-	/* --- reservations grid style 
-	.grid-reservations {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 10px;
-		justify-items: center;
-		align-items: end;
-	}
-
-  	.rs-left, .rs-right {
-		padding-left: 5px;
-		padding-right: 5px;
-		padding-bottom: 5px;
-	} --- */
-
 
 
 /* --------------------------------- */
@@ -429,14 +386,9 @@ a.sub-links:hover {
 
 
 	form {
-		/* Center the form on the page */
-		/* background-color: white; */
 		margin: 0 auto;
 		width: 400px;
-		/* Form outline */
 		padding: 1em;
-		/* border: 1px solid #ccc;
-		border-radius: 1em; */
 		color: var(--bg-color)
 	}
 
@@ -448,11 +400,9 @@ a.sub-links:hover {
 
 	form li + li {
 		margin-top: 1em;
-
 	}
 
 	label {
-		/* Uniform size & alignment */
 		display: inline-block;
 		width: 90px;
 		text-align: right;
@@ -460,15 +410,9 @@ a.sub-links:hover {
 
 	input,
 	textarea {
-		/* To make sure that all text fields have the same font settings
-				By default, textareas have a monospace font */
 		font: 1em sans-serif;
-
-		/* Uniform text field size */
 		width: 300px;
 		box-sizing: border-box;
-
-		/* Match form field borders */
 		border: 1px solid var(--bg-color);
 		padding-left: 10px;
 		padding-right: 10px;
@@ -478,15 +422,11 @@ a.sub-links:hover {
 
 	input:focus,
 	textarea:focus {
-		/* Additional highlight for focused elements */
 		border-color: var(--red);
 	}
 
 	textarea {
-		/* Align multiline text fields with their labels */
 		vertical-align: top;
-
-		/* Provide space to type some text */
 		height: 5em;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -495,22 +435,18 @@ a.sub-links:hover {
 	}
 
 	.button {
-		/* Align buttons with the text fields */
-		padding-left: 90px; /* same size as the label elements */
+		padding-left: 90px;
 		}
 
 		button {
-		/* This extra margin represent roughly the same space as the space
-				between the labels and their text fields */
 		margin-left: 0.5em;
 	}
+
 	#feedback {
-		/* add styling and layout properties of your own design here as needed */
 		padding: 10px;
 		text-align: center;
 		display: none;
 		color: var(--bg-color);
-		/* we will make the element invisible until the form is submitted successfully */
 	}
 
 
