@@ -1,6 +1,10 @@
+<!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Temple Inn & Suites | Your Home Away From Home | 215-529-9999</title>
+    <title>
+      Temple Inn & Suites: Reservations | Your Home Away From Home |
+      215-529-9999
+    </title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -11,13 +15,14 @@
   </head>
   <body>
     <header>
-      <picture>
+      <picture class="logo">
         <img src="images/icon.png" alt="logo placeholder" />
       </picture>
       <section class="heading">
         <h1>Temple Inn & Suites</h1>
-        <article class="motto">Your Sweet Home by the Temple</article>
+        <div class="motto">Your Sweet Home by the Temple</div>
       </section>
+
       <nav class="main-nav">
         <ul>
           <li><a class="inactive" href="index.html">Home</a></li>
@@ -38,16 +43,51 @@
         alt="salt lake city temple during conference"
         class="banner"
       />
-      <section class="flexit">
-        <article class="main-450">
-          <h2 class="main-heading">Reservations</h2>
-          <p class="color-block">placeholder page for reservations</p>
-          <img
-            src="https://placeimg.com/640/480/tech"
-            alt="banner placeholder"
-          />
-        </article>
-      </section>
+      <div id="feedback"></div>
+      <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" required />
+          </li>
+          <li>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_mail" required />
+          </li>
+          <!-- 
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" required />
+          </li>
+          -->
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
+      <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById("feedback");
+        // get the form element so we can read what was entered in it.
+        const formElement = document.forms[0];
+
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener("submit", function (e) {
+          // stop the form from doing the default action
+          e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+          feedbackElement.innerHTML =
+            "Hello " +
+            formElement.user_name.value +
+            "! Thank you for your message. We will get back with you as soon as possible!";
+          // make the feedback element visible.
+          feedbackElement.style.display = "block";
+        });
+      </script>
     </main>
 
     <footer>

@@ -147,13 +147,14 @@ header img {
 }
 
 /* ------------------------------- */
-/* ----- main section styles ----- */
+/* -- index main section styles -- */
 /* ------------------------------- */
 
 /* -- hero and call to action style -- */
 .banner-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 33% 33% 33%;
 }
 
 /* banner image style */
@@ -164,6 +165,7 @@ header img {
 	grid-row: 1;
 }
 
+/*
 .action {
     grid-column: 1;
     grid-row: 1;
@@ -187,8 +189,35 @@ header img {
 	font-weight: bold;
 	font-size: 1.2em;
 }
+*/
+/*  */
+.action {
+    grid-column: 1;
+    grid-row: 1;
+	background-color: rgba(238, 235, 211, 0.65);
+	font-size: .8em;
+	color: var(--red);
+	margin: 3em 5em;
+    padding: 1em;
+    text-align: center;
+}
 
-/* heading style */
+
+.action button {
+    line-height: 2em;
+	width: 10em;
+	color: var(--cream);
+    background-color: var(--bg-color);
+    font-size: 1.25em;
+}
+
+
+.action-paragraph{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/* heading style*/
 .main-heading, .main-heading-center {
 	font-family: var(--heading-font)
 	font-size: 1.5rem;
@@ -200,7 +229,6 @@ header img {
 .main-heading-center {
 	text-align: center;
 }
-
 
 
 /* --- main grid style --- */
@@ -271,6 +299,213 @@ figcaption {
     padding: 5px 10px;
 }
 
+/* --- sub page styles --- */
+
+a.sub-links:link {
+	color: var(--white);
+}
+
+a.sub-links:hover {
+	color: var(--light-blue);
+}
+
+/* --- amenities grid style --- */
+.grid-amenities {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	justify-items: center;
+	align-items: end;
+  }
+
+  .am-top-left, .am-top-mid, .am-top-right, .am-bottom-left, .am-bottom-mid, .am-bottom-right {
+	padding-left: 8px;
+	padding-right: 23px;
+	padding-bottom: 15px;
+  }
+
+
+  /* --- amenities grid paragraph style --- */
+  .am-color-block {
+	font-family: var(--standard-font);
+	background: var(--red);
+	color: var(--banana);
+	font-size: .85em;
+	padding: .75em;
+}
+
+
+  /* --- temple grid style --- */
+
+  .grid-temple {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+	justify-items: center;
+	align-items: unset;
+	grid-template-areas:
+    "h h t"
+    "l m r"
+  }
+
+  .ts-top-left, .ts-top-right, .ts-mid-left, .ts-mid-right {
+  }
+
+  .ts-top-left {
+	  grid-column: 1 / 3;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-top: 10px;
+	  padding-bottom: 20px;
+	  grid-area: h;
+	}
+
+  .ts-top-right {
+	  grid-column: 3 / 3;
+	  padding-left: 5px;
+	  padding-right: 20px;
+	  padding-top: 0px;
+	  padding-bottom: 20px;
+	  grid-area: t;
+	  align-content: ;
+	}
+
+  .ts-bottom-left {
+	  padding-left: 22px;
+	  padding-right: 20px;
+	  padding-top: 10px;
+	  padding-bottom: 20px;
+	  grid-area: l;
+	  /* grid-column: 1 / 1; */
+	}
+
+	.ts-bottom-mid {
+  	  padding-left: 20px;
+	  padding-right: 20px;
+	  padding-top: 10px;
+	  padding-bottom: 20px;
+	  grid-area: m;
+	  /* grid-column: 2 / 2; */
+	}
+
+	.ts-bottom-right {
+  	  padding-left: 5px;
+	  padding-right: 20px;
+	  padding-top: 10px;
+	  padding-bottom: 20px;
+	  grid-area: r;
+	  /* grid-column: 3 / 3; */
+	}
+
+	/* --- subpage main top style --- */
+	.sub-main {
+		font-family: var(--heading-font)
+		font-size: 1.5rem;
+		color: var(--red);
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+
+	 /* --- subpage grid paragraph style --- */
+	 .sub-color-block {
+		font-family: var(--standard-font);
+		background: var(--red);
+		color: var(--banana);
+		font-size: .85em;
+		padding: .75em;
+	  }
+
+
+/* --------------------------------- */
+/* ------ form section styles ------ */
+/* --------------------------------- */
+
+
+	form {
+	/* Center the form on the page */
+	/* background-color: white; */
+	margin: 0 auto;
+	width: 400px;
+	/* Form outline */
+	padding: 1em;
+	/* border: 1px solid #ccc;
+	border-radius: 1em; */
+	color: var(--bg-color)
+	}
+
+	ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	}
+
+	form li + li {
+	margin-top: 1em;
+
+	}
+
+	label {
+	/* Uniform size & alignment */
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+	}
+
+	input,
+	textarea {
+	/* To make sure that all text fields have the same font settings
+			By default, textareas have a monospace font */
+	font: 1em sans-serif;
+
+	/* Uniform text field size */
+	width: 300px;
+	box-sizing: border-box;
+
+	/* Match form field borders */
+	border: 1px solid var(--bg-color);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+	input:focus,
+	textarea:focus {
+	/* Additional highlight for focused elements */
+	border-color: var(--red);
+	}
+
+	textarea {
+	/* Align multiline text fields with their labels */
+	vertical-align: top;
+
+	/* Provide space to type some text */
+	height: 5em;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+	.button {
+	/* Align buttons with the text fields */
+	padding-left: 90px; /* same size as the label elements */
+	}
+
+	button {
+	/* This extra margin represent roughly the same space as the space
+			between the labels and their text fields */
+	margin-left: 0.5em;
+	}
+	#feedback {
+		/* add styling and layout properties of your own design here as needed */
+		padding: 10px;
+		text-align: center;
+		display: none;
+		color: var(--bg-color);
+		/* we will make the element invisible until the form is submitted successfully */
+	}
+
 
 /* --------------------------------- */
 /* ----- footer section styles ----- */
@@ -319,7 +554,7 @@ footer {
 /* --------------------------------- */
 
 @media screen and (max-width: 550px) {
-	.grid {
+	.grid, .grid-temple, .grid-amenities {
 	  display: block;
 	}
 	header img{
