@@ -43,32 +43,52 @@
         alt="salt lake city temple during conference"
         class="banner"
       />
-      <div id="feedback"></div>
-      <form action="/my-handling-form-page" method="post">
-        <ul>
-          <li>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" required />
-          </li>
-          <li>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="user_mail" required />
-          </li>
-          <!-- 
-          <li>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" required />
-          </li>
-          -->
-          <li>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-          </li>
-          <li class="button">
-            <button type="submit">Send your message</button>
-          </li>
-        </ul>
-      </form>
+      <div class="sub-main">
+        <h3>Contact Temple Inn & Suites for Reservations</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+          <div id="feedback"></div>
+          <form action="/form-page" method="post">
+            <ul class="reservations-ul">
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" placeholder="first lastname" required />
+              </li>
+              <li>
+                <label for="address">Address:</label>
+                <textarea id="address" name="user_address" placeholder="123 Street, City, State, Zip" required></textarea>
+              </li>
+              <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" placeholder="user@domain.com" required />
+              </li>
+              <li>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="user_phone" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+              </li>
+              <li>
+                <label for="arrival">Arrival:</label>
+                <input type="date" id="arrival" name="arrival" required/>
+              </li>
+              <li>
+                <label for="nights">Nights:</label>
+                <input type="number" id="nights" name="user_nights" required/>
+              </li>
+              <li>
+                <label for="rooms">Rooms:</label>
+                <input type="number" id="rooms" name="user_rooms" required />
+              </li>
+              <li>
+                <label for="msg">Notes:</label>
+                <textarea id="msg" name="user_notes" placeholder="type here" required></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Submit your reservation</button>
+              </li>
+            </ul>
+          </form>
+        </div>
       <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById("feedback");
@@ -113,11 +133,11 @@
       <article class="fine-print">
         <p>
           Copyright 2020 Temple Inn & Suites | All Rights Reserved | Privacy &
-          Cookie Statement | Eric Garofalo |
+          Cookie Statement | Eric Garofalo <!-- |
           <script>
             let date = document.lastModified;
             document.write("update: " + date);
-          </script>
+          </script> -->
         </p>
       </article>
     </footer>

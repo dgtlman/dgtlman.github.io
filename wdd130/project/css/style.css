@@ -325,16 +325,6 @@ a.sub-links:hover {
   }
 
 
-  /* --- amenities grid paragraph style --- */
-  .am-color-block {
-	font-family: var(--standard-font);
-	background: var(--red);
-	color: var(--banana);
-	font-size: .85em;
-	padding: .75em;
-}
-
-
   /* --- temple grid style --- */
 
   .grid-temple {
@@ -406,14 +396,31 @@ a.sub-links:hover {
 		padding-left: 10px;
 	}
 
-	 /* --- subpage grid paragraph style --- */
-	 .sub-color-block {
+	/* --- subpage grid paragraph style --- */
+	.sub-color-block {
 		font-family: var(--standard-font);
 		background: var(--red);
 		color: var(--banana);
-		font-size: .85em;
+		font-size: .95em;
 		padding: .75em;
 	  }
+
+	
+	/* --- reservations grid style 
+	.grid-reservations {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		justify-items: center;
+		align-items: end;
+	}
+
+  	.rs-left, .rs-right {
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+	} --- */
+
 
 
 /* --------------------------------- */
@@ -433,7 +440,7 @@ a.sub-links:hover {
 		color: var(--bg-color)
 	}
 
-	ul {
+	.reservations-ul {
 		list-style: none;
 		padding: 0;
 		margin: 0;
