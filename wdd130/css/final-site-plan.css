@@ -133,3 +133,7 @@ p {
 .inactive {
 	color: var(--color-white);
 }
+
+.footer {
+	text-align: center;
+}
