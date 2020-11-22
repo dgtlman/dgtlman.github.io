@@ -165,7 +165,7 @@ header img {
 	grid-row: 1;
 }
 
-/* --- call to action on main page banner --- */
+/* --- call to action on main page banner --- */ 
 .action {
     grid-column: 1;
     grid-row: 1;
