@@ -142,7 +142,7 @@ header img {
 }
 
 /* -- sets color of other pages user is not on -- */
-.inactive {
+/* .inactive { */
 	color: var(--cream);
 }
 
@@ -363,7 +363,7 @@ a.sub-links:hover {
 	/* --- subpage main top style --- */
 	.sub-main {
 		font-family: var(--heading-font);
-		font-size: 1.5rem;
+		font-size: 1rem;
 		color: var(--red);
 		padding-top: 10px;
 		padding-left: 10px;
