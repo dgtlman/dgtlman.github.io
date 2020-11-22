@@ -287,11 +287,11 @@ figcaption {
 
 /* --- sub page styles --- */
 
-a.sub-links:link {
+a.sub-link:link {
 	color: var(--white);
 }
 
-a.sub-links:hover {
+a.sub-link:hover {
 	color: var(--light-blue);
 }
 
@@ -387,7 +387,7 @@ a.sub-links:hover {
 		font-family: var(--standard-font);
 		background: var(--red);
 		color: var(--banana);
-		font-size: .95em;
+		font-size: .9em;
 		padding: .75em;
 	  }
 
