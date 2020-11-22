@@ -124,7 +124,7 @@ header img {
 }
 
 .main-nav a:link {
-	color: var(--cream);
+	/* color: #EEEBD3; */ /* replaced by active/inactive style*/
 }
 
 .main-nav a:hover {
@@ -142,7 +142,7 @@ header img {
 }
 
 /* -- sets color of other pages user is not on -- */
-/* .inactive { */
+.inactive {
 	color: var(--cream);
 }
 
@@ -173,8 +173,11 @@ header img {
 	background-color: rgba(238, 235, 211, 0.65);
 	font-size: .8em;
 	color: var(--red);
-	margin: 3em 5em;
-    padding: 1em;/* 
+	margin-top: 3em;
+	margin-bottom: 3.5em;
+	margin-left: 5em;
+	margin-right: 3.5em;
+    padding: .5em;/* 
     */
 }
 
@@ -255,6 +258,7 @@ header img {
 }
 
 figure {
+	border: 1px solid var(--light-blue);
 	background: var(--cream);
 	background-color: var(--white);
 	padding-top: 15px;
@@ -273,6 +277,14 @@ figcaption {
     padding: 5px 10px;
 }
 
+
+.threedee {
+	border: 1px solid var(--light-blue);
+	background-color: white;
+    padding: 5px;
+    box-shadow: 3px 3px 3px #999;
+}
+
 /* --- sub page styles --- */
 
 a.sub-links:link {
@@ -287,14 +299,14 @@ a.sub-links:hover {
 .grid-amenities {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 10px;
+	grid-gap: 5px;
 	justify-items: center;
 	align-items: end;
   }
 
   .am-top-left, .am-top-mid, .am-top-right, .am-bottom-left, .am-bottom-mid, .am-bottom-right {
 	padding-left: 8px;
-	padding-right: 23px;
+	padding-right: 15px;
 	padding-bottom: 15px;
   }
 
@@ -304,7 +316,7 @@ a.sub-links:hover {
   .grid-temple {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 10px;
+	grid-gap: 3px;
 	justify-items: center;
 	align-items: unset;
 	grid-template-areas:
@@ -317,8 +329,8 @@ a.sub-links:hover {
 
   .ts-top-left {
 	  grid-column: 1 / 3;
-	  padding-left: 5px;
-	  padding-right: 5px;
+	  padding-left: 7px;
+	  padding-right: 7px;
 	  padding-top: 10px;
 	  padding-bottom: 20px;
 	  grid-area: h;
@@ -326,17 +338,17 @@ a.sub-links:hover {
 
   .ts-top-right {
 	  grid-column: 3 / 3;
-	  padding-left: 5px;
+	  padding-left: 10px;
 	  padding-right: 20px;
 	  padding-top: 0px;
 	  padding-bottom: 20px;
 	  grid-area: t;
-	  align-content: space-between;
+	  align-content: space-around;
 	}
 
   .ts-bottom-left {
-	  padding-left: 22px;
-	  padding-right: 20px;
+	  padding-left: 15px;
+	  padding-right: 10px;
 	  padding-top: 10px;
 	  padding-bottom: 20px;
 	  grid-area: l;
@@ -344,7 +356,7 @@ a.sub-links:hover {
 	}
 
 	.ts-bottom-mid {
-  	  padding-left: 20px;
+  	  padding-left: 10px;
 	  padding-right: 20px;
 	  padding-top: 10px;
 	  padding-bottom: 20px;
@@ -354,7 +366,7 @@ a.sub-links:hover {
 
 	.ts-bottom-right {
   	  padding-left: 5px;
-	  padding-right: 20px;
+	  padding-right: 15px;
 	  padding-top: 10px;
 	  padding-bottom: 20px;
 	  grid-area: r;
