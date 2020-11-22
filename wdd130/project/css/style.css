@@ -287,11 +287,11 @@ figcaption {
 
 /* --- sub page styles --- */
 
-a.sub-link:link {
+a:link {
 	color: var(--white);
 }
 
-a.sub-link:hover {
+a:hover {
 	color: var(--light-blue);
 }
 
