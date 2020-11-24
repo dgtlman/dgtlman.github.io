@@ -7,12 +7,133 @@
 </head>
 
 <style>
+
+ /* --- intro div styles --- */
+  .intro h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    color: Black;
+  }
+
+  .intro p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: darkblue;
+  }
+
+
+ /* --- media card styles ---- */
+ /* --- based on alignment --- */
+
+  .card-left, .card-center, .card-right {
+    width: 320px;
+    box-shadow: 1px 1px 4px 1px #888;
+    border-radius: 3px;
+    background-color: white;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: .95em;
+  }
+
+  .card-center {
+    margin: 0 auto;
+  }
+
+  .card-right {
+    margin-left: auto;
+  }
+
+  .card-left p, .card-center p, .card-right p {
+    margin: 10px auto;
+    width: 90%;
+  }
+
+  .card-left footer, .card-center footer, .card-right footer {
+    display: grid;
+    grid-template-columns: 3rem 3rem auto;
+    align-items: center;
+    margin: 10px auto;
+    width: 90%;
+  }
+
+/* ---- universal media card styles --- */
+/* --- these are same for all cards --- */
+
+  img {
+    max-height: 240px;
+  }
+
+  .viewButton {
+    border-radius: 3px 0 0 3px;
+    color: #888;
+    background-color: #fff;
+    border: solid 1px #888;
+    padding: 10px;
+  }
+
+  .editButton {
+    border-radius: 0 3px 3px 0;
+    margin-left: -1px;
+    color: #888;
+    background-color: #fff;
+    border: solid 1px #888;
+    padding: 10px;
+  }
+
+  .time {
+    justify-self: right;
+    color: #888;
+  }
     
 </style>
 
 <body>
-  
-    <p>temp</p>
+
+    <div class="intro">
+        <h1>Week 12: Media Card Component</h1>
+        <p>I wasn't sure if this assignment was supposed to have the media card left aligned or centered. 
+        So I decided to do it both ways. Somwhere in the process, I realized that it would be wise to push
+        myself a little and have three boxes (left, center and right), but only use as little additional css
+        as possible to make it work. Which meant, seperate classes for each article and a simple class for the
+        center and right only to use margins to align the media cards.</p><br><br>
+    </div>
+    
+    <article class="card-left">
+        <img src="https://picsum.photos/320/240" alt="left aligned: card placeholder image"/></a>
+        <p>LEFT ALIGNED wider card supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    
+        <footer>
+            <button class="viewButton">View</button>
+            <button class="editButton">Edit</button>
+            <span class="time">9 mins</span>
+        </footer>
+    </article>
+
+        <br><br>
+
+    <article class="card-center">
+        <img src="https://picsum.photos/320/240" alt="center aligned: card placeholder image"/></a>
+        <p>CENTER ALIGNED wider card supporting text below as natural lead-in to additional content. This content is a little bit longer.</p>
+    
+        <footer>
+            <button class="viewButton">View</button>
+            <button class="editButton">Edit</button>
+            <span class="time">9 mins</span>
+        </footer>
+    </article>
+
+    <br><br>
+
+    <article class="card-right">
+        <img src="https://picsum.photos/320/240" alt="center aligned: card placeholder image"/></a>
+        <p>RIGHT ALIGNED  wider card supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+        <footer>
+            <button class="viewButton">View</button>
+            <button class="editButton">Edit</button>
+            <span class="time">9 mins</span>
+        </footer>
+    </article>
 
 </body>
 </html>
