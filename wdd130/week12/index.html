@@ -9,12 +9,10 @@
 <style>
 
  /* --- intro div styles --- */
-  .intro h1{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.25em;
-    color: Black;
+ .intro {
+  margin: 0 20px;
   }
-
+  
   .intro p{
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -33,6 +31,7 @@
     overflow: hidden;
     font-family: Helvetica, Arial, sans-serif;
     font-size: .95em;
+    margin: 0 20px;
   }
 
   .card-center {
@@ -80,6 +79,11 @@
     padding: 10px;
   }
 
+  .card-intro {
+    color: red;
+
+  }
+
   .time {
     justify-self: right;
     color: #888;
@@ -100,7 +104,7 @@
     
     <article class="card-left">
         <img src="https://picsum.photos/320/240" alt="left aligned: card placeholder image"/></a>
-        <p>LEFT ALIGNED wider card supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p><span class="card-intro">LEFT ALIGNED</span> wider card supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     
         <footer>
             <button class="viewButton">View</button>
@@ -113,7 +117,7 @@
 
     <article class="card-center">
         <img src="https://picsum.photos/320/240" alt="center aligned: card placeholder image"/></a>
-        <p>CENTER ALIGNED wider card supporting text below as natural lead-in to additional content. This content is a little bit longer.</p>
+        <p><span class="card-intro">CENTER ALIGNED</span> wider card supporting text below as natural lead-in to additional content. This content is a little bit longer.</p>
     
         <footer>
             <button class="viewButton">View</button>
@@ -126,7 +130,7 @@
 
     <article class="card-right">
         <img src="https://picsum.photos/320/240" alt="center aligned: card placeholder image"/></a>
-        <p>RIGHT ALIGNED  wider card supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p><span class="card-intro">RIGHT ALIGNED</span> wider card supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
         <footer>
             <button class="viewButton">View</button>

@@ -8,68 +8,94 @@
 
 <style>
 
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 550px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-    }
+  /* --- intro div styles --- */
+  .intro {
+    margin: 0 20px;
+  }
+    
+  h1, h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: darkblue;
+  }
 
-    img:hover {
-      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    }
+  h1{
+      font-size: 2em;
+  }
+    
+  h2{
+      font-size: 1.5em;
+  }
 
-    section {
+  h3{
+      font-size: 1em;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  /* --- poem section/block styles --- */
+  section {
     width: 50%;
     border: 1px solid;
-    }
+    padding: 10px;
+  }
 
-    .block2, .block4{
+  .intro h3{
+    font-size: .9em;
+  }
+
+  .block2, .block4{
     margin: 0 auto;
-    }
+  }
 
-    .block3 {
+  .block3 {
     margin-left: auto;
-    }
+  }
 
-    p:nth-of-type(1), p:nth-of-type(4) {
+  p:nth-of-type(1), p:nth-of-type(4) {
     text-align: left;
-    }
+  }
 
-    p:nth-of-type(2) { 
+  p:nth-of-type(2) { 
     text-align: center;
-    }
+  }
 
-    p:nth-of-type(3) {
+  p:nth-of-type(3) {
     text-align: right;
-    }
+  }
 
-    .block4 p:nth-of-type(1) {
+  .block4 p:nth-of-type(1) {
     text-align: right;
-    }
+  }
 
-    .block4 p:nth-of-type(3) {
+  .block4 p:nth-of-type(3) {
     text-align: left;
-    }
+  }
     
 </style>
 
 <body>
-  <div> 
+  <div class="intro"> 
     <h1>Week 11: Layout Revisited - Grid Garden</h1>
-  </div> 
-
-  <div>
-    <h2>screenshots from completed assignments</h2>
+    <br><br>
+    <h2>Hyperlinked screenshots from completed assignments</h2>
     <a href="images/week11-garden.png"/><img src="images/week11-garden.png" alt="grid garden completed screenshot"/></a><br>
     <a href="images/week11-poem.png"/><img src="images/week11-poem.png" alt="grid poem completed screenshot"/></a><br><br>
   </div> 
 
 
   <div class="content">
-      <h3>HTML/CSS code for Block vs Inline alignment</h3>
+      <h2>HTML/CSS code for Block vs Inline alignment</h2>
       <p>Earlier in the semester you were introduced to the concept of
                   <kbd>block</kbd> and <kbd>inline</kbd> elements. Blocks flow
                   vertically down the page by default, and inline flows horizontally across.
@@ -78,7 +104,7 @@
     </div>
     <div class="poem">
       <section class="block1">
-        <h2>The Cataract of Lodore</h2>
+        <h3>The Cataract of Lodore</h3>
         <p>...The cataract strong</p>
         <p> Then plunges along,</p>
         <p>Striking and raging</p>
