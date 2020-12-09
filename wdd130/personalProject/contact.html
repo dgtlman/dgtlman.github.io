@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us"> 
+  <head>
+    <title>
+      Temple Inn & Suites: Reservations | Your Home Away From Home |
+      215-529-9999
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Temple Inn & Suites, located in Bethesda, Maryland, builds & manages hotels near temples of The Church of Jesus Christ of Latter-day Saints."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <picture class="logo">
+        <img src="images/eg-logo-75.png" alt="eric garofalo consulting logo" />
+      </picture>
+      <div class="heading">
+        <h1>Eric Garofalo Consulting</h1>
+        <div class="motto">Providing IT services to enable you.</div>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a class="active"   href="index.html">home</a></li>
+          <li><a class="inactive" href="services.html">services</a></li>
+          <li><a class="inactive" href="portfolio.html">portfolio</a></li>
+          <li><a class="inactive" href="about.html">about</a>
+          <li><a class="inactive" href="contact.html">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner-grid">
+        <img class="banner" src="images/banner-code.jpg" alt="mac computer coding / network management"/>
+      </div>      
+      <div class="sub-main-contact">
+        <h2>Interested in getting started? Contact to learn more.</h2>
+        <p>Please fill out the form below and let me know what services you are insterested in and I will get back to you.</p>
+      </div>
+        <div id="feedback"></div>
+          <form action="/form-page" method="post">
+            <ul class="reservations-ul">
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" placeholder="full name" required />
+              </li>
+              <li>
+                <label for="address">Address:</label>
+                <textarea id="address" name="user_address" placeholder="123 Street, City, State, Zip" required></textarea>
+              </li>
+              <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" placeholder="user@domain.com" required />
+              </li>
+              <li>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="user_phone" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+              </li>
+              <li>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required/>
+              </li>
+              <li>
+                <label for="msg">Notes:</label>
+                <textarea id="msg" name="user_notes" placeholder="type here" required></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Submit Contact Form</button>
+              </li>
+            </ul>
+          </form>
+       <!-- </div> -->
+      <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById("feedback");
+        // get the form element so we can read what was entered in it.
+        const formElement = document.forms[0];
+
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener("submit", function (e) {
+          // stop the form from doing the default action
+          e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+          feedbackElement.innerHTML =
+            "Hello " +
+            formElement.user_name.value +
+            "! Thank you for your message. We will get back with you as soon as possible!";
+          // make the feedback element visible.
+          feedbackElement.style.display = "block";
+        });
+      </script>
+    </main>
+
+    <footer>
+      <div class="footer-flex">
+        <div class="address">
+          <p><b> Eric Garofalo Consulting | Copyright 2020 | contact | privacy <br> <script>
+            let date = document.lastModified;
+            document.write("update: " + date);
+          </script></p>
+        </div>
+        <div class="social">
+          <a href="https://twitter.com/tisproject" target="_blank" rel="noopener"><img src="images/twitter.png" alt="twitter icon" height="50"/></a>
+          <a href="https://instagram.com/tisproject" target="_blank" rel="noopener"><img src="images/instagram.png" alt="instagram icon" height="50"/></a>
+          <a href="https://facebook.com/groups/tisproject" target="_blank" rel="noopener"><img src="images/facebook.png" alt="facebook icon" height="50"/></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
