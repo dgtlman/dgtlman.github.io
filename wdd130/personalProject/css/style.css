@@ -135,7 +135,7 @@ header img {
 
 /* -- sets color of active page user is on -- */
 .active{
-	color: var(--slate-gray);
+	color: var(--selective-yellow);
 }
 
 /* -- sets color of other pages user is not on -- */
