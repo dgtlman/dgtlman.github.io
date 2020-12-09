@@ -192,16 +192,12 @@ header img {
 }
 
 /* heading style*/
-.main-heading, .main-heading-center {
+.main-heading {
 	font-family: var(--heading-font);
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	color: var(--slate-gray);
-	padding-top: 10px;
+	padding-top: 0px;
 	padding-left: 10px;
-}
-
-.main-heading-center {
-	text-align: center;
 }
 
 
@@ -250,35 +246,12 @@ header img {
 	padding: 1em;
 }
 
-/* --- image 3D polaroid effect ---*/
-.polaroid {
-	height: 280px;
-	width: auto;
-}
+/* --- image 3D image effect ---*/
 
-figure {
-	border: 1px solid var(--slate-gray);
-	background: var(--white);
-	background-color: var(--white);
-	padding-top: 15px;
-	padding-bottom: 0;
-	padding-left: 15px;
-	padding-right: 15px;
-    background-color: var(--white);
-	box-shadow: 6px 6px 6px var(--slate-gray);
-}
-
-figcaption {
-	font-family: var(--polaroid-font);
-	color: var(--slate-gray);
-	font-size: 1.5em;
-    text-align: center;
-    padding: 5px 10px;
-}
 
 
 .threedee {
-	border: 1px solid var(--selective-yellow);
+	border: 1px solid var(--slate-gray);
 	background-color: white;
     padding: 5px;
     box-shadow: 3px 3px 3px #999;
@@ -321,28 +294,18 @@ figcaption {
 	bottom: 100%;
 	left: 0;
 	right: 0;
-	background-color: #008CBA;
+	background-color: var(--prussian-blue);
 	overflow: hidden;
 	width: 100%;
 	height:0;
 	transition: .5s ease;
   }
-  
-  /* --- .igrid-left:hover .overlay {
-	bottom: 0;
-	height: 100%;
-  } ---*/
 
   .igrid-left:hover .overlay, .igrid-mid:hover .overlay, .igrid-right:hover .overlay {
 	bottom: 0;
 	height: 100%;
   }
 
-  /* --- .igrid-right:hover .overlay {
-	bottom: 0;
-	height: 100%;
-  } ---*/
-  
   .overlay-text {
 	color: white;
 	font-size: 20px;
@@ -354,6 +317,7 @@ figcaption {
 	transform: translate(-50%, -50%);
 	text-align: center;
   }
+
 
 /* --- sub page styles --- */
 
@@ -565,6 +529,7 @@ footer {
 
 .address {
 	text-align: left;
+	font-size: 1em;
 }
 
 .social {
@@ -585,13 +550,18 @@ footer {
 	padding-right: 2px;
 }
 
+/* --- nav sub-styles --- */
+a:link, a:hover, a:visited {
+	color: var(--white);
+}
+
 
 /* --------------------------------- */
 /* --- responsive styles > 550px --- */
 /* --------------------------------- */
 
 @media screen and (max-width: 550px) {
-	.grid, .grid-temple, .grid-amenities {
+	.grid, .grid-temple, .grid-amenities, index-grid {
 	  display: block;
 	}
 	header img{
@@ -607,3 +577,5 @@ footer {
 		visibility: hidden;
 	}
   }
+
+
