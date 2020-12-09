@@ -84,7 +84,7 @@ header img {
 	margin: 0;
 }
 
-/* style text below temple inn & suites */
+/* style text below company name */
 .motto {
 	font-style: italic;
 	color: var(--white);
@@ -465,7 +465,7 @@ a:link, a:hover, a:visited {
 /* --------------------------------- */
 
 @media screen and (max-width: 550px) {
-	.grid, .grid-temple, .grid-amenities, index-grid {
+	.grid, .index-grid {
 	  display: block;
 	}
 	header img{
