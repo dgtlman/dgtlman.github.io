@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <header>
       <picture class="logo">
         <img src="images/eg-logo-75.png" alt="eric garofalo consulting logo" />
@@ -33,13 +37,49 @@
         <img class="banner" src="images/banner-code.jpg" alt="mac computer coding / network management"/>
       </div>
 
-      <div class="sub-main">
-        <h2>PORTFOLIO PLACEHOLDER PAGE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div>
+        <h2>View My Portfolio :</h2>
+        <p class="description">While this is not an all inclusive list, these are some general catagories of work offered.</p>
       </div>
       <br>
 
+      <div class="carousel">
+        <!--  carousel uses a modified media card to act as the glallery -->
+        <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item">
+                <article class="port-card">
+                    <img class="port-media-image" src="images/portfolio-network.jpg" alt="left aligned: card placeholder image"/></a>
+                    <p><span class="port-card-intro">system administration:</span> affordable enterprise grade hardware makes internet speeds faster and the network more stable.</p>
+                    <footer><!--  this was left in so media card doesn't break --></footer>
+                </article>
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <article class="port-card">
+                    <img class="port-media-image" src="images/portfolio-design.jpg" alt="left aligned: card placeholder image"/></a>
+                    <p><span class="port-card-intro">Residential Clients:</span> Services that focus on computers, home wifi networking, media management and smart home integration.</p>
+                    <footer><!--  this was left in so media card doesn't break --></footer>
+                </article>
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <article class="port-card">
+                    <img class="port-media-image" src="images/portfolio-webdev.jpg" alt="left aligned: card placeholder image"/></a>
+                    <p><span class="port-card-intro">Remote Support:</span> Can you afford downtime? Remote management ensures your network is stable for remote offices or workers.</p>
+                    <footer><!--  this was left in so media card doesn't break --></footer>
+                </article>
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-1" class="carousel-control next control-3">›</label>
+        </div>
+    </div>
+
+     <br>
     </main>
 
     <footer>

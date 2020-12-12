@@ -165,7 +165,7 @@ h2 {
 }
 
 /* -- banner grid style -- */
-/* -- IS THIS NEEDED? -- */
+/* -- ARE THESE STILL NEEDED? - testing with it commented out
 
 .banner-grid {
     display: grid;
@@ -173,13 +173,13 @@ h2 {
 	grid-template-columns: 33% 33% 33%;
 }
 
-/* banner image style */
+/* banner image style * /
 .banner {
 	height: auto;
 	width: 960px;
 	grid-column: 1 / -1;
 	grid-row: 1;
-}
+} -- */
 
 
 
@@ -278,7 +278,8 @@ h2 {
 .threedee {
 	border: 1px solid var(--slate-gray);
 	background-color: white;
-    padding: 5px;
+	padding: 5px;
+	margin: 0 0 25px 0;
     box-shadow: 3px 3px 3px #999;
 }
 
@@ -375,145 +376,335 @@ a.sub-page:hover {
 	}
 
 
+/* --- css carousel (portfolio) style --- */
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 15px 15px var(--slate-gray);
+    margin: 5px 20px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+	opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+
 
 /* --------------------------------- */
 /* ------ form section styles ------ */
 /* --------------------------------- */
 
 
-	form {
-		margin: 0 auto;
-		width: 500px;
-		padding: 1em;
-		color: var(--green-blue-crayola)
+form {
+	margin: 0 auto;
+	width: 500px;
+	padding: 1em;
+	color: var(--green-blue-crayola)
+}
+
+.reservations-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+form li + li {
+	margin-top: 1em;
+}
+
+label {
+	display: inline-block;
+	width: 90px;
+	text-align: right;
+}
+
+input, textarea {
+	font: 1em sans-serif;
+	width: 300px;
+	box-sizing: border-box;
+	border: 1px solid var(--green-blue-crayola);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+	border-color: var(--slate-gray);
+}
+
+textarea {
+	vertical-align: top;
+	height: 5em;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.button {
+	padding-left: 90px;
 	}
 
-	.reservations-ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
+	button {
+	margin-left: 0.5em;
+}
 
-	form li + li {
-		margin-top: 1em;
-	}
-
-	label {
-		display: inline-block;
-		width: 90px;
-		text-align: right;
-	}
-
-	input, textarea {
-		font: 1em sans-serif;
-		width: 300px;
-		box-sizing: border-box;
-		border: 1px solid var(--green-blue-crayola);
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	input:focus, textarea:focus {
-		border-color: var(--slate-gray);
-	}
-
-	textarea {
-		vertical-align: top;
-		height: 5em;
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	.button {
-		padding-left: 90px;
-		}
-
-		button {
-		margin-left: 0.5em;
-	}
-
-	#feedback {
-		padding: 10px;
-		text-align: center;
-		display: none;
-		color: var(--green-blue-crayola);
-	}
+#feedback {
+	padding: 10px;
+	text-align: center;
+	display: none;
+	color: var(--green-blue-crayola);
+}
 
 
 /* --- media card styles ---- */
 /* --- based on alignment --- */
 
 .card-left, .card-center, .card-right {
-    width: 260px;
-    box-shadow: 1px 1px 4px 1px var(--slate-gray);
-    border-radius: 3px;
-    background-color: white;
-    overflow: hidden;
+	width: 260px;
+	box-shadow: 1px 1px 4px 1px var(--slate-gray);
+	border-radius: 3px;
+	background-color: white;
+	overflow: hidden;
 	font-family: var(--standard-font);
 	color: var(--prussian-blue);
-    font-size: .95em;
-    margin: 0 10px;
-  }
+	font-size: .95em;
+	margin: 0 10px;
+}
 
-  .card-center {
-    margin: 0 auto;
-  }
+.card-center {
+	margin: 0 auto;
+}
 
-  .card-right {
-    margin-left: auto;
-  }
+.card-right {
+	margin-left: auto;
+}
 
-  .card-left p, .card-center p, .card-right p {
-    margin: 5px auto;
-    width: 90%;
-  }
+.card-left p, .card-center p, .card-right p {
+	margin: 5px auto;
+	width: 90%;
+}
 
-  .card-left footer, .card-center footer, .card-right footer {
-    display: grid;
-    grid-template-columns: 3rem 3rem auto;
-    align-items: center;
-    margin: 5px auto;
-    width: 90%;
-  }
+.card-left footer, .card-center footer, .card-right footer {
+	display: grid;
+	grid-template-columns: 3rem 3rem auto;
+	align-items: center;
+	margin: 5px auto;
+	width: 90%;
+}
 
 /* ---- universal media card styles --- */
 /* --- these are same for all cards --- */
 
-  .media-image {
-    max-height: 240px;
-  }
+.media-image {
+	max-height: 240px;
+}
 
-  .viewButton {
-    border-radius: 3px 0 0 3px;
-    color: var(--slate-gray);
-    background-color: white;
-    border: solid 1px var(--slate-gray);
-    padding: 10px;
-  }
+.viewButton {
+	border-radius: 3px 0 0 3px;
+	color: var(--slate-gray);
+	background-color: white;
+	border: solid 1px var(--slate-gray);
+	padding: 10px;
+}
 
-  .editButton {
-    border-radius: 0 3px 3px 0;
-    margin-left: -1px;
-    color: var(--slate-gray);
-    background-color: white;
-    border: solid 1px var(--slate-gray);
-    padding: 10px;
-  }
+.editButton {
+	border-radius: 0 3px 3px 0;
+	margin-left: -1px;
+	color: var(--slate-gray);
+	background-color: white;
+	border: solid 1px var(--slate-gray);
+	padding: 10px;
+}
 
-  .card-intro {
+.card-intro {
 	color: var(--green-blue-crayola);
 	font-family: var(--heading-font);
+}
 
-  }
+.time {
+	justify-self: right;
+	color: var(--slate-gray);
+}
 
-  .time {
-    justify-self: right;
-    color: var(--slate-gray);
-  }
+
+/* --- large media card styles ---- */
+/* --- modified for the portfolio --- */
+
+.port-card {
+	/* width: 260px;
+	box-shadow: 1px 1px 4px 1px var(--slate-gray);
+	border-radius: 10px; */
+	background-color: white;
+	overflow: hidden;
+	font-family: var(--standard-font);
+	color: var(--prussian-blue);
+	font-size: .95em;
+	/* margin: 0 10px; */
+}
+
+/* .card-center {
+	margin: 0 auto;
+}
+
+.card-right {
+	margin-left: auto;
+} */
+
+.port-card p {
+	margin: 5px 20px 15px;
+	width: 90%;
+}
+
+.port-card-left footer {
+	display: grid;
+	grid-template-columns: 3rem 3rem auto;
+	align-items: center;
+	margin: 5px auto;
+	width: 90%;
+}
+
+/* ---- universal large media card styles --- */
+/* --- these are same for portfolio cards --- */
+
+.port-media-image {
+	margin-bottom: 15px;
+}
+
+.port-card-intro {
+	color: var(--green-blue-crayola);
+	font-family: var(--heading-font);
+}
+
+.port-viewButton {
+	border-radius: 3px 0 0 3px;
+	color: var(--slate-gray);
+	background-color: white;
+	border: solid 1px var(--slate-gray);
+	padding: 10px;
+}
+
+/* .port-editButton {
+	border-radius: 0 3px 3px 0;
+	margin-left: -1px;
+	color: var(--slate-gray);
+	background-color: white;
+	border: solid 1px var(--slate-gray);
+	padding: 10px;
+}
+
+.port-time {
+	justify-self: right;
+	color: var(--slate-gray);
+} */
+
 
 
 /* --------------------------------- */
