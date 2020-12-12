@@ -204,7 +204,7 @@ h2 {
 
 /* --- subpage grid paragraph style --- */
 .sub-main-text {
-	font-family: var(--standard-font)
+	font-family: var(--standard-font);
 	color: red /* var(--prussian-blue) */;
 	font-size: .9em;
 	padding: .75em;
@@ -764,7 +764,7 @@ a:hover {
 /* --------------------------------- */
 
 @media screen and (max-width: 550px) {
-	.grid, .index-grid, .about-grid, {
+	.grid, .index-grid, .about-grid {
 	  display: block;
 	}
 	header img{
