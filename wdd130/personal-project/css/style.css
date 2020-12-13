@@ -164,24 +164,6 @@ h2 {
 	margin: 5px 30px 15px;
 }
 
-/* -- banner grid style -- */
-/* -- ARE THESE STILL NEEDED? - testing with it commented out
-
-.banner-grid {
-    display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-columns: 33% 33% 33%;
-}
-
-/* banner image style * /
-.banner {
-	height: auto;
-	width: 960px;
-	grid-column: 1 / -1;
-	grid-row: 1;
-} -- */
-
-
 
 /* heading style*/
 .main-heading {
@@ -639,9 +621,6 @@ textarea {
 /* --- modified for the portfolio --- */
 
 .port-card {
-	/* width: 260px;
-	box-shadow: 1px 1px 4px 1px var(--slate-gray);
-	border-radius: 10px; */
 	background-color: white;
 	overflow: hidden;
 	font-family: var(--standard-font);
@@ -649,14 +628,6 @@ textarea {
 	font-size: .95em;
 	/* margin: 0 10px; */
 }
-
-/* .card-center {
-	margin: 0 auto;
-}
-
-.card-right {
-	margin-left: auto;
-} */
 
 .port-card p {
 	margin: 5px 20px 15px;
@@ -690,21 +661,6 @@ textarea {
 	border: solid 1px var(--slate-gray);
 	padding: 10px;
 }
-
-/* .port-editButton {
-	border-radius: 0 3px 3px 0;
-	margin-left: -1px;
-	color: var(--slate-gray);
-	background-color: white;
-	border: solid 1px var(--slate-gray);
-	padding: 10px;
-}
-
-.port-time {
-	justify-self: right;
-	color: var(--slate-gray);
-} */
-
 
 
 /* --------------------------------- */
