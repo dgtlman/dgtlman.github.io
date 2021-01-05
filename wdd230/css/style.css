@@ -140,3 +140,12 @@ footer a:hover {
 footer a:active, footer a:focus {
     color: var(--gray-color);
 }
+
+
+/* --- responsive styles > 550px --- */
+
+@media screen and (max-width: 550px) {
+	.eric {
+	  display: block;
+	  max-width: 300px;
+	}
