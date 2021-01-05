@@ -152,9 +152,10 @@ footer a:active, footer a:focus {
 	  max-width: 300px;
 	}
 
+	h2 {
+		font-size: 1em;
+
 	main {
-		background-color: var(--white-color);
-		max-width: 500px;
-		margin: 0 auto;
-		padding: .9em;
+		max-width: 475px;
+		padding: .85em;
 	}
