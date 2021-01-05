@@ -146,6 +146,15 @@ footer a:active, footer a:focus {
 
 @media screen and (max-width: 550px) {
 	.eric {
-	  display: block;
+	  float: none;
+	  align-items: center;
+	  box-shadow: 0 0 0px;
 	  max-width: 300px;
+	}
+
+	main {
+		background-color: var(--white-color);
+		max-width: 500px;
+		margin: 0 auto;
+		padding: .9em;
 	}
