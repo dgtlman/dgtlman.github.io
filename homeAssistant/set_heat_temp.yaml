@@ -1,0 +1,54 @@
+blueprint:
+  name: Heat for certain time
+  description: Turn on heating for a given amount of time.
+  domain: automation
+  input:
+    datetime:
+      name: Turn-on-time
+      description: A datetime input that defines the time at which the heating is turned on.
+      selector:
+        entity:
+          domain: input_datetime
+    thermostat:
+      name: Thermostat to control
+      description: climate entity for which the temperature will be set.
+      selector:
+        entity:
+          domain: climate
+    heating_time:
+      name: Heating duration
+      description: How long will the heating be turned on.
+    temp_on:
+      name: Target Temperature on
+      description: The temperature to set for heating.
+      selector:
+        entity:
+          domain: input_number
+    temp_off:
+      name: Target Temperature off
+      description: The temperature to set when not heating.
+      selector:
+        entity:
+          domain: input_number
+
+mode: single
+variables:
+  temp_on: !input temp_on
+  temp_off: !input temp_off
+
+trigger:
+  platform: time
+  at: !input datetime
+
+action:
+  - service: climate.set_temperature
+    data:
+      hvac_mode: heat
+      temperature: '{{ states(temp_on) }}'
+    entity_id: !input thermostat
+  - delay: !input heating_time
+  - service: climate.set_temperature
+    data:
+      hvac_mode: heat
+      temperature: '{{ states(temp_off) }}'
+    entity_id: !input thermostat
