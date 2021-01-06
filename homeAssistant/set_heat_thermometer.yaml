@@ -45,10 +45,10 @@ action:
     data:
       hvac_mode: heat
       temperature: '{{ states(temp_on) }}'
-    entity_id: !input thermostat
+    entity_id: !input thermometer
   - delay: !input heating_time
   - service: climate.set_temperature
     data:
       hvac_mode: heat
       temperature: '{{ states(temp_off) }}'
-    entity_id: !input thermostat
+    entity_id: !input thermometer
