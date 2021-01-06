@@ -106,7 +106,7 @@ a:hover {
   }
 
 /* profile photo float right */
-.eric {
+.family {
 	float: right;
 	box-shadow: 0 0 13px var(--gray-color);
     max-width: 380px;
