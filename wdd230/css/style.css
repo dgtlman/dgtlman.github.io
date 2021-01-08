@@ -157,11 +157,13 @@ footer a:active, footer a:focus {
 	  float: none;
 	  align-items: center;
 	  box-shadow: none;
-	  max-width: 275px;
+	  max-width: 250px;
 	}
 
 	h2 {
 		font-size: 1em;
+		text-align: center;
+		padding: 5px;
 
 	main {
 		max-width: 475px;
