@@ -156,7 +156,7 @@ footer a:active, footer a:focus {
 	.eric {
 	  float: none;
 	  align-items: center;
-	  box-shadow: 0 0 0px;
+	  box-shadow: none;
 	  max-width: 300px;
 	}
 
