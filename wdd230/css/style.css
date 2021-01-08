@@ -128,7 +128,7 @@ main {
 }
 
 /* text for footer box */
-.foot {
+.update {
 	text-align: center;
 	color: var(--orange-color);
 }
