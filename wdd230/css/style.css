@@ -104,7 +104,7 @@ a:hover {
 
 /* link clicked, link focused */
 a:hover {
-	color: var(--gray-color);
+	color: var(--blue-color);
   }
 
 /* profile photo float right */
