@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wdd230 - page title</title>
+    <meta name="description" content="about 150 charactors">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">    <!-- css to normalize styles-->
+    <link rel="stylesheet" href="css/small.css" />      <!-- base style is in the small-viewport -->
+    <link rel="stylesheet" href="css/medium.css" />     <!-- adjust style for mid-viewport -->
+    <link rel="stylesheet" href="css/large.css" />      <!-- adjust style for large-viewport-->
+</head>
+<body>
+    <header>
+        <h1>Week 02 - Design Principles</h1>
+        <h2>Eric Garofalo</h2>
+    </header>
+
+    <main>
+        <section class="alignment">
+            <h2>Alignment</h2>
+            <h3><a href="https://www.garmin.com">Garmin</a></h3>
+            <img src="images/garmin.jpg" alt="screenshot of garmin website on mobile device" />
+            <p>
+                MiniClip was able to really represent alignment on the mobile application. All of the games that they have listed 
+                all are right aligned, and even though the page has a lot going on, the alignment really makes it feel less busy
+            </p>
+        </section>
+
+        <section class="contrast">
+            <h2>Clean Design</h2>
+            <h3><a href="https://www.apple.com">Apple</a></h3>
+            <img src="images/apple.jpg" alt="screenshot of apple website on mobile device" />
+            <p>Apple's design style is  unappologetically clean, sparce and includes plenty of white space. It gives a very unencubmbered presentation of the products and services they are marketing. 
+            </p>
+        </section>
+
+        <section class="white-space">
+            <h2>Contrast</h2>
+            <h3><a href="https://www.byui.edu">BYUi Website</a></h3>
+            <img src="images/byui.jpg" alt="screenshot of byui website on mobile device" />
+            <p>
+                My favorite one so far though is the Apple Support page. When you first get on the site, you can tell it is a very clean looking site. 
+                They aren't afraid of letting there be white space. It is a very clean design - not too much taking up all the space.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="foot">
+            <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
+            <a href="https://en.wikipedia.org/wiki/2021" target="_blank">&copy; <span id='copyrightyear'></span></a>  &nbsp; | &nbsp;
+            <a href="https://dgtlman.github.io/" target="_blank">Eric Garofalo</a>  &nbsp; | &nbsp;
+            <a href="https://www.virginiacapitaltrail.org" target="_blank">Virginia</a>  &nbsp; | &nbsp;
+            <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
+          </p>
+          <!-- javascript insert - dymanically add date and time of last github update (id='lastupdated') -->
+          <p class="update">Last Updated: <span id='lastupdated'></span></p>
+    </footer>
+
+</body>
+    <script src='scripts/year-update.js'></script>
+</html>
