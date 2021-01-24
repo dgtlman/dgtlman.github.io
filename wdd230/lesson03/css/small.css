@@ -7,7 +7,6 @@ color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5
 
 /* varibales for font and colors */
 :root {
-
 	/* site colors: var(--color-name) */
     --umber-color: #6f5649;
     --pink-color: #DB3896;
@@ -20,15 +19,14 @@ color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5
     --heading-font: 'Poiret One', cursive;
     --heading2-font: 'Ubuntu Condensed', sans-serif;
     --paragraph-font: 'Ubuntu', sans-serif;
-
 }
+
 body {
     background-color: var(--cultured-color);
 }
 
 header, main, footer {
     margin: 0 auto;
-    /* padding: 2%; */
     max-width: 1140px;
 }
 
@@ -41,65 +39,47 @@ header, footer {
 header {
     padding: 5px 0;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     padding-bottom: 10px;
-    }
-
-/* h1, h2, h3, h4 {
-    font-family: var(--heading-font);
 }
-
-h1, h2 {
-    color: var(--cultured-color);
-    text-align: right;
-}
-
-h3, h4 {
-    color: var(--pink-color);
-    text-align: left;
-} */
 
 h1 {
     font-size: 1.5rem;
-    /*margin: 0;
-    padding: 0; */
     color: var(--cultured-color);
     text-align: right;
     font-family: var(--heading-font);
-  }
+}
 
-  h2 {
+h2 {
     font-size: 1.25rem;
     margin: 0;
     padding: 0;
     color: var(--cultured-color);
     text-align: right;
     font-family: var(--heading-font);
-  }
+}
 
-  h3 {
+h3 {
     font-size: 1.25rem;
     margin: 10px;
     font-family: var(--heading2-font);
     color: var(--pink-color);
     text-align: left;
-  }
+}
 
-  h4 {
+h4 {
     font-size: 1rem;
     margin: 10px;
     font-family: var(--heading2-font);
     color: var(--pink-color);
     text-align: left;
-  }
+}
 
 /* text styles */
 p, script {
     font-family: var(--paragraph-font);
     text-align: left;
     margin: 15px;
-    /* font-size: .85rem; */
 }
 
 /* ---> NAV STYLE <--- */
@@ -115,9 +95,9 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
+}
 
-  nav li a {
+nav li a {
     display: block;
     color: var(--pink-color);
     text-align: center;
@@ -125,25 +105,19 @@ nav ul {
     text-decoration: none;
     font-size: 1rem;
     transition: background-color .3s;
-  }
+}
 
 /* unvisited link, visited link, selected link */
-/* nav a:link, a:visited, a:active */
 nav ul li.active a {
     background-color: var(--cultured-color);
     color: var(--dark-color);
-  }
+}
 
-  /* mouse over link
-  nav a:hover */ 
-  nav ul li a:hover {
+/* mouse over link */
+nav ul li a:hover {
     color: var(--yellow-color);
-  }
+}
 
-  /* link clicked, link focused 
-  nav a:hover {
-      color: var(--dark-color);
-    } */
 
 main {
     display: grid;
@@ -171,10 +145,6 @@ main {
     align-content: center;
 }
 
-.ctext {
-    line-height: 1.35;
-}
-
 .headfont1, .headfont2 {
     font-family: var(--heading-font);
     color: var(--cultured-color);
@@ -195,6 +165,7 @@ main {
     color: var(--pink-color);
     margin: auto;
 }
+
 .headfont3 {
     font-size: 24px;
 }
@@ -240,7 +211,6 @@ td {
 
 table{
     width: 95%;
-    /* margin: auto; */
     border-collapse: collapse;
     margin: 10px auto 10px auto;
 }
@@ -254,21 +224,16 @@ main img{
     align-self: center;
 }
 
-
 section {
     padding: 10px;
-    /* background-color: var(--cultured-color); */
     text-align: center;
     color: var(--dark-color);
-    /* border-radius: 10px; */
-    /* align-content: center; */
     margin: 10px;
-} 
+}
 
 .ipersona {
     width: 300px;
 }
-
 
 /* text for footer box */
 .foot {
