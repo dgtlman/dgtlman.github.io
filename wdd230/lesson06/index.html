@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wdd230 - page title</title>
+    <meta name="description" content="about 150 charactors">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">    <!-- css to normalize styles-->
+    <link rel="stylesheet" href="css/small.css" />      <!-- base style is in the small-viewport -->
+    <link rel="stylesheet" href="css/medium.css" />     <!-- adjust style for mid-viewport -->
+    <link rel="stylesheet" href="css/large.css" />      <!-- adjust style for large-viewport-->
+</head>
+<body>
+    <header>
+        <h1>Week ## - ##name##</h1>
+        <h2>Eric Garofalo</h2>
+    </header>
+
+    <main>
+        <!-- insert main content here -->
+    </main>
+
+    <footer>
+        <p class="foot">
+            <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
+            <a href="https://en.wikipedia.org/wiki/2021" target="_blank">&copy; <span id='copyrightyear'></span></a>  &nbsp; | &nbsp;
+            <a href="https://dgtlman.github.io/" target="_blank">Eric Garofalo</a>  &nbsp; | &nbsp;
+            <a href="https://www.virginiacapitaltrail.org" target="_blank">Virginia</a>  &nbsp; | &nbsp;
+            <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
+          </p>
+          <!-- javascript insert - dymanically add date and time of last github update (id='lastupdated') -->
+          <p class="update">Last Updated: <span id='lastupdated'></span></p>
+    </footer>
+
+</body>
+    <script src='scripts/year-update.js'></script>
+</html>
