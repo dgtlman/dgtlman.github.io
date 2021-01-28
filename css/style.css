@@ -1,19 +1,21 @@
 /* comments
 color link - https://coolors.co/0e1c36-fffffc-#A27E8E-8c1c13
-10/9/2020 @ 9:01pm
+10/9/2020 @ 9:01pm*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu+Mono&display=swap');
 
 *:root {
 	--red-color: #8C1C13;
 	--blue-color: #0E1C36;
 	--gray-color: #A27E8E;
 	--white-color: #FFFFFC;
-	--heading-font: Helvetica, Arial, sans-serif;
-	--paragraph-font: Helvetica, Arial, sans-serif;  
+	--heading-font: 'Ubuntu Condensed', sans-serif;
+	--paragraph-font: 'Ubuntu Mono', monospace;
 }
-*/
+
 
 body {
-	background-color: #8C1C13;
+	background-color: var(--red-color);
 	max-width: 750px;
 	margin: 0 auto;
 	padding: 1em;
@@ -24,15 +26,15 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Helvetica, Arial, sans-serif;
-	color: #FFFFFC ;
+	font-family: var(--heading-font);
+	color: var(--white-color);
 }
 
 header {
 	padding: 1em;
 	text-align: center;
-	color: #FFFFFC;
-	background-color: #0E1C36;
+	color: var(--white-color);
+	background-color: var(--blue-color);
 }
 
 header>h1, h4 {
@@ -45,8 +47,8 @@ header>h1, h4 {
 }
 
 p, ul, li, script {
-	font-family: Helvetica, Arial, sans-serif;
-	color: #8C1C13;
+	font-family: var(--paragraph-font);
+	color: # var(--red-color);
 	/*padding: 1em;*/
 }
 
@@ -57,26 +59,26 @@ ul, li {
 
 /* unvisited link */
 a:link {
-  color: #8C1C13;
+  color: var(--gray-color)#8C1C13;
 }
 
 /* visited link */
 a:visited {
-  color: #8C1C13;
+  color: var(--gray-color)#8C1C13;
 }
 
 /* mouse over link */
 a:hover {
-  color: #0E1C36;
+  color: var(--blue-color);
 }
 
 /* selected link */
 a:active {
-  color: #8C1C13;
+  color: var(--gray-color);
 }
 
 .bgcolor {
-	background-color: #FFFFFC;
+	background-color: var(--white-color);
 }
 
 main {
@@ -84,13 +86,13 @@ padding: .5em;
 }
 
 .foot {
-	color: #0E1C36;
+	color: var(--blue-color);
 }
 
 footer {
 	text-align: center;
-	color: #FFFFFC;
-	background-color: #FFFFFC;
+	color: var(--white-color);
+	background-color: var(--white-color)FFC;
 	font-size: .8em;
 	padding: .5em;
 }
