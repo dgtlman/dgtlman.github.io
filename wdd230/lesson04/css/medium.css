@@ -1,70 +1,30 @@
-/* @media only screen and (min-width: 560px) {
-  main {
-    grid-template-columns: 1fr 1fr;
+/*35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em) {
+  h1 {
+    font-size: 2rem;
   }
 
-  .right {
-    grid-column: span 2;
+  h2 {
+    font-size: 1.5rem;
   }
-} */
 
-@media only screen and (min-width:37.5em) {
-body {
-  max-width: 800px;
-  margin: 0 auto;
-}
+  h2 {
+    font-size: 1.25rem;
+  }
 
-.navigation {
-  display: flex;
-}
-.navigation li {
-  display: block; /* change state in small view */
-  flex: 1 1 auto;
-}
-.navigation a {
-  text-align: center;
-}
-.navigation li:first-child {
-  display: none;
-}
+  h3 {
+    font-size: 1.5rem;
+  }
 
-/* nav ul {
-  display: flex;}
-  nav ul li {
-    flex: 1 1 100%;
-} */
+  main, footer {
+    font-size: 1rem;
+  }
 
-.grid-container {
-  display: grid;
-  font-size: 1rem;
-  grid-gap: 20px;
-}
-
-.two-up {
-  grid-template-columns: 1fr 1fr;
-}
-
-.three-up {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-main {
-  font-size: 1rem;
-}
+  .motto {
+    font-size: 1.5rem;
+  }
+  
+  .logo{
+    width: 100px;
+  }
 }

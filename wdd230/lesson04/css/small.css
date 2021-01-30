@@ -1,302 +1,210 @@
 /* comments
 color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5
-*/
 
-/* google font import */
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+google font import */
+    @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
 
 /* varibales for font and colors */
 :root {
 	/* site colors: var(--color-name) */
-    --umber-color: #6f5649;
-    --pink-color: #DB3896;
-    --yellow-color: #fdbd5d;
-    --peach-color: #ffeac2;
-    --cultured-color: #F5F5F5;
-    --dark-color: #161032;
+        --umber-color: #6f5649;
+        --pink-color: #DB3896;
+        --yellow-color: #fdbd5d;
+        --peach-color: #ffeac2;
+        --cultured-color: #F5F5F5;
+        --dark-color: #161032;
 
     /* site fonts var(--style-font) */
-    --heading-font: 'Poiret One', cursive;
-    --heading2-font: 'Ubuntu Condensed', sans-serif;
-    --paragraph-font: 'Ubuntu', sans-serif;
+        --heading-font: 'Poiret One', cursive;
+        --subhead-font: 'Ubuntu Condensed', sans-serif;
+        --main-font: 'Ubuntu', sans-serif;
 }
 
+/* body page styles */
 body {
-    background-color: var(--cultured-color);
+    color: var(--dark-color);
+    line-height: 1.5;
+    font-size: 16px;
 }
 
-header, main, footer {
-    margin: 0 auto;
-    max-width: 1140px;
-}
-
-header, footer {
-    text-align: center;
-    color: var(--cultured-color);
-    background-color: var(--umber-color);
-}
-
+/* header styles */
 header {
+    background-color: var(--umber-color);
+    color: var(--cultured-color);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
     padding: 5px 0;
     display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
 }
 
-h1 {
-    font-size: 1.5rem;
+/* main styles */
+main {
+    font-family: var(--main-font);
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* footer styles */
+footer {
+    background-color: var(--umber-color);
+    font-family: var(--main-font);
+    color: var(--cultured-color);
+}
+
+/* motto text styles */
+.motto {
+    font-family: var(--subhead-font);
     color: var(--cultured-color);
     text-align: right;
+    padding: 0;
+  }
+
+/* main nav styles - includes responsive hamburger */
+
+/* main nav text styles */
+nav {
+    background-color: var(--dark-color);
+    font-family: var(--main-font)
+}
+
+/* nav hamburger style */
+nav button {
+    background-color: transparent;
+    color: var(--cultured-color);
+    font-size: 1.6rem;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+}
+
+/* nav ul style */
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* nav link style */
+nav ul li a {
+    border-top: 1px solid var(--dark-color);
+    color: var(--cultured-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: .8rem 2%;
+    font-size: 1rem;
+    display: block;
+}
+
+/* nav link active page style */
+nav ul li.active a {
+    background-color: var(--umber-color);
+    color: var(--cultured-color);
+}
+
+/* nav hover over link style */
+nav ul li a:hover {
+    background-color: var(--pink-color);
+    color: var(--cultured-color);
+}
+
+/* nav: used for hamburger style, hides links inside icon until clicked on */
+nav ul.hide {
+    display: none;
+}
+
+/* heading styles */
+h1 {
     font-family: var(--heading-font);
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin: 0;
 }
 
 h2 {
-    font-size: 1.25rem;
-    margin: 0;
-    padding: 0;
-    color: var(--cultured-color);
-    text-align: right;
     font-family: var(--heading-font);
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
 }
 
 h3 {
+    font-family: var(--subhead-font);
+    color: var(--pink-color);
     font-size: 1.25rem;
-    margin: 10px;
-    font-family: var(--heading2-font);
-    color: var(--pink-color);
+    padding-left: 10px;
     text-align: left;
+  }
+
+/* used to align GEMi site H1 text */
+.headings {
+    flex-direction: column;
+    display: flex;
 }
 
-h4 {
-    font-size: 1rem;
-    margin: 10px;
-    font-family: var(--heading2-font);
-    color: var(--pink-color);
-    text-align: left;
-}
-
-/* text styles */
-p, script {
-    font-family: var(--paragraph-font);
-    text-align: left;
-    margin: 15px;
-}
-
-/* ---> NAV STYLE <--- */
-
-nav {
-	margin: 0 auto;
-	max-width: 760px;
-	background-color: tomato;
-}
-.navigation {
-	list-style: none;
-	padding: 0;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-}
-.navigation a:hover {
-	color: white;
-	background-color: black;
-}
-
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-.responsive li {
-	display: block;
-}
-
-/* nav {
-    background-color: var(--dark-color);
-    font-family: var(--paragraph-font);
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav li a {
+/* style the place holder boxes */
+.placeholder {
+    border: 1px dashed var(--dark-color);
+    background-color: var(--peach-color);
+    color: var(--dark-color);
+    margin: 10px auto;
     display: block;
-    color: var(--pink-color);
-    text-align: center;
-    padding: .75rem;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background-color .3s;
-} */
-
-/* unvisited link, visited link, selected link */
-nav ul li.active a {
-    background-color: var(--cultured-color);
-    color: var(--dark-color);
+    padding: 1rem;
 }
 
-/* mouse over link */
-nav ul li a:hover {
-    color: var(--yellow-color);
+/* span style the place holder boxes with pink text */
+.phcolor {
+    color: var(--umber-color);
+    font-weight: bold;
+    font-style: italic;
 }
 
-
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: var(--cultured-color);
-    font-family: var(--paragraph-font);
-    font-size: .5em;
-}
-
+/* logo image style */
 .logo {
-    max-width: 50%;
-    margin: 20px auto;
+    margin-right: 10px;
+    height: auto;
+    width: 60px;
 }
 
-.logo02 {
-    max-width: 100%;
-    margin: auto;
-    padding: 10px;
+/* clearsfix for nav */
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both;
 }
 
-.cpallet {
-    max-width: 450px;
-    margin: auto;
-    padding: 10px;
-    align-content: center;
-}
-
-.headfont1, .headfont2 {
-    font-family: var(--heading-font);
-    color: var(--cultured-color);
-    font-size: 30px;
-    margin: auto;
-}
-
-.headfont1 {
-    font-size: 32px;
-}
-
-.headfont2 {
-    font-size: 26px;
-}
-
-.headfont3, .headfont4  {
-    font-family: var(--heading2-font);
-    color: var(--pink-color);
-    margin: auto;
-}
-
-.headfont3 {
-    font-size: 24px;
-}
-
-.headfont4 {
-    font-size: 20px;
-}
-
-.mnav, .fnav {
-    font-family: var(--paragraph-font);
-    margin: auto;
-}
-
-.mnav {
-    color: var(--pink-color);
-    font-size: 16px;
-}
-
-.fnav {
-    color: var(--cultured-color);
-    font-size: 16px;
-}
-
-.parafont {
-    font-family: var(--paragraph-font);
-    font-size: 16px;
-    margin: auto;
-}
-
-td {
-    border: 2px solid var(--dark-color);
-    text-align: center;
-    padding: 10px;
-}
-
-.td-umbra {
-    background-color: var(--umber-color);
-}
-
-.td-dark {
-    background-color: var(--dark-color);
-}
-
-table{
-    width: 95%;
-    border-collapse: collapse;
-    margin: 10px auto 10px auto;
-}
-
-main img{
-    margin-top: 20px;
-    width: 100%;
-}
-
-.grid-container img{
-    align-self: center;
-}
-
-section {
-    padding: 10px;
-    text-align: center;
-    color: var(--dark-color);
-    margin: 10px;
-}
-
-.ipersona {
-    width: 300px;
-}
-
-/* text for footer box */
+/* footer box - main text */
 .foot {
-    padding: 5px;
-    margin: 5px;
-	text-align: center;
-	color: var(--cultured-color);
+    padding: 5px 0 0 0;
+    text-align: center;
+    margin: 0px;
 }
 
-/* text for footer box */
+/* footer box - styles date text*/
 .update {
-    padding: 5px;
-    margin: 5px;
-	text-align: center;
-	color: var(--yellow-color);
+    color: var(--yellow-color);
+    padding: 0 0 5px 0;
+    text-align: center;
+    margin: 0px;
+	
 }
 
 /* FOOTER ONLY: unvisited link, visited link, selected link  */
 footer a, footer a:link, footer a:visited {
     color: var(--cultured-color);
+    text-decoration: none;
 }
 
 /* FOOTER ONLY: mouse over link */
 footer a:hover {
     color: var(--pink-color);
+    text-decoration: none;
 }
 
 /* FOOTER ONLY: link clicked, link focused */
 footer a:active, footer a:focus {
     color: var(--yellow-color);
+    text-decoration: none;
 }

@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd230 - page title</title>
-    <meta name="description" content="about 150 charactors">
-    <link rel="stylesheet" href="css/normalize.css">    <!-- css to normalize styles-->
-    <link rel="stylesheet" href="css/small.css" />      <!-- base style is in the small-viewport -->
-    <link rel="stylesheet" href="css/medium.css" />     <!-- adjust style for mid-viewport -->
-    <link rel="stylesheet" href="css/large.css" />      <!-- adjust style for large-viewport-->
-</head>
-<body>
-    <header>
-      <picture>
-        <img class="logo" src="images/logo.png" alt="GEMi.link logo"/>
-      </picture>
-      <section>
-        <h1>Greater Eastern Metropolitan Idaho (GEMi)</h1>
-        <h2>eric garofalo: site planning index</h2>
-      </section>
-    </header>
 
-    <nav>
-        <ul class="navigation">
-            <li><a class="ham" href="#">menu</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Feedback</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Contact</a></li>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>GEMi: Preston, Idaho local info</title>
+      <meta name="description" content="GEMi is a portal for southeastern Idaho. This page provides weather and city information for the city of Preston." />
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+    </head>
+
+    <body>
+
+      <header>
+        <picture>
+          <img class="logo" src="images/logo.png" alt="GEMi logo" />
+        </picture>
+        <section class="headings">
+          <h1>GEMi: Greater Eastern Metro Idaho</h1>
+          <div class="motto">living the great wide open</div>
+        </section>
+      </header>
+
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <!-- NOTE: for week04, preston page is temporarily named as INDEX. This is to auto open page in folder.
+              As other pages are added, remember to rename this to preston and create a new index page for site. -->
+          <li class="active"><a href="">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
         </ul>
-</nav>
+      </nav>
 
-    <main class="grid-container three-up">
-      <section>
-        <h3>Domain Name:</h3>
-        <p>The site name is based on Idaho's state nickname (the Gem state) and Greater Eastern Metropolitan Idaho (GEMi). The site will be stylized as GEMi.link and cost $13 per year.</p>
-      </section>
+      <main>
+        <h3>Preston Idaho</h3>
+          <div class="placeholder">placeholder 01: <span class="phcolor"> hero image with weather summary</span></div>
+          <div class="placeholder">placeholder 02: <span class="phcolor"> five day forecast</span></div>
+          <div class="placeholder">placeholder 03: <span class="phcolor"> article</span></div>
+          <div class="placeholder">placeholder 04: <span class="phcolor"> contact information</span></div>
+      </main>
 
-      <section>
-        <h3>Site Purpose:</h3>
-        <p>
-        GEMi.link will be landing site to focus on local information. It will also provide weather conditions, outdoor events, community information and resouces related to the area.</p>
-      </section>
-
-      <section>
-        <h3>Site Logo:</h3>
-        <img class="logo02" src="images/logo.png" alt="GEMi.link logo"/>
-      </section>
-    </main>
-
-    <footer>
+      <footer>
         <p class="foot">
-            <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
-            <a href="https://en.wikipedia.org/wiki/2021" target="_blank">&copy; <span id='copyrightyear'></span></a>  &nbsp; | &nbsp;
-            <a href="https://dgtlman.github.io/" target="_blank">Eric Garofalo</a>  &nbsp; | &nbsp;
-            <a href="https://www.virginiacapitaltrail.org" target="_blank">Virginia</a>  &nbsp; | &nbsp;
-            <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
-          </p>
+                <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
+                | &nbsp;
+                <a href="index" target="_blank">&copy; <span id='copyrightyear'></span> GEMi</a>  &nbsp; | &nbsp;
+                <a href="#" target="_blank">Attributes</a>  &nbsp; | &nbsp;
+                <a href="https://dgtlman.github.io/wdd230/" target="_blank">Eric Garofalo</a>  &nbsp; | &nbsp;
+              </p>
 
-          <!-- javascript insert - dymanically add date and time of last github update (id='lastupdated') -->
-          <p class="update">Last Updated: <span id='lastupdated'></span></p>
-    </footer>
+              <!-- javascript insert - dymanically adds date [format: weekday, month, #day, #year] of the last github update (id='current-date') -->
+        <p id="current-date" class="update">
+        </p>
+      </footer>
+      <script src="js/script.js"></script>
+    </body>
 
-</body>
-    <script src='js/year-update.js'></script>
 </html>
