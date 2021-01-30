@@ -42,7 +42,7 @@ header {
 main {
     font-family: var(--main-font);
     max-width: 960px;
-    margin: 0 auto;
+    margin: 0 10px 0 0;
 }
 
 /* footer styles */
@@ -184,7 +184,7 @@ h3 {
 
 /* footer box - styles date text*/
 .update {
-    color: var(--pink-color);
+    color: var(--peach-color);
     padding: 0 0 5px 0;
     text-align: center;
     margin: 0px;
