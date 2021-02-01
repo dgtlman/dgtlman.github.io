@@ -56,11 +56,6 @@ a:link, a:visited, a:active {
   a:hover {
     color: var(--blue-color);
   }
-  
-  /* link clicked, link focused */
-  a:hover {
-      color: var(--blue-color);
-    }
 
 main {
     display: grid;

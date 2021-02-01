@@ -110,6 +110,10 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: var(--pink-color);
     color: var(--cultured-color);
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
 }
 
 /* nav: used for hamburger style, hides links inside icon until clicked on */
