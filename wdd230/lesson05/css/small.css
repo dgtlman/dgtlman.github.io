@@ -259,7 +259,7 @@ h4 {
 
 .contact {
   background-color: var(--peach-color);
-  color: # var(--dark-color);
+  color: var(--dark-color);
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 20px;
