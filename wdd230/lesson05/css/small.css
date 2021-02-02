@@ -226,39 +226,42 @@ h4 {
     color: var(--cultured-color);
     padding-bottom: 0;
   }
-  .weathersummary p, .weathersummary h3{
-    margin: 1.5px;
-  }
 
-  .fiveday {
+.weathersummary p, .weathersummary h3{
+    margin: 1.5px;
+}
+
+.fiveday {
     display: none;
-  }
-  .articleCity {
+}
+
+.articleCity {
     text-align: justify;
     background-color: var(--peach-color);
     margin: 5px;
     padding: 20px;
-  }
-  .map {
+}
+
+.map {
     display: none;
   }
-  .prestonBanner {
+.prestonBanner {
     background-color: var(--yellow-color);
     color: var(--cultured-color);
     padding: 10px;
     text-align: center;
     display:none;
-  }
+}
 
-  .contact {
+.contact {
   background-color: var(--peach-color);
   color: # var(--dark-color);
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 20px;
-  padding-top: 20px;
-  
+  padding-top: 20px; 
 }
+
 .contactInfo {
   display: grid;
 }
@@ -276,16 +279,20 @@ h4 {
 .contactItem img{
   width: 24px;
 }
+
 .contactItem p {
   margin: 5px;
 }
+
 .contactInfo h3{
   text-align: left;
   margin: 0;
 }
+
 .social img{
-margin: 15px 1px 10px 0;
-width: 30px;
+  margin: 15px 1px 10px 0;
+  width: 30px;
+}   
 
 
 /* footer box - main text */
