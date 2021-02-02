@@ -37,26 +37,99 @@
         </ul>
       </nav>
 
-      <main>
-        <h3>Preston, Idaho</h3>
-          <div class="placeholder">placeholder 01: <span class="phcolor"> hero image with weather summary</span></div>
-          <div class="placeholder">placeholder 02: <span class="phcolor"> five day forecast</span></div>
-          <div class="placeholder">placeholder 03: <span class="phcolor"> article</span></div>
-          <div class="placeholder">placeholder 04: <span class="phcolor"> contact information</span></div>
-      </main>
+        <main>
+    <h2>Preston, Idaho</h2>
+    <div class="herodiv">
+      <picture>
+        <source srcset="images/heroimage-small2@2x.jpg" media="(max-width:320px)"/>
+        <source srcset="images/heroimage-medium@2x.jpg" media="(max-width:480px)"/>
+        <source srcset="images/heroimage-large@2x.jpg" media="(max-width:1000px)"/>
+        <img class="hero-image" src="images/heroimage-xlarge@2x.jpg" alt="picture of sky, a mountain, and valley" />
+      </picture>
+      <section class="weathersummary">
+        <h3>Weather Summary</h3>
+        <p>Currently: Sunny</p>
+        <p>High: 75 &#8457;</p>
+        <p>Wind Chill: &#8457;</p>
+        <p>Humidity: 16%</p>
+        <p>Wind Speed: 15mph</p>
+      </section>
+    </div>
+
+    <div class="fiveday">
+      <h3>5 Day Forecast</h3>
+      <table>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tues</th>
+          <th>Wed</th>
+          <th>Thur</th>
+        </tr>
+        <tr>
+          <td><img src="images/sunny.png" alt="sun icon"></td>
+          <td><img src="images/sunny.png" alt="sun icon"></td>
+          <td><img src="images/partlycloudy.png" alt="sun covered by cloud icon"></td>
+          <td><img src="images/partlycloudy.png" alt="sun covered by cloud icon"></td>
+          <td><img src="images/sunny.png" alt="sun icon"></td>
+        </tr>
+        <tr>
+          <td> 55 &#8457;</td>
+          <td> 62 &#8457;</td>
+          <td> 66 &#8457;</td>
+          <td> 60 &#8457;</td>
+          <td> 55 &#8457;</td>
+        </tr>
+      </table>
+    </div>
+    <section class="articleCity clearfix">
+      <img src="images/snowshoe.jpg" alt="view of mountian with snow at disk">
+      <h3>Snow Shoeing until Dusk</h3>
+      <p>In my experience, there is no such thing as luck. A tremor in the Force. The last time I felt it was in the 
+        presence of my old master. Don't underestimate the Force. Kid, I've flown from one side of this galaxy to 
+        the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one 
+        all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's
+        all a lot of simple tricks and nonsense. What?! What good is a reward if you ain't around to use it? Besides, 
+        attacking that battle station ain't my idea of courage. It's more like… suicide. Red Five standing by. 
+        You're all clear, kid. Let's blow this thing and go home!</p>
+    </section>
+    <div class="contact">
+      <img class="map" src="images/prestonmapsmall.png" alt="small map of preston">
+    <div class="contactInfo">
+      <h3>GEMi</h3>
+      <div class="contactItem address">
+        <img src="images/location.png" alt="location marker">
+        <p>250 S 2nd E St<br>Preston, ID 83263</p>
+      </div>
+      <div class="contactItem phone">
+        <img src="images/phone.png" alt="mobile phone icon">
+        <p> (208) 852-1817</p>
+      </div>
+      <div class="contactItem email">
+        <img src="images/email.png" alt="email icon">
+        <p>preston@gemi.link</p>
+      </div>
+      <div class="social">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a>
+        <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest.png" alt= "pinterest icon"></a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter.png" alt="twitter icon"></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+      </div>
+    </div>
+    </div>
+  </main>
 
       <footer>
         <p class="foot">
                 <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
                 | &nbsp;
-                <a href="index" target="_blank">&copy; <span id='copyrightyear'></span> GEMi</a>  &nbsp; | &nbsp;
+                <a href="index" target="_blank">&copy; <span id='copyrightyear'></span> GEMi: Preston, Idaho Portal</a>  &nbsp; | &nbsp;
                 <a href="#" target="_blank">Attributes</a>  &nbsp; | &nbsp;
                 <a href="https://dgtlman.github.io/wdd230/" target="_blank">Eric Garofalo</a>  &nbsp; | &nbsp;
               </p>
 
               <!-- javascript insert - dymanically adds date [format: weekday, month, #day, #year] of the last github update (id='current-date') -->
-        <p id="current-date" class="update">
-        </p>
+        <p id="current-date" class="update"></p>
       </footer>
       <script src="js/script.js"></script>
     </body>

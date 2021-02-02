@@ -1,0 +1,21 @@
+/* GLOBAL STYLE SHEET WITH VARIBLES */
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+/* varibales for font and colors */
+/* color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5 */
+
+:root {
+	/* site colors: var(--color-name) */
+        --umber-color: #6f5649;
+        --pink-color: #DB3896;
+        --yellow-color: #fdbd5d;
+        --peach-color: #ffeac2;
+        --cultured-color: #F5F5F5;
+        --dark-color: #161032;
+
+    /* site fonts var(--style-font) */
+        --heading-font: 'Poiret One', cursive;
+        --subhead-font: 'Ubuntu Condensed', sans-serif;
+        --main-font: 'Ubuntu', sans-serif;
+}

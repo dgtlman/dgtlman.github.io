@@ -1,27 +1,36 @@
 @media only screen and (min-width: 64rem) {
 
-  nav button {
-      display: none;
-  }
+    nav button {
+        display: none;
+    }
 
-  nav ul.hide {
-      display:flex;
-  }
+    nav ul.hide{
+        display:flex;
+    }
 
-  nav ul li {
-      justify-content: space-evenly;
-      flex: 1 1 100%;
-      float: left;
-  }
+    nav ul li {
+        float: left;
+        flex: 1 1 100%;
+        justify-content: space-evenly;
+    }
 
-  nav ul li a {
-      border-right: 1px solid #161032;
-      padding: .6rem 1rem;
-      border: none;
-  }
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
 
-  .logo {
-      margin-bottom: 0;
-      width: 120px;
-  }
+    .logo {
+        width: 10rem;
+        margin-bottom: 0;
+    }
+
+    .fiveday {
+        background-color: #77bdd9;
+        padding: 10px 0 20px 0;
+        max-width: 1000px;
+    }
+
+    .fiveday table {
+        background-color: #fff;
+    }
 }
