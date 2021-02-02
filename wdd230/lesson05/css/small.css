@@ -154,7 +154,6 @@ h4 {
 }
 
 
-
 /* used to align GEMi site H1 text */
 .headings {
     flex-direction: column;
@@ -220,26 +219,22 @@ h4 {
     top: 30px;
     left: 30px;
     background-color: rgba(2, 64, 89, 0.8);
-    border: 1px solid #024059;
+    border: 1px solid var(--dark-color);
     padding: .5rem 1rem;
-    box-shadow: 0 0 30px #011C26;
-    color: #fff;
+    box-shadow: 0 0 30px var(--dark-color);
+    color: var(--cultured-color);
     padding-bottom: 0;
   }
   .weathersummary p, .weathersummary h3{
     margin: 1.5px;
   }
-  /* .weathersummary h3{
-    text-decoration: underline;
-  } */
-
 
   .fiveday {
     display: none;
   }
   .articleCity {
     text-align: justify;
-    background-color: #CEE3EB;
+    background-color: var(--cultured-color);
     margin: 5px;
     padding: 20px;
   }
@@ -247,16 +242,16 @@ h4 {
     display: none;
   }
   .prestonBanner {
-    background-color: #d9734e;
-    color: #fff;
+    background-color: var(--yellow-color);
+    color: var(--cultured-color);
     padding: 10px;
     text-align: center;
     display:none;
   }
 
   .contact {
-  background-color: #CEE3EB;
-  color: #011C26;
+  background-color: var(--cultured-color);
+  color: # var(--dark-color);
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 20px;
