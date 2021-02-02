@@ -53,6 +53,7 @@ footer {
     color: var(--cultured-color);
     max-width: 1000px;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* motto text styles */
@@ -234,7 +235,7 @@ h4 {
   }
   .articleCity {
     text-align: justify;
-    background-color: var(--cultured-color);
+    background-color: var(--peach-color);
     margin: 5px;
     padding: 20px;
   }
@@ -250,7 +251,7 @@ h4 {
   }
 
   .contact {
-  background-color: var(--cultured-color);
+  background-color: var(--peach-color);
   color: # var(--dark-color);
   display: grid;
   grid-template-columns: 1fr;
@@ -270,7 +271,6 @@ h4 {
 
 .contactInfo h3, .contactItem, .social{
   grid-column: 2/3;
-    
 }
 
 .contactItem img{
