@@ -4,7 +4,7 @@ google font import */
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
 
 /* varibales for font and colors
-color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5 */
+color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-faf0dc-f5f5f5 */
 
 :root {
 	/* site colors: var(--color-name) */
@@ -12,6 +12,7 @@ color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5 */
       --pink-color: #DB3896;
       --yellow-color: #fdbd5d;
       --peach-color: #ffeac2;
+      --eggshell-color: #FAF0DC;
       --cultured-color: #F5F5F5;
       --gray-color: #c4c4c4;
       --dark-color: #161032;
@@ -247,10 +248,9 @@ h4 {
     margin: 40px;
     padding: 0 0 0 0;
 }
-
 .snowshoe {
     text-align: justify;
-    background-color: var(--peach-color);
+    background-color: var(--eggshell-color);
     margin: 5px;
     padding: 20px;
 }
@@ -260,9 +260,6 @@ h4 {
     box-shadow: 0 0 10px var(--dark-color);
 }
 
-.snowshoe {
-    margin-bottom: 20px;
-}
 
 .map {
     display: none;
@@ -279,7 +276,7 @@ h4 {
 }
 
 .contactBlock {
-  background-color: var(--peach-color);
+  background-color: var(--eggshell-color);
   color: var(--dark-color);
   display: grid;
   grid-template-columns: 1fr;
@@ -309,12 +306,13 @@ h4 {
   margin: 5px;
 }
 
-.contactInfo h4{
+.contactInfo h4 {
+  color: var(--pink-color);
   text-align: left;
   margin: 0;
 }
 
-.social img{
+.social img {
   margin: 15px 1px 10px 0;
   width: 30px;
 }   
@@ -329,7 +327,7 @@ h4 {
 
 /* footer box - styles date text*/
 .update {
-    color: var(--yellow-color);
+    color: var(--peach-color-color);
     padding: 0 0 5px 0;
     text-align: center;
     margin: 0px;
