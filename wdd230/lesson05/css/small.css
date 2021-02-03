@@ -1,7 +1,7 @@
 /* comments
 
 google font import */
-    @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
 
 /* varibales for font and colors
 color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5 */
@@ -15,11 +15,11 @@ color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5 */
       --cultured-color: #F5F5F5;
       --gray-color: #c4c4c4;
       --dark-color: #161032;
-        
+
   /* site colors: var(--color-name) */
       --umber-75: rgba(111, 86, 73, 0.75);
       --dark-75: rgba(22, 16, 50, 0.75);
-      --peach-75: rgba(225, 234, 194, 0.75);
+      --peach-50: rgba(225, 234, 194, 0.8);
 
   /* site fonts var(--style-font) */
       --heading-font: 'Poiret One', cursive;
@@ -48,6 +48,7 @@ header {
 /* main styles */
 main {
     font-family: var(--main-font);
+    /* background-color: var(--cultured-color); */
     max-width: 960px;
     margin: 0 auto;
 }
@@ -200,9 +201,8 @@ h4 {
 
 /* hero div - container for all hero content - image and float */
 
-.herodiv {
+.heroBlock {
     position: relative;
-    
   }
 
 /* hero div - for image and float */
@@ -223,7 +223,7 @@ h4 {
   }
 
 /* hero div - for image and float */
-.weathersummary {
+.heroWeather {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -235,7 +235,7 @@ h4 {
     padding-bottom: 0;
   }
 
-.weathersummary p, .weathersummary h3{
+.heroWeather p, .heroWeather h4 {
     margin: 1.5px;
 }
 
@@ -243,19 +243,24 @@ h4 {
     display: none;
 }
 
-.articleCity {
+.fiveday h4 {
+    margin: 40px;
+    padding: 0 0 0 0;
+}
+
+.snowshoe {
     text-align: justify;
     background-color: var(--peach-color);
     margin: 5px;
     padding: 20px;
 }
 
-.articleCity img{
+.snowshoe img{
     width: 100%;
     box-shadow: 0 0 10px var(--dark-color);
 }
 
-.articleCity{
+.snowshoe {
     margin-bottom: 20px;
 }
 
@@ -271,7 +276,7 @@ h4 {
     display:none;
 }
 
-.contact {
+.contactBlock {
   background-color: var(--peach-color);
   color: var(--dark-color);
   display: grid;
@@ -290,7 +295,7 @@ h4 {
   align-items: center;
 }
 
-.contactInfo h3, .contactItem, .social{
+.contactInfo h4, .contactItem, .social{
   grid-column: 2/3;
 }
 
@@ -302,7 +307,7 @@ h4 {
   margin: 5px;
 }
 
-.contactInfo h3{
+.contactInfo h4{
   text-align: left;
   margin: 0;
 }
