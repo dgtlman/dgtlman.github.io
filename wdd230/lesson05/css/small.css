@@ -60,7 +60,7 @@ footer {
     background-color: var(--umber-color);
     font-family: var(--main-font);
     color: var(--cultured-color);
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
     text-align: center;
 }
@@ -310,7 +310,7 @@ h4 {
 .contactInfo h4 {
   color: var(--pink-color);
   text-align: left;
-  margin: 0;
+  margin: -10px;
 }
 
 .social img {
@@ -328,7 +328,7 @@ h4 {
 
 /* footer box - styles date text*/
 .update {
-    color: var(--peach-color-color);
+    color: var(--yellow-color);
     padding: 0 0 5px 0;
     text-align: center;
     margin: 0px;

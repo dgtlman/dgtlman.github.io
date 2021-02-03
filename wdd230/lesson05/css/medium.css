@@ -46,14 +46,7 @@ color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5 */
   main, footer {
     font-size: 1rem;
   }
-  
-  /* .navbackground {
-  background: #77bdd9;
-  background: -moz-linear-gradient(top, #77bdd9 0%, #51abcc 100%);
-  background: -webkit-linear-gradient(top, #77bdd9 0%, #51abcc 100%);
-  background: linear-gradient(to bottom, #77bdd9 0%, #51abcc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77bdd9', endColorstr='#51abcc', GradientType=0);
-  } */
+
 
   .motto {
     font-size: 1.5rem;
@@ -78,8 +71,6 @@ color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-f5f5f5 */
   .fiveday table {
     text-align: center;
     border: 1px solid  var(--dark-color);
-
-
   }
 
   table th {
