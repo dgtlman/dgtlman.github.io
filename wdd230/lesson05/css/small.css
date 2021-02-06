@@ -134,6 +134,14 @@ h4 {
     text-align: left;
 }
 
+h5 {
+    font-family: var(--subhead-font);
+    color: var(--pink-color);
+    font-size: .9rem;
+    padding-left: 10px;
+    text-align: left;
+}
+
 /* used to align GEMi site H1 text */
 .headings {
     flex-direction: column;
@@ -285,7 +293,6 @@ h4 {
 .contactInfo h4, .contactItem, .social{
   grid-column: 2/3;
 }
-
 
 .contactItem img{
   width: 24px;
