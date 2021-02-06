@@ -185,6 +185,10 @@ h4 {
     font-family: var(--subhead-font);
 }
 
+.spacer {
+    line-height: 3;
+}
+
 /* hero div - container for all hero content - image and float */
 
 .heroBlock {
@@ -282,6 +286,7 @@ h4 {
   grid-column: 2/3;
 }
 
+
 .contactItem img{
   width: 24px;
 }
@@ -317,6 +322,25 @@ h4 {
     margin: 0px;
 }
 
+/* CONTACTBLOCK ONLY: unvisited link, visited link, selected link  */
+.contactBlock a, .contactBlock a:link, .contactBlock a:visited {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+/* FOOTER ONLY: mouse over link */
+.contactBlock a:hover {
+    color: var(--pink-color);
+    /* text-decoration: none; */
+}
+
+/* FOOTER ONLY: link clicked, link focused */
+.contactBlock a:active, footer a:focus {
+    color: var(--yellow-color);
+    /* text-decoration: none; */
+}
+
+
 /* FOOTER ONLY: unvisited link, visited link, selected link  */
 footer a, footer a:link, footer a:visited {
     color: var(--white-color);
@@ -326,12 +350,12 @@ footer a, footer a:link, footer a:visited {
 
 /* FOOTER ONLY: mouse over link */
 footer a:hover {
-    color: var(--pink-color);
+    color: var(--yellow-color);
     /* text-decoration: none; */
 }
 
 /* FOOTER ONLY: link clicked, link focused */
 footer a:active, footer a:focus {
-    color: var(--yellow-color);
+    color: var(--peach-color);
     /* text-decoration: none; */
 }
