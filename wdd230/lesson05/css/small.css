@@ -1,33 +1,5 @@
-/* comments
-
-google font import */
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
-
-/* varibales for font and colors
-color link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-faf0dc-f5f5f5 */
-
-:root {
-	/* site colors: var(--color-name) */
-      --umber-color: #6f5649;
-      --pink-color: #DB3896;
-      --yellow-color: #fdbd5d;
-      --peach-color: #ffeac2;
-      --eggshell-color: #FAF0DC;
-      --platinum-color: #ebebeb;
-      --cultured-color: #F5F5F5;
-      --gray-color: #c4c4c4;
-      --dark-color: #161032;
-
-  /* site colors: var(--color-name) */
-      --umber-75: rgba(111, 86, 73, 0.75);
-      --dark-75: rgba(22, 16, 50, 0.75);
-      --peach-50: rgba(225, 234, 194, 0.8);
-
-  /* site fonts var(--style-font) */
-      --heading-font: 'Poiret One', cursive;
-      --subhead-font: 'Ubuntu Condensed', sans-serif;
-      --main-font: 'Ubuntu', sans-serif;
-}
+/* all variables are defined in the global.css file */
+@import "global.css";
 
 /* body page styles */
 body {
@@ -38,8 +10,8 @@ body {
 
 /* header styles */
 header {
-    background-color: var(--umber-color);
-    color: var(--cultured-color);
+    background-color: var(--brown-color);
+    color: var(--white-color);
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
@@ -50,17 +22,16 @@ header {
 /* main styles */
 main {
     font-family: var(--main-font);
-    /* background-color: var(--cultured-color); */
+    /* background-color: var(--white-color); */
     max-width: 960px;
     margin: 0 auto;
 }
 
 /* footer styles */
 footer {
-    background-color: var(--umber-color);
+    background-color: var(--brown-color);
     font-family: var(--main-font);
-    color: var(--cultured-color);
-    /* max-width: 1000px; */
+    color: var(--white-color);
     margin: 0 auto;
     text-align: center;
 }
@@ -68,10 +39,10 @@ footer {
 /* motto text styles */
 .motto {
     font-family: var(--subhead-font);
-    color: var(--cultured-color);
+    color: var(--white-color);
     text-align: right;
     padding: 0;
-  }
+}
 
 /* main nav styles - includes responsive hamburger */
 
@@ -84,7 +55,7 @@ nav {
 /* nav hamburger style */
 nav button {
     background-color: transparent;
-    color: var(--cultured-color);
+    color: var(--white-color);
     font-size: 1.6rem;
     padding: 10px;
     margin: 0 5px;
@@ -102,7 +73,7 @@ nav ul {
 /* nav link style */
 nav ul li a {
     border-top: 1px solid var(--dark-color);
-    color: var(--cultured-color);
+    color: var(--white-color);
     text-decoration: none;
     text-align: center;
     font-weight: bold;
@@ -113,14 +84,14 @@ nav ul li a {
 
 /* nav link active page style */
 nav ul li.active a {
-    background-color: var(--umber-color);
-    color: var(--cultured-color);
+    background-color: var(--brown-color);
+    color: var(--white-color);
 }
 
 /* nav hover over link style */
 nav ul li a:hover {
     background-color: var(--pink-color);
-    color: var(--cultured-color);
+    color: var(--white-color);
     -webkit-transition: background-color 1s;
     -moz-transition: background-color 1s;
     -o-transition: background-color 1s;
@@ -153,7 +124,7 @@ h3 {
     font-size: 1.25rem;
     padding-left: 10px;
     text-align: left;
-  }
+}
 
 h4 {
     font-family: var(--subhead-font);
@@ -182,7 +153,7 @@ h4 {
 
 /* span style the place holder boxes with pink text */
 .phcolor {
-    color: var(--umber-color);
+    color: var(--brown-color);
     font-weight: bold;
     font-style: italic;
 }
@@ -205,7 +176,7 @@ h4 {
 
 .heroBlock {
     position: relative;
-  }
+}
 
 /* hero div - for image and float */
 .hero {
@@ -222,7 +193,7 @@ h4 {
     margin: 10px auto;
     width: 100%;
     height: auto;
-  }
+}
 
 /* hero div - for image and float */
 .heroWeather {
@@ -233,9 +204,9 @@ h4 {
     border: 1px solid var(--dark-color);
     padding: .5rem 1rem;
     box-shadow: 0 0 30px var(--dark-color);
-    color: var(--cultured-color);
+    color: var(--white-color);
     padding-bottom: 0;
-  }
+}
 
 .heroWeather p, .heroWeather h4 {
     margin: 1.5px;
@@ -251,7 +222,7 @@ h4 {
 }
 .snowshoe {
     text-align: justify;
-    background-color: var(--platinum-color);
+    background-color: var(--silver-color);
     margin: 5px;
     padding: 20px;
 }
@@ -264,12 +235,12 @@ h4 {
 
 .map {
     display: none;
-  }
+}
 
 .pancakeBanner {
     background-color: var(--pink-color);
     font-family: var(--subhead-font);
-    color: var(--cultured-color);
+    color: var(--white-color);
     text-align: center;
     font-weight: bold;
     padding: 10px;
@@ -277,7 +248,7 @@ h4 {
 }
 
 .contactBlock {
-  background-color: var(--platinum-color);
+  background-color: var(--silver-color);
   color: var(--dark-color);
   display: grid;
   grid-template-columns: 1fr;
@@ -316,8 +287,7 @@ h4 {
 .social img {
   margin: 15px 1px 10px 0;
   width: 30px;
-}   
-
+}
 
 /* footer box - main text */
 .foot {
@@ -336,7 +306,7 @@ h4 {
 
 /* FOOTER ONLY: unvisited link, visited link, selected link  */
 footer a, footer a:link, footer a:visited {
-    color: var(--cultured-color);
+    color: var(--white-color);
     text-decoration: none;
 }
 
