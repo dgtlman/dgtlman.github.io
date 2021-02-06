@@ -3,7 +3,8 @@
  * on the small, medium and large  style pages */
 
 /* google font import */
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
 
 /* varibales for font and colors
  * coolors link - https://coolors.co/6f5649-161032-db3896-fdbd5d-ffeac2-faf0dc-f5f5f5
@@ -30,4 +31,5 @@
       --heading-font: 'Poiret One', cursive;
       --subhead-font: 'Ubuntu Condensed', sans-serif;
       --main-font: 'Ubuntu', sans-serif;
+
 }

@@ -73,19 +73,19 @@
     margin-right: auto;
   }
 
-  .snowshoe {
+  .starMovie {
     max-width: 960px;
     margin: 20px 0 20px;
     padding: 30px 30px;
   }
 
-  .snowshoe img {
+  .starMovie img {
     float: right;
     width: 300px;
     margin: 0 0 15px 50px;
   }
 
-  .snowshoe h4 {
+  .starMovie h4 {
     text-align: left;
   }
 
