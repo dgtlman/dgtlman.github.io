@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd230 - page title</title>
-    <meta name="description" content="about 150 charactors">
-    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">    <!-- css to normalize styles-->
-    <link rel="stylesheet" href="css/small.css" />      <!-- base style is in the small-viewport -->
-    <link rel="stylesheet" href="css/medium.css" />     <!-- adjust style for mid-viewport -->
-    <link rel="stylesheet" href="css/large.css" />      <!-- adjust style for large-viewport-->
-</head>
-<body>
-    <header>
-        <h1>Week ## - ##name##</h1>
-        <h2>Eric Garofalo</h2>
-    </header>
 
-    <main>
-        <!-- insert main content here -->
-    </main>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>GEMi: Preston, Idaho local info</title>
+      <meta name="description" content="GEMi is a portal for southeastern Idaho. This page provides weather and city information for the city of Preston." />
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+    </head>
 
-    <footer>
+    <body> <!-- BEGIN BODY -->
+
+        <!-- this is a javascript dynamically added banner. If it is wednesday present soda mixer -->
+        <div class="sabbath">Today is the Sabbath and our offices are closed.<br>We invite you to visit your house of worship.</div>
+        <!-- end banner -->
+
+      <header> <!-- BEGIN HEADER -->
+        <picture>
+          <img class="logo" src="images/logo.png" alt="GEMi logo" />
+        </picture>
+        <section class="headings">
+          <h1>GEMi: Greater Eastern Metro Idaho</h1>
+          <h2 class="motto">living the great wide open</h2>
+        </section>
+      </header> <!-- END HEADER -->
+
+      <nav class="clearfix"> <!-- BEGIN NAV -->
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodasprings.html">Soda Springs</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav> <!-- END NAV -->
+
+    <main> <!-- BEGIN MAIN -->
+
+        <h3>GEMi: homepage</h3>
+            <div class="placeholder">placeholder 01: <span class="phcolor"> future portal for GEMi</span></div>
+            <!-- <div class="placeholder">placeholder 02: <span class="phcolor"> five day forecast</span></div>
+            <div class="placeholder">placeholder 03: <span class="phcolor"> article</span></div>
+            <div class="placeholder">placeholder 04: <span class="phcolor"> contact information</span></div> -->
+
+        <div class="contactBlock">
+            <img class="map" src="images/prestonmapsmall.png" alt="small map of fish haven, idaho">
+            <div class="contactInfo">
+                <h4 class="spacer">GEMi: Main Campus | Glactic HQ</h4>
+                <div class="contactItem address">
+                    <img src="images/location.png" alt="location marker">
+                    <p>1 HQ, Hot Lava Springs, ID 83246</p>
+                </div>
+
+                <div class="contactItem phone">
+                    <img src="images/phone.png" alt="mobile phone icon">
+                    <p><a target="_blank" rel="noreferrer" href="https://youtu.be/MicECONdno0">208.867.5309</a></p>
+                </div>
+
+                <div class="contactItem email">
+                    <img src="images/email.png" alt="email icon">
+                    <p><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=oex82yk952c">waytogoidaho@gemi.link</a></p>
+                </div>
+
+                <div class="social">
+                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest.png" alt= "pinterest icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter.png" alt="twitter icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+                </div>
+            </div>
+        </div>
+
+    </main> <!-- END MAIN -->
+
+      <footer> <!-- BEGIN FOOTER -->
         <p class="foot">
-            <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
-            <a href="https://en.wikipedia.org/wiki/2021" target="_blank">&copy; <span id='copyrightyear'></span></a>  &nbsp; | &nbsp;
-            <a href="https://dgtlman.github.io/" target="_blank">Eric Garofalo</a>  &nbsp; | &nbsp;
-            <a href="https://www.virginiacapitaltrail.org" target="_blank">Virginia</a>  &nbsp; | &nbsp;
-            <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
-          </p>
-          <!-- javascript insert - dymanically add date and time of last github update (id='lastupdated') -->
-          <p class="update">Last Updated: <span id='lastupdated'></span></p>
-    </footer>
+                <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
+                | &nbsp;
+                <a href="index" target="_blank">&copy; <span id='copyrightyear'></span> GEMi: Portal</a>  &nbsp; | &nbsp;
 
-</body>
-    <script src='scripts/year-update.js'></script>
+                <a href="#" target="_blank">Attributes</a>  &nbsp; | &nbsp;
+                <a href="https://dgtlman.github.io/wdd230/" target="_blank">eric<span class="bold">garofalo</span></a>  &nbsp; | &nbsp;
+              </p>
+
+              <!-- javascript insert - dymanically adds date [format: weekday, month, #day, #year] of the last github update (id='current-date') -->
+        <p id="current-date" class="update">
+        </p>
+      </footer> <!-- END FOOTER -->
+        <script src="js/site.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/windchill.js"></script>
+    </body> <!-- END BODY -->
+
 </html>
