@@ -246,6 +246,10 @@ h5 {
     margin: 1.5px;
 }
 
+.heroWeather h4  {
+    color: var(--yellow-color);
+}
+
 .fiveday {
     display: none;
 }
