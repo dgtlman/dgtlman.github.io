@@ -55,7 +55,7 @@
 
   table th {
     background-color: var(--yellow-color);
-    color: var(--white-color);
+    color: var(--dark-color);
   }
 
   table img {
