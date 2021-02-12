@@ -335,11 +335,11 @@ h5 {
 
 /* footer box - styles date text*/
 .update {
-    color: var(--white-color);
+    color: var(--yellow-color);
     font-weight: 500;
     padding: 0 0 5px 0;
     text-align: center;
-    margin: 0px;
+    margin: 0 0 0 0;
 }
 
 /* CONTACTBLOCK ONLY: unvisited link, visited link, selected link  */

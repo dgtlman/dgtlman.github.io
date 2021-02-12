@@ -19,6 +19,16 @@ window.addEventListener('load', (event)=>{
   document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', options);
 
 
+ // uses local storage to count how many times each unique visitor returns to site.  
+var n = localStorage.getItem('on_load_counter'); 
+if (n === null) {
+    n = 0;
+}
+n++;
+localStorage.setItem("on_load_counter", n);
+document.querySelector('#counter').innerHTML = n;
+
+
 // webfont loader
 WebFont.load({
     google: {
