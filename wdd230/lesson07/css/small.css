@@ -261,7 +261,7 @@ h5 {
     padding: 0 0 0 0;
 }
 .starMovie {
-    text-align: justify;
+    /* text-align: justify; */
     background-color: var(--silver-color);
     margin: 5px;
     padding: 20px;
