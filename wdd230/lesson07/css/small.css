@@ -398,6 +398,7 @@ footer a:active, footer a:focus {
 figcaption {
     text-align: center;
     font-size: 14px;
+    color: var(--brown-color);
 }
 
 figure img {
