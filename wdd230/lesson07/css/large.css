@@ -41,7 +41,7 @@
     .gallerygrid {
         grid-template-columns: repeat(3, 1fr);
         align-content: center;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .gallerybox:hover {
