@@ -1,6 +1,8 @@
 /* all variables are defined in the global.css file */
 @import "global.css";
 
+
+
 /* body page styles */
 body {
     color: var(--dark-color);
@@ -214,11 +216,11 @@ h5 {
 
 /* hero div - for image and float */
 .hero {
-   margin: 10px auto;
-   background-color: var(--peach-color);
-   border: 1px solid var(--dark-color);
-   width: 960px;
-   height: 300px;
+    margin: 10px auto;
+    background-color: var(--peach-color);
+    border: 1px solid var(--dark-color);
+    width: 960px;
+    height: 300px;
 }
 
 /* style for hero image */
@@ -285,45 +287,45 @@ h5 {
 }
 
 .contactBlock {
-  background-color: var(--silver-color);
-  color: var(--dark-color);
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 20px;
-  padding-top: 20px; 
+    background-color: var(--silver-color);
+    color: var(--dark-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    padding-top: 20px; 
 }
 
 .contactInfo {
-  display: grid;
+    display: grid;
 }
 
 .contactItem {
-  display: grid;
-  grid-template-columns: 32px 1fr; 
-  align-items: center;
+    display: grid;
+    grid-template-columns: 32px 1fr; 
+    align-items: center;
 }
 
 .contactInfo h4, .contactItem, .social{
-  grid-column: 2/3;
+    grid-column: 2/3;
 }
 
 .contactItem img{
-  width: 24px;
+    width: 24px;
 }
 
 .contactItem p {
-  margin: 5px;
+    margin: 5px;
 }
 
 .contactInfo h4 {
-  color: var(--pink-color);
-  text-align: left;
-  margin: -10px;
+    color: var(--pink-color);
+    text-align: left;
+    margin: -10px;
 }
 
 .social img {
-  margin: 15px 1px 10px 0;
-  width: 30px;
+    margin: 15px 1px 10px 0;
+    width: 30px;
 }
 
 /* footer box - main text */
@@ -340,7 +342,7 @@ h5 {
     padding: 0 0 5px 0;
     text-align: center;
     margin: 0 0 0 0;
-    
+
 }
 
 /* CONTACTBLOCK ONLY: unvisited link, visited link, selected link  */
@@ -380,3 +382,30 @@ footer a:active, footer a:focus {
     color: var(--peach-color);
     /* text-decoration: none; */
 }
+
+
+/* ------------------------ */
+/* ----- GALLERY PAGE ----- */
+
+.gallerygrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+}
+
+figure img {
+    width: 100%;
+}
+
+/* ----------------------------- */
+/* ----- STORM CENTER FORM ----- */
+
+
+

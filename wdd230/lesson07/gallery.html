@@ -40,36 +40,80 @@
 
     <main>
 
-        <h3>GEMi: Gallery</h3>
-        <div class="placeholder">placeholder 01: <span class="phcolor"> future gallery</span></div>
-            <!-- <div class="placeholder">placeholder 02: <span class="phcolor"> five day forecast</span></div>
-            <div class="placeholder">placeholder 03: <span class="phcolor"> article</span></div>
-            div class="placeholder">placeholder 04: <span class="phcolor"> contact information</span></div> -->
+        <h3>GEMi: Weather Gallery</h3>
+        <div class="gallerygrid">
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/icylake.jpg" src="images/placeholdersquare.png" alt="frozen lake with a mountain in the background"/>
+                <figcaption>Perfect day for ice fishing.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/avalanche.jpg" src="images/placeholdersquare.png" alt="snow blowing over mountains"/>
+                <figcaption>Don't get caught in the avalanche.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/lightening.jpg" src="images/placeholdersquare.png" alt="Dark sky lit by lightening"/>
+                <figcaption>Lightening stikes and delights.</figcaption>
+            </figure>
+
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/twister.jpg" src="images/placeholdersquare.jpg" alt="dark funnel cloud"/>
+                <figcaption>This isn't Kansas anymore Dorothy.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/musicalrain.jpg" src="images/placeholdersquare.png" alt="night time rain fall"/>
+                <figcaption>We're singing in the rain.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/wave.jpg" src="placeholdersquare.png" alt="large ocean waves" />
+                <figcaption>The navy grounded? We go out.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/fog.jpg" src="images/placeholdersquare.png" alt="fog covered city square with flowers"/>
+                <figcaption>Frodo &amp; Sam on Misty Mountians.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/snow.jpg" src="images/placeholdersquare.png" alt="Cityscape with snowy umbrella" />
+                <figcaption>Snow the day after tomorrow.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/hurricane.jpg" src="placeholdersquare.png" alt="Above view of a hurricane"/>
+                <figcaption>Hurricane hits south beach.</figcaption>
+            </figure>
+        </div>
 
         <div class="contactBlock">
-            <img class="map" src="images/prestonmapsmall.png" alt="small map of fish haven, idaho">
+            <img class="map" src="images/contact/prestonmapsmall.png" alt="small map of fish haven, idaho">
             <div class="contactInfo">
                 <h4 class="spacer">GEMi: Main Campus | Glactic HQ</h4>
                 <div class="contactItem address">
-                    <img src="images/location.png" alt="location marker">
+                    <img src="images/contact/location.png" alt="location marker">
                     <p>1 HQ, Hot Lava Springs, ID 83246</p>
                 </div>
 
                 <div class="contactItem phone">
-                    <img src="images/phone.png" alt="mobile phone icon">
+                    <img src="images/contact/phone.png" alt="mobile phone icon">
                     <p><a target="_blank" rel="noreferrer" href="https://youtu.be/MicECONdno0">208.867.5309</a></p>
                 </div>
 
                 <div class="contactItem email">
-                    <img src="images/email.png" alt="email icon">
+                    <img src="images/contact/email.png" alt="email icon">
                     <p><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=oex82yk952c">waytogoidaho@gemi.link</a></p>
                 </div>
 
                 <div class="social">
-                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a>
-                    <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest.png" alt= "pinterest icon"></a>
-                    <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter.png" alt="twitter icon"></a>
-                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/contact/facebook.png" alt="facebook icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/contact/pinterest.png" alt= "pinterest icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/contact/twitter.png" alt="twitter icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/contact/instagram.png" alt="instagram icon"></a>
                 </div>
             </div>
         </div>
@@ -77,21 +121,18 @@
     </main>
 
       <footer>
-        <p class="foot">
+            <p class="foot">| &nbsp;
                 <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
-                | &nbsp;
                 <a href="index" target="_blank">&copy; <span id='copyrightyear'></span> GEMi: Portal</a>  &nbsp; | &nbsp;
-
                 <a href="#" target="_blank">Attributes</a>  &nbsp; | &nbsp;
                 <a href="https://dgtlman.github.io/wdd230/" target="_blank">eric<span class="bold">garofalo</span></a>  &nbsp; | &nbsp;
-              </p>
-
-              <!-- javascript insert - dymanically adds date [format: weekday, month, #day, #year] of the last github update (id='current-date') -->
-        <p class="foot">last update: <span id="current-date" class="update"></span> |  site: <span id="counter" class="update"></span></p>
-        </p>
+            </p>
+            <!-- javascript insert - dymanically adds date [format: weekday, month, #day, #year] of the last github update (id='current-date') -->
+            <p class="foot">|&nbsp; last update: &nbsp;<span id="current-date" class="update"></span> &nbsp;|</p>
       </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/lazyload.js"></script>
     </body>
 
 </html>

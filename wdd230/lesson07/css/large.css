@@ -36,4 +36,15 @@
     .fiveday table {
         background-color: var(--white-color);
     }
+
+
+    .gallerygrid {
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+        justify-content: center;
+    }
+
+    .gallerybox:hover {
+        box-shadow: 0 0 10px var(--pink-color);}
+    }
 }
