@@ -107,9 +107,10 @@
         border: 1px solid var(--pink-color);
     }
 
-    .pancakeBanner {
+    .pancakeBanner, .fishFry, .sodaFloat, .sabbath {
         padding: 20px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 1.25;
     }
 
     .spacer {
