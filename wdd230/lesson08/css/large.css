@@ -44,9 +44,10 @@
     }
 
     .gallerybox:hover {
-        box-shadow: 0 0 10px var(--pink-color);}
+        box-shadow: 0 0 10px var(--pink-color);
     }
 
     form label.sbs {
         padding: .2rem 0;
     }
+}
