@@ -1,0 +1,53 @@
+/* all variables are defined in the global.css file */
+@import "global.css";
+
+@media only screen and (min-width: 64rem) {
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide{
+        display:flex;
+    }
+
+    nav ul li {
+        float: left;
+        flex: 1 1 100%;
+        justify-content: space-evenly;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+    }
+
+    .logo {
+        width: 10rem;
+        margin-bottom: 0;
+    }
+
+    .fiveday {
+        background-color: var(--silver-color);
+        padding: 1px 0 20px 0;
+        max-width: 1000px;
+    }
+
+    .fiveday table {
+        background-color: var(--white-color);
+    }
+
+    .gallerygrid {
+        grid-template-columns: repeat(3, 1fr);
+        align-content: center;
+        /* justify-content: center; */
+    }
+
+    .gallerybox:hover {
+        box-shadow: 0 0 10px var(--pink-color);}
+    }
+
+    form label.sbs {
+        padding: .2rem 0;
+    }
+}
