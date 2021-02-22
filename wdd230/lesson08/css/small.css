@@ -354,13 +354,16 @@ h5 {
 /* FOOTER ONLY: mouse over link */
 .contactBlock a:hover {
     color: var(--pink-color);
-    /* text-decoration: none; */
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    
 }
 
 /* FOOTER ONLY: link clicked, link focused */
 .contactBlock a:active, footer a:focus {
     color: var(--yellow-color);
-    /* text-decoration: none; */
 }
 
 
@@ -374,7 +377,10 @@ footer a, footer a:link, footer a:visited {
 /* FOOTER ONLY: mouse over link */
 footer a:hover {
     color: var(--yellow-color);
-    /* text-decoration: none; */
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
 }
 
 /* FOOTER ONLY: link clicked, link focused */
