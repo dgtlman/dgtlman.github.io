@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON fetch practice</title>
+  <meta name="description" content="practice page for fetch using json" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/prophets.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+</head>
+
+<body>
+  <header>
+    <h1>Latter-day Prophets</h1>
+  </header>
+  <main>
+    <div class="cards"></div>
+  </main>
+  <footer>
+      <p class="foot">
+          <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
+          | &nbsp;
+          <a href="index" target="_blank">&copy; <span id='copyrightyear'></span> <!-- eg</a>  &nbsp; | &nbsp; --> </a>
+          <a href="https://dgtlman.github.io/wdd230/" target="_blank">eric<span class="bold">garofalo</span></a>  &nbsp; | <br> | &nbsp;
+          <span class="foot">last update:  &nbsp;  &nbsp; <span id="current-date" class="update"></span>  &nbsp; |</span>
+      </p>
+    <!-- javascript insert - dymanically adds date [format: weekday, month, #day, #year] of the last github update (id='current-date') -->
+</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/prophets.js"></script>
+  <script src="js/standard.js"></script>
+</body>
+
+</html>
