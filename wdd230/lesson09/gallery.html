@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>GEMi: Image Gallery</title>
+      <meta name="description" content="GEMi is a portal for cities in the southeastern Idaho area. This page showcases images for the GEMi site." />
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    </head>
+
+    <body>
+
+      <header>
+        <picture>
+          <img class="logo" src="images/logo.png" alt="GEMi logo" />
+        </picture>
+        <section class="headings">
+          <h1>GEMi: Greater Eastern Metro Idaho</h1>
+          <h2 class="motto">living the great wide open</h2>
+        </section>
+      </header>
+
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodasprings.html">Soda Springs</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+
+    <main>
+
+        <h3>GEMi: Weather Gallery</h3>
+        <div class="gallerygrid">
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/icylake.jpg" src="images/gallery/placeholder400.jpeg" alt="frozen lake with a mountain in the background"/>
+                <figcaption>The perfect day for ice fishing.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/avalanche.jpg" src="images/gallery/placeholder400.jpeg" alt="avalanche on snowy mountains"/>
+                <figcaption>Don't get caught in the avalanche.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/lightening.jpg" src="images/gallery/placeholder400.jpeg" alt="Lightening at Magic Kingdom with crowd"/>
+                <figcaption>Lightening stikes and delights.</figcaption>
+            </figure>
+
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/twister.jpg" src="images/gallery/placeholder400.jpeg" alt="Tornado coming through field"/>
+                <figcaption>This isn't Kansas anymore Dorothy.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/musicalrain.jpg" src="images/gallery/placeholder400.jpeg" alt="Wet street during rain at night"/>
+                <figcaption>We're singing in the rain.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/wave.jpg" src="images/gallery/placeholder400.jpeg" alt="large ocean waves crashing over ship" />
+                <figcaption>The navy grounded? We go out.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/fog.jpg" src="images/gallery/placeholder400.jpeg" alt="fog covered mountian and forest"/>
+                <figcaption>Frodo &amp; Sam on Misty Mountians.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/snow.jpg" src="images/gallery/placeholder400.jpeg" alt="Person holding umbrella during snowfall" />
+                <figcaption>Snow the day after tomorrow.</figcaption>
+            </figure>
+
+            <figure class="gallerybox">
+                <img data-src="images/gallery/hurricane.jpg" src="images/gallery/placeholder400.jpeg" alt="House and palm tree trying to survive a hurricane"/>
+                <figcaption>Hurricane hits south beach.</figcaption>
+            </figure>
+        </div>
+
+        <div class="contactBlock">
+            <img class="map" src="images/contact/prestonmapsmall.png" alt="small map of fish haven, idaho">
+            <div class="contactInfo">
+                <h4 class="spacer">GEMi: Main Campus | Glactic HQ</h4>
+                <div class="contactItem address">
+                    <img src="images/contact/location.png" alt="location marker">
+                    <p>1 HQ, Hot Lava Springs, ID 83246</p>
+                </div>
+
+                <div class="contactItem phone">
+                    <img src="images/contact/phone.png" alt="mobile phone icon">
+                    <p><a target="_blank" rel="noreferrer" href="https://youtu.be/MicECONdno0">208.867.5309</a></p>
+                </div>
+
+                <div class="contactItem email">
+                    <img src="images/contact/email.png" alt="email icon">
+                    <p><a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=oex82yk952c">waytogoidaho@gemi.link</a></p>
+                </div>
+
+                <div class="social">
+                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/contact/facebook.png" alt="facebook icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/contact/pinterest.png" alt= "pinterest icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/contact/twitter.png" alt="twitter icon"></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/contact/instagram.png" alt="instagram icon"></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+      <footer>
+            <p class="foot">| &nbsp;
+                <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
+                <a href="index" target="_blank">&copy; <span id='copyrightyear'></span> GEMi: Portal</a>  &nbsp; | &nbsp;
+                <a href="#" target="_blank">Attributes</a>  &nbsp; | &nbsp;
+                <a href="https://dgtlman.github.io/wdd230/" target="_blank">eric<span class="bold">garofalo</span></a>  &nbsp; | &nbsp;
+            </p>
+            <!-- javascript insert - dymanically adds date [format: weekday, month, #day, #year] of the last github update (id='current-date') -->
+            <p class="foot">|&nbsp; last update: &nbsp;<span id="current-date" class="update"></span> &nbsp;|</p>
+      </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/lazyload.js"></script>
+    </body>
+
+</html>
