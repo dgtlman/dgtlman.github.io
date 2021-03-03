@@ -38,7 +38,7 @@ h2 {
 
 .cards section {
   border: 1px solid var(--brown-color);
-  background-color: var(--gray-color);
+  background-color: var(--dark-25);
   padding: 20px;
 }
 
