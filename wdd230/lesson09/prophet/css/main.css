@@ -19,7 +19,7 @@ margin-bottom: 5px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  box-shadow: 0 0 30px var(--peach-50);
+  box-shadow: 0 0 30px var(--dark-75);
 }
 
 h1, h2 {
@@ -38,7 +38,7 @@ h2 {
 
 .cards section {
   border: 1px solid var(--brown-color);
-  background-color: var(--dark-75);
+  background-color: var(--peach-50);
   padding: 20px;
 }
 
