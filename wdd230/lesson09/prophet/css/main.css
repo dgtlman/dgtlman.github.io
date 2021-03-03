@@ -37,7 +37,7 @@ h2 {
 }
 
 .cards section {
-  border: 1px solid var(--peach-color);
+  border: 1px solid var(--dark-color);
   background-color: var(--dark-75);
   padding: 20px;
 }
@@ -46,7 +46,7 @@ h2 {
   object-fit: cover;
   height: 280px;
   width: 200px;
-  box-shadow: 0 5px 15px var(--dark-75);
+  box-shadow: 0 5px 15px var(--peach-50);
 }
 
 footer {
