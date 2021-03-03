@@ -37,8 +37,8 @@ h2 {
 }
 
 .cards section {
-  border: 1px solid var(--brown-color);
-  background-color: var(--peach-50);
+  border: 1px solid var(--peach-color);
+  background-color: var(--dark-50);
   padding: 20px;
 }
 
