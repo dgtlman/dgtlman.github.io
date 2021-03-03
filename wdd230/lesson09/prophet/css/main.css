@@ -40,7 +40,7 @@ h2 {
 }
 
 .cards section {
-  border: 1px solid var(--dark-color);
+  border: 2px solid var(--pink-color);
   background-color: var(--silver-color);
   padding: 10px 20px 20px;
 }
