@@ -208,6 +208,23 @@ h5 {
     font-style: italic;
 }
 
+
+/* start: paragraph style to deal with inline navigation */ 
+
+/*link and visted state */
+.inlineLink a, .inlineLink a:link, .inlineLink a:visited {
+    color: var(--pink-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* hover over link */
+.inlineLink a:hover {
+    color: var(--brown-color);
+}
+
+/* end: paragraph style to deal with inline navigation */ 
+
 /* hero div - container for all hero content - image and float */
 
 .heroBlock {
