@@ -213,7 +213,7 @@ h5 {
 
 /*link and visted state */
 .inlineLink a, .inlineLink a:link, .inlineLink a:visited {
-    color: var(--pink-color);
+    color: var(--darkpink-color);
     text-decoration: none;
     font-weight: 500;
 }
