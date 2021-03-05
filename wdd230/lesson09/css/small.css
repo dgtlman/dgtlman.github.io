@@ -220,7 +220,7 @@ h5 {
 
 /* hover over link */
 .inlineLink a:hover {
-    color: var(--brown-color);
+    color: var(--yellow-color);
 }
 
 /* end: paragraph style to deal with inline navigation */ 
