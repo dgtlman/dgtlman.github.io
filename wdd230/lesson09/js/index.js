@@ -52,7 +52,7 @@ fetch(requestURL)
       averageRainfallNum.textContent = specificTowns[i].averageRainfall + "\"";
       yearFoundedLabel.textContent = "Founded";
       currentPopulationLabel.textContent = "Population";
-      averageRainfallLabel.textContent = "Rain/yr";
+      averageRainfallLabel.textContent = "Rain / Year";
       photo.setAttribute('src', "images/" + specificTowns[i].photo);
       photo.setAttribute('alt', "The lovely town of " + specificTowns[i].name);
       card.appendChild(photo);
