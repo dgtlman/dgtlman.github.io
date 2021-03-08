@@ -154,20 +154,29 @@ footer a:active, footer a:focus {
 /* --- responsive styles > 550px --- */
 
 @media screen and (max-width: 550px) {
-	.eric {
+	.family {
 	  float: none;
-	  align-items: center;
+	  margin-left: auto;
+	  margin-left: auto;
 	  box-shadow: none;
-	  max-width: 250px;
+	  width: 75%;
+	}
+
+	h1, h2 {
+		text-align: center;
+		padding: 5px;
+	}
+
+	h1 {
+		font-size: 1.5em;
 	}
 
 	h2 {
 		font-size: 1em;
-		text-align: center;
-		padding: 5px;
+	}
 
 	main {
-		max-width: 475px;
+		/* max-width: 475px; */
 		padding: .85em;
 	}
 }
