@@ -72,12 +72,9 @@ header>h1, h4 {
 	padding: 0em;;
 }
 
-/*
-.left{
-	display: flex;
-	text-align: right;
+a {
+	text-decoration: none;
 }
-*/
 
 /* text styles */
 p, ul, li, script {
