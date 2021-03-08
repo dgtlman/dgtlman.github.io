@@ -18,7 +18,7 @@ color link - https://coolors.co/0e1c36-fffffc-#A27E8E-8c1c13
 	/* site colors: var(--color-name) */
 	--red-color: #8C1C13;
 	--blue-color: #0E1C36;
-	--gray-color: #A27E8E;
+	--gray-color: #717171;
 	--white-color: #FFFFFC;
 	--orange-color: #FFC07F;
 	/*--orange-color-old: #FF9B42;*/
@@ -83,6 +83,7 @@ header>h1, h4 {
 p, ul, li, script {
 	font-family: var(--paragraph-font);
 	color: var(--red-color);
+	font-weight: 700;
 	/*padding: 1em;*/
 }
 
@@ -93,18 +94,20 @@ ul, li {
 }
 
 /* unvisited link, visited link, selected link  */
-a:link, a:visited, a:active {
-  color: var(--red-color);
+a:link, a:visited {
+  color: var(--blue-color);
+  text-decoration: none;
+  font-weight: normal;
 }
 
 /* mouse over link */
 a:hover {
-  color: var(--blue-color);
+  color: var(--orange-color);
 }
 
 /* link clicked, link focused */
-a:hover {
-	color: var(--blue-color);
+a:active {
+	color: var(--red-color);
   }
 
 /* profile photo float right */
