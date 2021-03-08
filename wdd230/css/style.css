@@ -64,8 +64,8 @@ header {
 }
 
 footer {
-	font-size: .8em;
-	padding: .5em;
+	font-size: .9em;
+	padding: .25em;
 }
 
 header>h1, h4 {
@@ -132,6 +132,7 @@ main {
 .update {
 	text-align: center;
 	color: var(--orange-color);
+	font-weight: normal;
 }
 
 /* FOOTER ONLY: unvisited link, visited link, selected link  */
