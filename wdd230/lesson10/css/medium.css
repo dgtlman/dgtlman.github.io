@@ -52,6 +52,7 @@
     table th {
         background-color: var(--brown-50);
         color: var(--white-color);
+        font-family: var(--subhead-font);
     }
 
     table img {
