@@ -283,7 +283,7 @@ h5 {
 }
 
 .fiveday h4 {
-    margin: 40px;
+    margin: 15px 0 15px 35px;
     padding: 0 0 0 0;
 }
 
@@ -297,6 +297,12 @@ h5 {
 .starMovie img{
     width: 100%;
     box-shadow: 0 0 10px var(--dark-color);
+}
+
+.starMovie h4 {
+    /* text-align: justify; */
+    margin: 0 0 15px 5px;
+    padding: 0;
 }
 
 .map {
