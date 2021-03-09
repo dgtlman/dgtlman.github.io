@@ -2,15 +2,17 @@
 color link - https://coolors.co/0e1c36-fffffc-#A27E8E-8c1c13
 10/9/2020 @ 9:01pm*/
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inconsolata:wght@500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *:root {
 	--red-color: #8C1C13;
 	--blue-color: #0E1C36;
-	--gray-color: #A27E8E;
+	--gray-color: #717171;
 	--white-color: #FFFFFC;
-	--heading-font: 'Ubuntu Condensed', sans-serif;
-	--paragraph-font: 'Ubuntu Mono', monospace;
+	--orange-color: #FFC07F;
+	--heading-font: 'Roboto', sans-serif;
+	--paragraph-font: 'Fira Sans', sans-serif;
+	--course-font: 'Inconsolata', monospace;
 }
 
 
@@ -48,36 +50,41 @@ header>h1, h4 {
 
 p, ul, li, script {
 	font-family: var(--paragraph-font);
-	color: # var(--red-color);
-	/*padding: 1em;*/
+	color: var(--red-color);
+	font-weight: 500;
 }
 
 ul, li {
 	margin: 10px;
-	padding-left: 3em;
+	/* padding-left: 3em; */
 }
 
-/* unvisited link */
-a:link {
-  color: var(--gray-color)#8C1C13;
-  text-decoration: none;
+.indent {
+	padding-left: 45px;
+	font-size: 1em;
 }
 
-/* visited link */
-a:visited {
-  color: var(--gray-color)#8C1C13;
-  text-decoration: none;
+.course {
+	font-family: var(--course-font);
+	font-weight: 800;
+
 }
 
+/* unvisited link, visited link, selected link  */
+a:link, a:visited {
+	color: var(--blue-color);
+	text-decoration: none;
+	font-weight: 300;
+}
+  
 /* mouse over link */
 a:hover {
-  color: var(--blue-color);
+	color: var(--orange-color);
 }
 
-/* selected link */
+/* link clicked, link focused */
 a:active {
-  color: var(--gray-color);
-  text-decoration: none;
+	color: var(--red-color);
 }
 
 .bgcolor {
@@ -90,6 +97,8 @@ padding: .5em;
 
 .foot {
 	color: var(--blue-color);
+	font-size: 1.1em;
+	line-height: 2em;
 }
 
 footer {
@@ -98,4 +107,46 @@ footer {
 	background-color: var(--white-color)FFC;
 	font-size: .8em;
 	padding: .5em;
+}
+
+/* --- responsive styles > 550px --- */
+
+@media screen and (max-width: 550px) {
+	.family {
+	  float: none;
+	  margin-left: auto;
+	  margin-left: auto;
+	  box-shadow: none;
+	  width: 75%;
+	}
+
+	h1, h2 {
+		text-align: center;
+		padding: 5px;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1em;
+	}
+
+	p, ul, li, script {
+		font-size: .9em;
+	}
+
+	.indent {
+		font-size: .8em;
+	}
+
+	main {
+		/* max-width: 475px; */
+		padding: .85em;
+	}
+
+	.foot {
+		font-size: .9em;
+	}
 }
