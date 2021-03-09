@@ -50,7 +50,7 @@
     }
 
     table th {
-        background-color: var(--brown-75);
+        background-color: var(--dark-75);
         color: var(--true-white);
         font-family: var(--subhead-font);
     }
