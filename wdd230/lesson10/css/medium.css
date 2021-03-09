@@ -46,7 +46,13 @@
 
     .fiveday table {
         text-align: center;
-        border: 1px solid  var(--dark-color);
+        border: 1px solid  var(--brown-50);
+    }
+
+    .fivedayIcon {
+        background-color: var(--true-white);
+        color: var(--dark-75);
+        font-weight: 100;
     }
 
     table th {
@@ -60,12 +66,12 @@
     }
 
     table, th {
-        border: 1px solid var(--brown-color);
+        border: 1px solid var(--white-color);
         border-collapse: collapse;
     }
 
     table td {
-        border-right: 1px solid var(--dark-color);
+        border-right: 1px solid var(--brown-75);
     }
 
     table {
@@ -73,11 +79,6 @@
         margin-right: auto;
     }
 
-    .fivedayIcon {
-        background-color: var(--true-white);
-        color: var(--dark-75);
-        font-weight: 100;
-    }
 
     .starMovie {
         max-width: 960px;
