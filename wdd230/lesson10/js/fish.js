@@ -41,7 +41,7 @@ fetch(forecastURL)
   .then((response) => response.json())
   .then((forecastObject) => {
     var forecast = forecastObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     for (let day = 0; day < forecast.length; day++) {
       const d = new Date(forecast[day].dt_txt);
       const imagesrc = 'https://openweathermap.org/img/wn/' + forecast[day].weather[0].icon + '@2x.png';
