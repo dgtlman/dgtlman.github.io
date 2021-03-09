@@ -75,7 +75,8 @@
 
     .fivedayIcon {
         background-color: var(--true-white);
-        color: var(--pink-color);
+        color: var(--dark-75);
+        font-weight: 100;
     }
 
     .starMovie {
