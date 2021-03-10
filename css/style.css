@@ -54,9 +54,12 @@ p, ul, li, script {
 	font-weight: 500;
 }
 
-ul, li {
+.gap {
+	padding-bottom: 1em;
+}
+
+li {
 	margin: 10px;
-	/* padding-left: 3em; */
 }
 
 .indent {
@@ -139,6 +142,10 @@ footer {
 
 	.indent {
 		font-size: .8em;
+	}
+
+	.gap {
+		padding-bottom: .8em;
 	}
 
 	main {
