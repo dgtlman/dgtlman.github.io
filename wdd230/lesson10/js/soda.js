@@ -18,7 +18,7 @@ window.onload = function thursdayBanner() {
   // soda springs weather - pulls weather data from open weather map   <--- currently preston
   // this also adds real windchill info based on temp and wind speed
   
-  const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=f59f532633b10d55bbf07be7f8538bff&units=imperial';
+  const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=4a75851e61f117f8c13325e07c980e53&units=imperial';
   fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -36,7 +36,7 @@ window.onload = function thursdayBanner() {
       document.getElementById('speed').innerHTML = Math.round(s) + " mph";
   
     });
-  const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=f59f532633b10d55bbf07be7f8538bff';
+  const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=4a75851e61f117f8c13325e07c980e53';
   fetch(forecastURL)
     .then((response) => response.json())
     .then((forecastObject) => {
