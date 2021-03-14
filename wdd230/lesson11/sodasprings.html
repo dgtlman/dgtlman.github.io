@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>GEMi: Soda Springs, Idaho local info</title>
+      <meta name="description" content="GEMi is a portal for southeastern Idaho. This page provides weather and city information for the city of Soda Springs." />
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/small.css">
+      <link rel="stylesheet" href="css/medium.css">
+      <link rel="stylesheet" href="css/large.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    </head>
+
+    <body>
+
+        <!-- this is a javascript dynamically added banner. If it is wednesday present soda mixer -->
+        <div class="sodaFloat">Thursday is the town soda mixer and ice cream catch!<br>7:30pm every Thursday night at the Bubbling Springs Lodge.</div>
+        <!-- end banner -->
+
+      <header>
+        <picture>
+          <img class="logo" src="images/logo.png" alt="GEMi logo" />
+        </picture>
+        <section class="headings">
+          <h1>GEMi: Greater Eastern Metro Idaho</h1>
+          <h2 class="motto">living the great wide open</h2>
+        </section>
+      </header>
+
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+
+    <main>
+
+    <h3>Soda Springs, Idaho</h3>
+    <div class="heroBlock">
+       <picture>
+        <source srcset="images/banner/heroimage-small2@2x.jpg" media="(max-width:320px)"/>
+        <source srcset="images/banner/heroimage-medium@2x.jpg" media="(max-width:480px)"/>
+        <source srcset="images/banner/heroimage-large@2x.jpg" media="(max-width:1000px)"/>
+        <img class="hero-image" src="images/banner/heroimage-xlarge@2x.jpg" alt="picture of sky, a mountain, and valley"/>
+      </picture>
+
+      <section class="heroWeather">
+        <h4>Weather Summary</h4>
+        <p>Currently: &nbsp;<span id="weather" class="hwstatus"></span></p>
+        <p>Current Temp: &nbsp;<span id="current-temp" class="hwstatus"></span></p>
+        <p>Wind Chill: &nbsp;<span id="output" class="hwstatus"></span></p>
+        <p>Humidity: &nbsp;<span id="humidity" class="hwstatus"></span></p>
+        <p>Wind Speed: &nbsp;<span id="speed" class="hwstatus"></span></p>
+      </section>
+
+  </div>
+
+  <div class="fiveday">
+    <h4>Five Day Forecast</h4>
+      <table>
+        <tr>
+          <th><span id="day01" class="fiveDayName"></span></th> <!-- fix -->
+          <th><span id="day02" class="fiveDayName"></span></th> <!-- fix -->
+          <th><span id="day03" class="fiveDayName"></span></th> <!-- fix -->
+          <th><span id="day04" class="fiveDayName"></span></th> <!-- fix -->
+          <th><span id="day05" class="fiveDayName"></span></th> <!-- fix -->
+        </tr>
+        <tr class="fivedayIcon">
+          <td><img id="icon01" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"/></td> <!-- fix -->
+          <td><img id="icon02" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"/></td> <!-- fix -->
+          <td><img id="icon03" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"></td> <!-- fix -->
+          <td><img id="icon04" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"></td> <!-- fix -->
+          <td><img id="icon05" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true" alt="unknown"></td> <!-- fix -->
+        </tr>
+        <tr class="fivedayIcon">
+          <td><span id="forecast01"></span>&#8457;</td> <!-- fix -->
+          <td><span id="forecast02"></span>&#8457;</td> <!-- fix -->
+          <td><span id="forecast03"></span>&#8457;</td> <!-- fix -->
+          <td><span id="forecast04"></span>&#8457;</td> <!-- fix -->
+          <td><span id="forecast05"></span>&#8457;</td> <!-- fix -->
+        </tr>
+      </table>
+    </div>
+    
+    <section class="starMovie clearfix">
+      <img src="images/starMovie.jpg" alt="view of mountian with snow at dusk">
+      <h4>Snow Movies after Dusk</h4>
+      <p><span class="iBold">the movie went something like this:</span><br>In my experience, there is no such thing 
+        as luck. A tremor in the Force. The last time I felt it was in the presence of my old master. Don't 
+        underestimate the Force. Kid, I've flown from one side of this galaxy to the other. I've seen a lot of 
+        strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling 
+        everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks 
+        and nonsense. What?! What good is a reward if you ain't around to use it? Besides, attacking that battle
+        station ain't my idea of courage. It's more like… suicide. Red Five standing by. You're all clear, kid. 
+        Let's blow this thing and go home!</p>
+    </section>
+    
+    <div class="contactBlock">
+      <img class="map" src="images/contact/sodamapsmall.png" alt="small map of soda springs">
+        <div class="contactInfo">
+          <h4>GEMi: Soda Springs, Idaho Portal</h4>
+          <div class="contactItem address">
+          <img src="images/contact/location.png" alt="location marker">
+          <p>260 3rd St, Soda Springs, ID 83276</p>
+        </div>
+
+      <div class="contactItem phone">
+        <img src="images/contact/phone.png" alt="mobile phone icon">
+        <p><a target="_blank" rel="noreferrer" href="https://youtu.be/MicECONdno0">208.867.5309</a></p>
+      </div>
+
+      <div class="contactItem email">
+        <img src="images/contact/email.png" alt="email icon">
+        <p><a target="_blank" rel="noreferrer" href="https://youtu.be/X_zQUZ3uqdE">sodaSprings@gemi.link</a></p>
+      </div>
+
+      <div class="social">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/contact/facebook.png" alt="facebook icon"></a>
+        <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/contact/pinterest.png" alt= "pinterest icon"></a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/contact/twitter.png" alt="twitter icon"></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/contact/instagram.png" alt="instagram icon"></a>
+      </div>
+    </div>
+    </div>
+  </main>
+
+      <footer>
+            <p class="foot">| &nbsp;
+                <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
+                <a href="index" target="_blank">&copy; <span id='copyrightyear'></span> GEMi: Portal</a>  &nbsp; | &nbsp;
+                <a href="https://openweathermap.org/" target="_blank" rel="noreferrer">OpenWeatherMap API</a>  &nbsp; | &nbsp;
+                <a href="https://dgtlman.github.io/wdd230/" target="_blank" rel="noreferrer">eric<span class="bold">garofalo</span></a>  &nbsp; | &nbsp;
+            </p>
+            <!-- javascript insert - dymanically adds date [format: weekday, month, #day, #year] of the last github update (id='current-date') -->
+            <p class="foot">|&nbsp; last update: &nbsp;<span id="current-date" class="update"></span> &nbsp;|</p>
+            <br>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/soda.js"></script>
+    </body>
+
+</html>

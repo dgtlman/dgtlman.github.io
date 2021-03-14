@@ -1,0 +1,614 @@
+/* all variables are defined in the global.css file */
+@import "global.css";
+
+
+
+/* body page styles */
+body {
+    color: var(--dark-color);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* header styles */
+header {
+    background-color: var(--brown-color);
+    color: var(--white-color);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding: 5px 0;
+    display: flex;
+}
+
+/* main styles */
+main {
+    font-family: var(--main-font);
+    /* background-color: var(--white-color); */
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* footer styles */
+footer {
+    background-color: var(--brown-color);
+    font-family: var(--main-font);
+    color: var(--white-color);
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* motto text styles */
+.motto {
+    font-family: var(--subhead-font);
+    color: var(--white-color);
+    text-align: right;
+    padding: 0;
+}
+
+/* main nav styles - includes responsive hamburger */
+
+/* main nav text styles */
+nav {
+    background-color: var(--dark-color);
+    font-family: var(--main-font)
+}
+
+/* nav hamburger style */
+nav button {
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+}
+
+/* nav ul style */
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* nav link style */
+nav ul li a {
+    border-top: 1px solid var(--dark-color);
+    color: var(--white-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500; 
+    padding: .8rem 2%;
+    font-size: 1rem;
+    display: block;
+}
+
+/* nav link active page style */
+nav ul li.active a {
+    background-color: var(--brown-color);
+    color: var(--white-color);
+}
+
+/* nav hover over link style */
+nav ul li a:hover {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+}
+
+/* nav: used for hamburger style, hides links inside icon until clicked on */
+nav ul.hide {
+    display: none;
+}
+
+/* h1-h4 heading styles */
+h1 {
+    font-family: var(--heading-font);
+    font-weight: normal;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--subhead-font);
+    color: var(--pink-color);
+    font-size: 1.25rem;
+    padding-left: 10px;
+    text-align: left;
+}
+
+h4 {
+    font-family: var(--subhead-font);
+    color: var(--pink-color);
+    font-size: 1rem;
+    padding-left: 10px;
+    text-align: left;
+}
+
+h5 {
+    font-family: var(--subhead-font);
+    color: var(--pink-color);
+    font-size: .9rem;
+    padding-left: 10px;
+    text-align: left;
+}
+
+/* used to align GEMi site H1 text */
+.headings {
+    flex-direction: column;
+    display: flex;
+}
+
+/* style the place holder boxes */
+.placeholder {
+    border: 1px dashed var(--dark-color);
+    background-color: var(--peach-color);
+    color: var(--dark-color);
+    margin: 10px auto;
+    display: block;
+    padding: 1rem;
+}
+
+/* span style the place holder boxes with pink text */
+.phcolor {
+    color: var(--brown-color);
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* logo image style */
+.logo {
+    margin-right: 10px;
+    height: auto;
+    width: 60px;
+}
+
+/* clearsfix for nav */
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.iBold {
+    font-style: italic;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.thin {
+    font-family: var(--subhead-font);
+}
+
+.spacer {
+    line-height: 3;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.icaps {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
+/* start: paragraph style to deal with inline navigation */ 
+
+/*link and visted state */
+.inlineLink a, .inlineLink a:link, .inlineLink a:visited {
+    color: var(--purple-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* hover over link */
+.inlineLink a:hover {
+    color: var(--yellow-color);
+}
+
+/* end: paragraph style to deal with inline navigation */ 
+
+/* hero div - container for all hero content - image and float */
+
+.heroBlock {
+    position: relative;
+}
+
+/* hero div - for image and float */
+.hero {
+    margin: 10px auto;
+    background-color: var(--peach-color);
+    border: 1px solid var(--dark-color);
+    width: 960px;
+    height: 300px;
+}
+
+/* style for hero image */
+.hero-image {
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+}
+
+/* hero div - for image and float */
+.heroWeather {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: var(--dark-75);
+    border: 1px solid var(--dark-color);
+    padding: .5rem 1rem;
+    box-shadow: 0 0 30px var(--dark-color);
+    color: var(--white-color);
+    padding-bottom: 0;
+    font-weight: 300;
+}
+
+.heroWeather p, .heroWeather h4 {
+    margin: 1.5px;
+}
+
+.heroWeather h4  {
+    color: var(--yellow-color);
+}
+
+#weather {
+    text-transform: capitalize;
+}
+
+.hwstatus{
+    color: var(--lightpink-color);
+    font-weight: 100;
+}
+
+.fiveday {
+    display: none;
+}
+
+.fiveday h4 {
+    margin: 15px 0 15px 35px;
+    padding: 0 0 0 0;
+}
+
+.starMovie {
+    /* text-align: justify; */
+    background-color: var(--silver-color);
+    margin: 5px;
+    padding: 20px;
+}
+
+.starMovie img{
+    width: 100%;
+    box-shadow: 0 0 10px var(--dark-color);
+}
+
+.starMovie h4 {
+    /* text-align: justify; */
+    margin: 0 0 15px 5px;
+    padding: 0;
+}
+
+.map {
+    display: none;
+}
+
+.pancakeBanner, .fishFry, .sodaFloat, .sabbath {
+    background-color: var(--brown-color);
+    font-family: var(--subhead-font);
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    display:none;
+}
+
+.contactBlock {
+    background-color: var(--silver-color);
+    color: var(--dark-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    padding-top: 20px; 
+}
+
+.contactInfo {
+    display: grid;
+}
+
+.contactItem {
+    display: grid;
+    grid-template-columns: 32px 1fr; 
+    align-items: center;
+}
+
+.contactInfo h4, .contactItem, .social{
+    grid-column: 2/3;
+}
+
+.contactItem img{
+    width: 24px;
+}
+
+.contactItem p {
+    margin: 5px;
+}
+
+.contactInfo h4 {
+    color: var(--pink-color);
+    text-align: left;
+    margin: -10px;
+}
+
+.social img {
+    margin: 15px 1px 10px 0;
+    width: 30px;
+}
+
+/* footer box - main text */
+.foot {
+    padding: 5px 0 0 0;
+    text-align: center;
+    margin: 0px;
+}
+
+/* footer box - styles date text*/
+.update {
+    color: var(--slightpink-color);
+    font-weight: 500;
+    padding: 0 0 5px 0;
+    text-align: center;
+    margin: 0 0 0 0;
+
+}
+
+/* CONTACTBLOCK ONLY: unvisited link, visited link, selected link  */
+.contactBlock a, .contactBlock a:link, .contactBlock a:visited {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+/* FOOTER ONLY: mouse over link */
+.contactBlock a:hover {
+    color: var(--pink-color);
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    
+}
+
+/* FOOTER ONLY: link clicked, link focused */
+.contactBlock a:active, footer a:focus {
+    color: var(--yellow-color);
+}
+
+
+/* FOOTER ONLY: unvisited link, visited link, selected link  */
+footer a, footer a:link, footer a:visited {
+    color: var(--white-color);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+/* FOOTER ONLY: mouse over link */
+footer a:hover {
+    color: var(--yellow-color);
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+}
+
+/* FOOTER ONLY: link clicked, link focused */
+footer a:active, footer a:focus {
+    color: var(--peach-color);
+    /* text-decoration: none; */
+}
+
+/* ------------------------ */
+/* ------ INDEX PAGE ------ */
+
+.townStats {
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+}
+  
+  .townStats div {
+    width: 100px;
+    text-align: center;
+}
+  
+  .townStats dt {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+  
+  .townStats dd {
+    display: inline;
+    margin: 0;
+    font-size: 12px;
+}
+  
+  .cards section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 15% 20% 15%;
+    background-color: var(--white-color);
+    padding: 20px;
+    width: 343px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px var(--dark-75);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0 0 10px;
+    align-items: center;
+    justify-items: center;
+}
+  
+  .cards img {
+    object-fit: cover;
+    width: 343px;
+    height: 200px;
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+}
+  
+  .cards p {
+    text-align: center;
+    height: 32px;
+}
+  
+  .cards h4 {
+    margin: 20px 0 0;
+}
+
+
+/* ------------------------ */
+/* ----- GALLERY PAGE ----- */
+
+.gallerygrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    /* justify-items: center; */
+    gap: 20px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: var(--brown-color);
+}
+
+figure img {
+    width: 100%;
+}
+
+/* ----------------------------- */
+/* ----- STORM CENTER FORM ----- */
+
+figure img { 
+    width: 100%;
+}
+
+form fieldset {
+    margin: 3rem 0;
+    border: 1px solid transparent;
+    background-color: var(--brown-30);
+    border-radius: 10px;
+}
+
+form legend {
+    color: var(--brown-color);
+    position: relative;
+    top: -1rem;
+    font-weight: bold;
+}
+
+form label.top, form div {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select, form label.top textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid var(--pink-color);
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--brown-color);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+form label.sbs {
+  display: block;
+  padding: .1rem 0;
+  color: var(--dark-75);
+}
+
+form input.submitBtn {
+  display: block;
+  border: none;
+  background-color: var(--brown-color);
+  color: var(--white-color);
+  border-radius: .5rem;
+  padding: .75rem 1.5rem;
+  width: 200px;
+  margin: 0 auto;
+}
+
+form input.submitBtn:hover {
+    background-color: var(--pink-color);
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+}
+
+form label.top input:required{
+    border-left: var(--pink-color) solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: 6px solid var(--brown-75);
+}
+
+form label.stormrating input {
+    display: block;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+.stormCenter {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.stormCenter h2 {
+    margin: 40px 0 0 0 ;
+    padding: 0;
+}
+
+ .stormCenter h3, .thanks h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.thankYou img {
+    display: block;
+    width: 48px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
