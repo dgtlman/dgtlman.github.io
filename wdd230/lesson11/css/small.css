@@ -283,6 +283,7 @@ h5 {
 }
 
 .fiveday h4 {
+    color: var(--dpink-color);
     margin: 15px 0 15px 35px;
     padding: 0 0 0 0;
 }
@@ -299,6 +300,7 @@ h5 {
     box-shadow: 0 0 10px var(--dark-color);
 }
 
+/* h4 contrast issue */
 .starMovie h4 {
     /* text-align: justify; */
     margin: 0 0 15px 5px;
@@ -351,7 +353,7 @@ h5 {
 }
 
 .contactInfo h4 {
-    color: var(--pink-color);
+    color: var(--dpink-color);
     text-align: left;
     margin: -10px;
 }
