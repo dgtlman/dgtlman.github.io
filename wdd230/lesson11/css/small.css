@@ -293,10 +293,19 @@ h5 {
 }
 
 .town-events ul {
-    text-align: center;
-    margin: 0;
-    list-style: none;
-    padding: 0;
+    /* text-align: center; */
+    margin: 5px 0 10px 20px;
+    list-style-type: square;
+    /*  list-style: none; */
+    padding: 5px 0 10px 15px;
+    font-size: 1em;
+    font-weight: 100;
+    color: var(--brown-75);
+}
+
+.town-events h4 {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .starMovie {
@@ -311,7 +320,6 @@ h5 {
     box-shadow: 0 0 10px var(--dark-color);
 }
 
-/* h4 contrast issue */
 .starMovie h4 {
     /* text-align: justify; */
     margin: 0 0 15px 5px;
