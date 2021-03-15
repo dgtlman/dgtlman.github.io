@@ -1,3 +1,5 @@
+//lazy load script for the gallery page
+
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 const loadImages = (image) => {
   image.setAttribute('src', image.getAttribute('data-src'));

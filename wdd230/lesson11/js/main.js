@@ -1,10 +1,11 @@
-//main script
+//main script - things that apply to all pages
 
 // keeps the copywrite as current year in footer
 window.addEventListener('load', (event)=>{
     const cry = document.querySelector('#copyrightyear');
     cry.textContent = new Date().getFullYear();
   })
+
 
   // toggles hamburger menu to show/hide based on display size
   function toggleMenu() {

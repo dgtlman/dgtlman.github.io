@@ -288,6 +288,17 @@ h5 {
     padding: 0 0 0 0;
 }
 
+.town-events {
+    margin: 48px 16px;
+}
+
+.town-events ul {
+    text-align: center;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
 .starMovie {
     /* text-align: justify; */
     background-color: var(--silver-color);

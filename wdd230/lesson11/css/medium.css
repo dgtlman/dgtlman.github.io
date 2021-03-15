@@ -79,6 +79,14 @@
         margin-right: auto;
     }
 
+    .town-events h3, .fiveday h3{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    .town-events li{
+        font-size: 1.25em;
+    }
 
     .starMovie {
         max-width: 960px;

@@ -14,7 +14,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     </head>
 
-    <body>
+    <body id="preston">
 
       <!-- this is a javascript dynamically added banner. If it is friday, put this on the site. -->
       <div class="pancakeBanner">Remember tomorrow is pancake day! Bring your own butter!<br>9:00am every Saturday at the Preston City Park Pavilion.</div>
@@ -92,6 +92,10 @@
       </table>
     </div>
 
+    <section class="town-events">
+      <h4>Preston Town Events:</h4>
+    </section>
+
     <section class="starMovie clearfix">
       <img src="images/starMovie.jpg" alt="view of mountian with snow at dusk">
       <h4>Snow Movies after Dusk</h4>
@@ -142,13 +146,14 @@
                 <a href="https://dgtlman.github.io/wdd230/" target="_blank" rel="noreferrer">eric<span class="bold">garofalo</span></a>  &nbsp; | &nbsp;
             </p>
             <!-- javascript insert - dymanically adds date [format: weekday, month, #day, #year] of the last github update (id='current-date') -->
-            <p class="foot">|&nbsp; last updated: &nbsp;<span id="current-date" class="update"></span> &nbsp;|</p>
+            <p class="foot">|&nbsp; last update: &nbsp;<span id="current-date" class="update"></span> &nbsp;|</p>
             <br>
         </footer>
 
         <!-- <script src="js/site.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/towns.js"></script>
         <script src="js/preston.js"></script>
     </body>
 
