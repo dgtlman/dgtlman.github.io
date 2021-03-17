@@ -310,7 +310,7 @@ h5 {
 
 .town-events ul{
     list-style: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     li{
       position:relative;
       padding:10px 0;
