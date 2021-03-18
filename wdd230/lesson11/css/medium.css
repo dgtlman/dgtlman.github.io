@@ -153,6 +153,10 @@
         border-radius: 0 8px 8px 0;
     }
 
+    .stormForm {
+        display: inline-flexbox;
+    }
+
     .townStats {
         grid-column: 1;
         grid-row: 3;

@@ -171,7 +171,7 @@ h5 {
 
 /* logo image style */
 .logo {
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
     width: 60px;
     height: auto;
 }
@@ -214,6 +214,14 @@ h5 {
 .icaps {
     text-transform: uppercase;
     font-style: italic;
+}
+
+/* sudo h4 */
+.pink4 {
+    color: var(--pink-color);
+    font-size: 1rem;
+    padding-left: 10px;
+    text-align: right; 
 }
 
 
@@ -614,8 +622,8 @@ form {
 
 .stormCenter {
     display: block;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .stormCenter h2 {
