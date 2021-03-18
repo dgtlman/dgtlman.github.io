@@ -29,7 +29,7 @@
     }
 
     .logo {
-        width: 160px;
+        width: 5em;
     }
 
     .hero-image {
@@ -119,8 +119,7 @@
     }
 
     .pancakeBanner, .fishFry, .sodaFloat, .sabbath {
-        padding: 10px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: 1.25;
     }
 

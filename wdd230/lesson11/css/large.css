@@ -22,8 +22,12 @@
         padding: .6rem 1rem;
     }
 
+    .pancakeBanner, .fishFry, .sodaFloat, .sabbath {
+        font-size: 1.2rem;
+        line-height: 1.5;
+
     .logo {
-        width: 10rem;
+        width: 6rem;
         margin-bottom: 0;
     }
 
@@ -64,8 +68,8 @@
         grid-template-rows: 50% 15% 20% 15%;
         width: 300px;
         padding: 0 0 10px;
-        align-items: center;
-        justify-items: center;
+        /* align-items: center;
+        justify-items: center;  */
     }
 
     .cards img {
@@ -89,13 +93,11 @@
     .cards section:nth-child(even) p,
     .cards section:nth-child(even) .townStats {
         grid-column: 1;
-
     }
 
     .townStats {
         grid-row: 4;
         width: 90%;
-
     }
 
     .cards p {

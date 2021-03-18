@@ -148,6 +148,8 @@ h5 {
 .headings {
     flex-direction: column;
     display: flex;
+    margin: 10px 0;
+
 }
 
 /* style the place holder boxes */
@@ -170,7 +172,7 @@ h5 {
 /* logo image style */
 .logo {
     margin-right: 10px;
-    height: auto;
+    height: auto%;
     width: 60px;
 }
 
@@ -295,13 +297,13 @@ h5 {
 }
 
 .town-events {
-    margin: 48px 16px;
+    margin: 36px 16px 24px 16px;
 }
 
 .town-events ul {
-    margin: 5px 0 10px 20px;
+    margin: 5px 0 5px 20px;
     list-style-type: square;
-    padding: 5px 0 10px 15px;
+    padding: 5px 0 5px 15px;
     font-size: 1em;
     font-weight: 100;
     color: var(--brown-color);
@@ -339,8 +341,9 @@ h5 {
     font-family: var(--subhead-font);
     color: var(--white-color);
     text-align: center;
-    font-weight: 500;
-    padding: 10px;
+    font-size: .9em;
+    font-weight: 300;
+    padding: 20px 0;
     display:none;
 }
 
@@ -412,10 +415,6 @@ h5 {
 /* FOOTER ONLY: mouse over link */
 .contactBlock a:hover {
     color: var(--pink-color);
-    -webkit-transition: background-color 1s;
-    -moz-transition: background-color 1s;
-    -o-transition: background-color 1s;
-    -ms-transition: background-color 1s;
     
 }
 
