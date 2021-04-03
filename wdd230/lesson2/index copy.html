@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Midlothian Virginia Chamber of Commerce</title>
+  <meta name="description" content="The Midlothian Virginia Chamber of Commerce serves local businesses and the community of the southside of Richmond Virginia" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<!--  BODY -->
+<body>
+  <!-- WEATHER ALERT -->
+  <div class="weatheralert">
+    <span id="alert"></span>
+    <span id="alertdesc"></span>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <img class="logo" src="images/logo.png" alt="stylized word scoots">
+    <p class="subhead">Richmond. VA Chamber of Commerce</p>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- NAV -->
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">home</a></li>
+        <li><a href="midlothian.html">midlothian</a></li>
+        <li><a href="join.html">join</a></li>
+        <li><a href="directory.html">directory</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="herodiv">
+      <picture>
+        <source srcset="images/index/rva-small.jpg" media="(max-width:600px)" />
+        <source srcset="images/index/rva-medium.jpg" media="(max-width:1024px)" />
+        <img class="hero-ph" src="images/index/rva-large.jpg" alt="2 guys standing by a jeep" />
+      </picture>
+      <a class="button calltoaction" href="join.html">Book Now</a>
+    </div>
+    
+    <!-- ABOUT CHAMBER (3) BOXES -->
+    <h1>About the Chamber of Commerce</h1>
+    <section class="aboutChamber">
+      <div class="chamber">
+        <picture>
+          <source srcset="images/index/goals-480.jpg" media="(max-width:600px)" />
+          <source srcset="images/index/goals-640.jpg" media="(max-width:1024px)" />
+          <img src="images/index/goals-800.jpg" alt="light blue one person scooter" />
+        </picture>
+        <div class="info">
+          <h2 class="emphRed">Goals</h2>
+          <p>We exsist to help your business grow and thrive. Our team of officials and mentors can assist you to make good 
+            business decisions, provide targeted advertisement oppertunities and link you with related businesses. 
+          </p>
+        </div>
+      </div>
+      <div class="chamber">
+        <picture>
+          <source srcset="images/index/purpose-480.jpg" media="(max-width:600px)" />
+          <source srcset="images/index/purpose-640.jpg" media="(max-width:1024px)" />
+          <img src="images/index/purpose-800.jpg" alt="green 4 seater ATV" />
+        </picture>
+        <div class="info">
+          <h2 class="emphRed">Purpose</h2>
+          <p>Our greatest benifits is to help influence business, commercial interests, and help prevent laws that may impede
+            the community’s business interests. We are advocates of the business and social community at large.</p>
+        </div>
+      </div>
+      <div class="chamber">
+        <picture>
+          <source srcset="images/index/events-480.jpg" media="(max-width:600px)" />
+          <source srcset="images/index/events-640.jpg" media="(max-width:1024px)" />
+          <img src="images/index/events-800.jpg" alt="white four door jeep with the roof off" />
+        </picture>
+        <div class="info">
+          <h2 class="emphRed">Events</h2>
+          <p>March 31st - Event name and time.</p>
+          <p>April 4th- Event name and time.</p>
+          <p>April 15th - Event name and time.</p>
+          <p>March 31st - Event name and time.</p>
+          <p>April 4th- Event name and time.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- WEATHER -->
+    <h2>Weather</h2>
+    <section class="weather">
+      <div class="weathersummary">
+        <h2>Today's Weather</h2>
+        <img id="icon" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+          alt="unknown">
+        <p>Currently: <span id="weather"></span> </p>
+        <p>Current Temp: <span id="current-temp"></span></p>
+        <p>Feels Like: <span id="feels_like"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+      </div>
+      <div class="threeday">
+        <ul>
+          <li><span id="dayofweek1"></span></li>
+          <li class="icon"><img id="icon1"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              alt="unknown" /></li>
+          <li><span id="forecast1"></span>&#8457;</li>
+        </ul>
+        <ul>
+          <li><span id="dayofweek2"></span></li>
+          <li class="icon"><img id="icon2"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              alt="unknown"></li>
+          <li><span id="forecast2"></span>&#8457;</li>
+        </ul>
+        <ul>
+          <li><span id="dayofweek3"></span></li>
+          <li class="icon"><img id="icon3"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              alt="unknown"></li>
+          <li><span id="forecast3"></span>&#8457;</li>
+        </ul>
+      </div>
+    </section>
+  
+    <!-- ADVERTISEMENT -->
+    <h1>Rentals</h1>
+    <section class="rentalList">
+      <div class="rentals">
+        <picture>
+          <source srcset="images/blue-488x350.jpg" media="(max-width:600px)" />
+          <source srcset="images/blue-640x520.jpg" media="(max-width:1024px)" />
+          <img src="images/blue-800x600.jpg" alt="light blue one person scooter" />
+        </picture>
+        <div class="info">
+          <h2 class="emphOrange">Scooters</h2>
+          <p>Three different types of scooters</p>
+          <p>Our scooters can seat 1 to 2 people</p>
+          <a href="rentals.html" class="button">Learn More</a>
+        </div>
+      </div>
+      <div class="rentals">
+        <picture>
+          <source srcset="images/pioneeratv-small.jpg" media="(max-width:600px)" />
+          <source srcset="images/pioneeratv-medium.jpg" media="(max-width:1024px)" />
+          <img src="images/pioneeratv-large.jpg" alt="green 4 seater ATV" />
+        </picture>
+        <div class="info">
+          <h2 class="emphOrange">ATVs</h2>
+          <p>For your off-road adventures</p>
+          <p>Seats up to 4</p>
+          <a href="rentals.html" class="button">Learn More</a>
+        </div>
+      </div>
+      <div class="rentals">
+        <picture>
+          <source srcset="images/4doorjeep488x350.jpg" media="(max-width:600px)" />
+          <source srcset="images/4doorjeep640x520.jpg" media="(max-width:1024px)" />
+          <img src="images/4doorjeep800x600.jpg" alt="white four door jeep with the roof off" />
+        </picture>
+        <div class="info">
+          <h2 class="emphOrange">Jeeps</h2>
+          <p>Two or Four Door jeeps</p>
+          <p>Seats 4 or 5 people</p>
+          <a href="rentals.html" class="button">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <!-- CONTACT -->
+    <h2 class="cursive">Scoots</h2>
+    <div class="contact">
+      <div class="contact1">
+        <h3>Playa del Carmen Location</h3>
+        <div class="contactItem address">
+          <img src="images/location32.png" alt="location marker" />
+          <p>Av. Rafael E. Melgar, Centro, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+        </div>
+        <div class="contactItem phone">
+          <img src="images/phone32.png" alt="mobile phone icon" />
+          <p>+52 987 878 4391</p>
+        </div>
+      </div>
+      <div class="contact1">
+        <h3>Puerta Maya Location</h3>
+        <div class="contactItem address">
+          <img src="images/location32.png" alt="location marker" />
+          <p>Carretera Costera Sur, 77600 <br>San Miguel de Cozumel, Q.R., Mexico
+        </div>
+        <div class="contactItem phone">
+          <img src="images/phone32.png" alt="mobile phone icon" />
+          <p>+52 987 869 1984</p>
+        </div>
+      </div>
+      <div class="contactItem email">
+        <img src="images/email32.png" alt="email icon" />
+        <p>miguel@scootscozumel.com</p>
+      </div>
+      <div class="social">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/facebook32.png" alt="facebook icon" /></a>
+        <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/pinterest32.png" alt="pinterest icon" /></a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/twitter32.png" alt="twitter icon" /></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/instagram32.png" alt="instagram icon" /></a>
+      </div>
+    </div>
+    <p>
+      &copy;<span id="current-date"></span> Eric Garofalo &mdash; 
+      <a class="attribute" href="attributes.html"> Attributions</a>
+    </p>
+    <p>
+      <small>Last Updated:<span id="last-updated"></span></small>
+    </p>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>

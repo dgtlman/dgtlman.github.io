@@ -1,0 +1,34 @@
+/* THIS FILE IS A LIST OF GLOBAL SITE PERAMETERS
+ * anthing added to this style sheet will be imported
+ * on the small, medium and large  style pages */
+
+/* google font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Recursive:wght@300;400;500;600;700;900&display=swap');
+/* varibales for font and colors
+ * coolors link - https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7-fdf8ec
+ */
+
+:root {
+	/* site colors: var(--color-name) */
+/* CSS HEX */
+        --dark-color: #003049ff;
+        --blue-color: #0077b8ff;
+        --sky-color: #33B8FF;
+        --red-color: #d62828ff;
+        --orange-color: #f77f00ff;
+        --yellow-color: #fcbf49ff;
+        --tan-color: #eae2b7ff;
+        --cream-color: #fdf8ecff;
+        --gray-color: #e5e5e5;
+        --white-color: #ffffff;
+
+  /* site transparent colors: var(--color-##) */
+        --shadow-50: rgba(2, 48, 71, 0.5);
+        --shadow-70: rgba(175, 175, 175, 0.7);
+
+  /* site fonts var(--style-font) */
+        --heading-font: 'Recursive', sans-serif;;
+        --main-font: 'Oxygen', sans-serif;
+
+}

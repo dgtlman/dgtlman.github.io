@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Midlothian Virginia Chamber of Commerce</title>
+  <meta name="description" content="The Midlothian Virginia Chamber of Commerce serves local businesses and the community of the southside of Richmond Virginia" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="images/icons/logo.png" alt="logo for Richmond VA, Chamber of Commerce: Midlothian Chapter">
+    <p class="subhead">RVA Chamber of CommVerce</p>
+  </header>
+  <main>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">home</a></li>
+        <li><a href="midlothian.html">midlothian</a></li>
+        <li><a href="join.html">join</a></li>
+        <li class="active"><a href="directory.html">directory</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <picture>
+      <source srcset="images/directory/rva-small.jpg" media="(max-width:600px)" />
+      <source srcset="images/directory/rva-medium.jpg" media="(max-width:1024px)" />
+      <img class="hero-ph" src="images/directory/rva-large.jpg" alt="2 guys standing by a jeep" />
+    </picture>
+    <a class="button calltoaction" href="join.html">Book Now</a>
+  </div>
+    
+      <h3>Featured Member Directory</h3>
+      <h2 id="dirh2">Member Directory</h2>
+        <button class="listify"><i class="fas fa-list"></i> &nbsp;View as List</button> &nbsp; 
+        <button class="gridify"><i class="fas fa-grip-horizontal"></i> &nbsp;View as Grid</button>
+        <div class="cards"></div>
+
+  </main>
+  <!-- FOOTER -->
+  <footer>
+
+    <!-- CONTACT -->
+    <h2 class="contacthead">Richmond Virginia Chamber of Commerce: Midlothian Chapter</h2>
+    <div class="contact">
+      <div class="contact1">
+          <p> 804.867.5309 | <a href="contact.html">contact</a></p>
+      </div>
+      <div class="contact1">
+        <div class="social">
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/icons/facebook32.png" alt="facebook icon" /></a>
+          <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/icons/pinterest32.png" alt="pinterest icon" /></a>
+          <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/icons/twitter32.png" alt="twitter icon" /></a>
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/icons/instagram32.png" alt="instagram icon" /></a>
+        </div>
+      </div>
+    </div>
+    <p>
+      &copy;<span id="current-date"></span> Eric Garofalo &mdash; 
+      <a class="attribute" href="attributes.html"> Attributions</a>
+    </p>
+    <p>
+      <small>Last Updated:<span id="last-updated"></span></small>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/directory.js"></script>
+  <script src="https://kit.fontawesome.com/e9beb20fb8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
