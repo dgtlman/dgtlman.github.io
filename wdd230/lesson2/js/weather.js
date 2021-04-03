@@ -1,6 +1,6 @@
 //city code: 4748726
 
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=4748726&appid=bfddfc6c9bae6c1248202d2adef5c697&units=imperial';
+const APIurl = 'https://api.openweathermap.org/data/2.5/onecall?lat=37.486809&lon=-77.662048&appid=4a75851e61f117f8c13325e07c980e53&units=imperial';
 fetch(APIurl)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -13,7 +13,7 @@ fetch(APIurl)
     document.getElementById('feels_like').innerHTML = Math.round(jsObject.current.feels_like) + "&#8457;";
     document.getElementById('humidity').innerHTML = Math.round(jsObject.current.humidity) + "&#37;";
     var forecast = jsObject.daily.slice(1, 4);
-    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thusday', 'Friday', 'Saturday'];
     for (let day = 0; day < forecast.length; day++) {
       const d = new Date(forecast[day].dt * 1000); // The new Date() function needs a milliseconds value. Convert Unix timestamp to milliseconds by multiplying by 1000.
       const imagesrc = 'https://openweathermap.org/img/wn/' + forecast[day].weather[0].icon + '@2x.png';
@@ -31,4 +31,3 @@ fetch(APIurl)
       document.querySelector('.weatheralert').style.display = 'none';
     }
   });
-
