@@ -800,6 +800,7 @@ margin: 0 20px;
   .card p {
     color: var(--dark-color);
     font-size: 1em;
+    line-height: 1;
   }
   
 
