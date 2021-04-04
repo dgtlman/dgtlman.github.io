@@ -30,11 +30,10 @@ fetch(requestURL)
         image.setAttribute('alt', directory[i].name + 'Logo');
 
         link.appendChild(card);
-        card.appendChild(image);
         card.appendChild(h3);
         card.appendChild(phone);
         card.appendChild(address);
-        
+        card.appendChild(image);
         
         // send to html         
         document.querySelector('div.cards').appendChild(link);
