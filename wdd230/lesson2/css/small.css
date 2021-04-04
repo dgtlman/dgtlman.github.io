@@ -768,6 +768,131 @@ margin: 0 20px;
   color: var(--orange-color);
   }
 
+  /* --- directory css --- */
+
+/* button, */ #dirh2 {
+  margin-left: 1px;
+  color: var(--dark-color);
+}
+
+/* ./* button, */ */ .directlist, .directgrid {
+  margin-left: 10px;
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid var(--dark-color);
+  margin: 0 .7rem 0 .7rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Poppins',sans-serif;
+  font-weight:300;
+  background-color: var(--gray-color);
+  color: var(--dark-color);
+  text-align:center;
+  transition: all 0.2s;
+}
+
+/* .button:hover, */ .directlist:hover, .directgrid:hover {
+  color: var(--white-color);
+  background-color: var(--dark-color);
+  cursor: pointer;
+}
+
+.directcards {display: grid;
+  grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  gap: 1rem;
+  justify-content: center;
+}  
+
+.directcards img {display: block;
+  margin: 10px;
+  max-width: 200px;
+}
+
+.directcards span {
+  display: block;
+  font-family: var(--main-font);
+  color: var(--dark-color);
+  margin: 5px;
+}
+
+.directcards p {
+      color: var(--dark-color);
+}
+
+.directcards section {
+margin-bottom: 10px;
+}
+
+.list section{display: grid;
+  width: 100%;
+  grid-template-areas: "name name name"
+                  "img span1 web"
+                  "img span2 phone";
+              gap: 5px;
+              column-gap: .5rem;
+              justify-content: start;
+              margin-left: 10px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+      }
+
+.list img {
+  grid-area: img; max-width: 100px;
+}
+
+.list section span:first-child {
+  grid-area: span1;
+}
+
+.list section span:nth-child(2) {
+  grid-area: span2;
+}
+
+.list section a {
+  grid-area: web;
+}
+
+.list section p:first-child {
+  grid-area: name;
+}
+
+.list section p:last-child {
+  grid-area: phone;
+}
+
+.list section p {
+  margin: 5px;
+}
+
+.list span {
+  font-family: var(--main-font);
+  color: var(--dark-color);
+}
+
+.list p {
+  color: var(--dark-color);
+}
+
+/* button, */ #dirh2 {
+      margin-left: 10px;
+      color: var(--dark-color);
+}
+
+.directlist {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.directgrid {
+  margin-left: 0px;
+}
+
+
+
+
 
 /* Animations */
 

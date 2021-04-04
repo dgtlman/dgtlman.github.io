@@ -233,13 +233,20 @@
     padding: 30px 30px;
 }
 
-.starMovie img {
-    float: right;
-    width: 300px;
-    margin: 0 0 15px 50px;
-}
+  .starMovie img {
+      float: right;
+      width: 300px;
+      margin: 0 0 15px 50px;
+  }
 
-.starMovie h4 {
-    text-align: left;
-}
+  .starMovie h4 {
+      text-align: left;
+  }
+  
+  /* --- directory css --- */
+
+  button.directlist, #dirh2 {
+    margin-left:1rem;
+  }
+
 }

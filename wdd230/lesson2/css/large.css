@@ -148,4 +148,12 @@
   .headsup {
     margin-top: 0;
   }
+
+  /* --- directory css --- */
+
+.directcards {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+
 }

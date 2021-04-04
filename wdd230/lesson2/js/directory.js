@@ -1,6 +1,6 @@
-const listify = document.querySelector('.listify');
-const gridify = document.querySelector(".gridify");
-const directory = document.querySelector('.cards');
+const listify = document.querySelector('.directlist');
+const gridify = document.querySelector(".directgrid");
+const directory = document.querySelector('.directcards');
 
 listify.addEventListener('click', () => {directory.classList.remove('cards'), directory.classList.add('list')});
 gridify.addEventListener('click', () => {directory.classList.remove('list'), directory.classList.add('cards')});
@@ -25,12 +25,12 @@ fetch(requestURL)
         let web = document.createElement('a');
         let phone = document.createElement('p');
 
-        h2.textContent = directory[i].company;
+        h2.textContent = directory[i].name;
         h2.setAttribute('class','title');
         add.textContent = directory[i].address + "\n";
         //city.textContent = directory[i].city;
-        img.setAttribute('src', directory[i].image);
-        img.setAttribute('alt', directory[i].company + "'s logo image");
+        img.setAttribute('src', directory[i].logo);
+        img.setAttribute('alt', directory[i].name + "'s logo image");
         web.setAttribute('href', directory[i].website);
         web.textContent = 'Website';
         phone.textContent= directory[i].phone;
@@ -42,4 +42,4 @@ fetch(requestURL)
         card.appendChild(phone);
         card.appendChild(web);
         
-        document.querySelector('div.cards').appendChild(card);}});
+        document.querySelector('div.directcards').appendChild(card);}});
