@@ -7,14 +7,14 @@ fetch(requestURL)
   .then(function (jsonObject) {
   
       //   console.table(jsonObject);
-      const directory = jsonObject['directory'];
+      const businesses = jsonObject['businesses'];
 
     // For loop for cycling through each profile
-    for (let i = 0; i < directory.length; i++ ) {
+    for (let i = 0; i < businesses.length; i++ ) {
 
           //  define variables
         let link = document.createElement('a');
-        link.setAttribute("href", directory[i].link);
+        link.setAttribute("href", businesses[i].link);
         let card = document.createElement('div');
         card.setAttribute("class","item");
         let h3 = document.createElement('h3');
@@ -23,11 +23,11 @@ fetch(requestURL)
         let image = document.createElement('img');
 
         // output 
-        h3.textContent = directory[i].name;
-        phone.textContent = 'Phone: '+ directory[i].phone;
-        address.textContent = 'Address: ' + directory[i].address;
-        image.setAttribute('src', directory[i].imageurl);
-        image.setAttribute('alt', directory[i].name + 'Logo');
+        h3.textContent = businesses[i].name;
+        phone.textContent = 'Phone: '+ businesses[i].phone;
+        address.textContent = 'Address: ' + businesses[i].address;
+        image.setAttribute('src', businesses[i].imageurl);
+        image.setAttribute('alt', businesses[i].name + 'Logo');
 
         link.appendChild(card);
         card.appendChild(h3);
