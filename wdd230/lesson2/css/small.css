@@ -122,6 +122,7 @@ a {
   text-decoration: none;
   color: var(--dark-color);
 }
+
 .attribute {
   color: var(--orange-color);
 }
@@ -143,6 +144,7 @@ img {
   font-weight: bold;
   position: relative;
 }
+
 .closebtn {
   color: var(--dark-color);
   font-weight: bold;
@@ -154,9 +156,11 @@ img {
   right: 25px;
   text-align: right;
 }
+
 .closebtn:hover {
   color: var(--dark-color);
 }
+
 .button {
   display: inline-block;
   font-size: .8rem;
@@ -635,13 +639,16 @@ form {
   max-width: 600px;
   margin: 0 auto;
 }
+
 .about {
   margin: 0 20px;
 }
+
 .cozumelmap img{
   width: 100%;
   max-width: 600px;
 }
+
 .recommended {
   background-color: var(--white-color);
   max-width: 600px;
@@ -651,16 +658,19 @@ form {
   padding:20px;
   overflow: hidden;
 }
+
 .recommended img {
   max-width: 200px;
   border-radius: 8px;
 }
+
 .recommended .highlight {
   grid-column: 2;
   color: var(--blue-color);
   font-size: 16px;
   padding: 0px
 }
+
 .expimg {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -668,23 +678,28 @@ form {
   margin: 20px 0;
   column-gap: 10px;
 }
+
 .expimg img:nth-child(1) {
   width: 100%;
   max-width: 300px;
   grid-column: 1;
 }
+
 .expimg img:nth-child(2) {
   width: 100%;
   max-width: 300px;
   grid-column: 2;
 }
+
 .expheader {
 display: flex;
 align-items:center;
 }
+
 .expheader .pill, .expheader .pill2 {
   margin-left: 10px;
   }
+
 .experiences {
 max-width: 600px;
 margin: 0 20px;
@@ -707,6 +722,7 @@ margin: 0 20px;
   border-radius: 16px;
   font-size: 12px;
 }
+
 .pill2 {
   background-color: var(--yellow-color);
   color: var(--dark-color);
@@ -716,13 +732,16 @@ margin: 0 20px;
   border-radius: 16px;
   font-size: 12px;
 }
+
 .headsup {
   margin-top: 40px;
 }
+
 .atts {
   max-width: 320px;
   margin: 0 auto;
 }
+
 .atts a {
   color: var(--orange-color) !important;
 }
