@@ -1,86 +1,86 @@
 {
 	"directory": [{
-			"company": "Mr. Submarine & Sal’s Pizza",
-			"image": "images/directory/sals.jpg",
+			"name": "Mr. Submarine & Sal’s Pizza",
+			"imageurl": "images/directory/sals.jpg",
 			"phone": "804.533.7827",
-			"website": "https://www.facebook.com/mrsubmarineandsalspizza/",
+			"link": "https://www.facebook.com/mrsubmarineandsalspizza/",
 			"address": "7124 Cosby Village Rd, Chesterfield, VA 23832"
 		},
 		{
-			"company": "Lavish Nails & Spa",
-			"image": "images/directory/spa.jpg",
+			"name": "Lavish Nails & Spa",
+			"imageurl": "images/directory/spa.jpg",
 			"phone": "804.608.1732",
-			"website": "http://lavishnailsandspa.us",
+			"link": "http://lavishnailsandspa.us",
 			"address": "7118 Cosby Village Rd, Chesterfield, VA 23832"
 		},
 		{
-			"company": "Great Clips",
-			"image": "images/directory/clips.jpg",
+			"name": "Great Clips",
+			"imageurl": "images/directory/clips.jpg",
 			"phone": "804.464-3737",
-			"website": "https://salons.greatclips.com/us/va/chesterfield/7312-cosby-village-rd",
+			"link": "https://salons.greatclips.com/us/va/chesterfield/7312-cosby-village-rd",
 			"address": "7312 Cosby Village Rd, Chesterfield, VA 23832"
 		},
 		{
-			"company": "Brushup Dental",
-			"image": "images/directory/dental.jpg",
+			"name": "Brushup Dental",
+			"imageurl": "images/directory/dental.jpg",
 			"phone": "804-821-0070",
-			"website": "https://lipscombdentist.com/brush-up-dental-hull-street-chesterfield-va/",
+			"link": "https://lipscombdentist.com/brush-up-dental-hull-street-chesterfield-va/",
 			"address": "7300 Cosby Village Rd, Chesterfield, VA 23832"
 		},
 		{
-			"company": "The Sand Dollar Beach Kitchen",
-			"image": "images/directory/sand.jpg",
+			"name": "The Sand Dollar Beach Kitchen",
+			"imageurl": "images/directory/sand.jpg",
 			"phone": "804.818.5567",
-			"website": "https://birdwatchersrva.com",
+			"link": "https://birdwatchersrva.com",
 			"address": "7324 Cosby Village Rd, Chesterfield, Virginia 23832"
 		},
 		{
-			"company": "Virginia Tire and Auto",
-			"image": "images/directory/vatire.jpg",
+			"name": "Virginia Tire and Auto",
+			"imageurl": "images/directory/vatire.jpg",
 			"phone": "855.425.3677",
-			"website": "https://vatire.com/stores/virginia-tire-auto-of-chesterfield/",
+			"link": "https://vatire.com/stores/virginia-tire-auto-of-chesterfield/",
 			"address": "7501 Harpers Green Way, Chesterfield, Virginia 23832"
 		},
 		{
-			"company": "Pakwaan Indian Cuisine",
-			"image": "images/directory/paka.jpg",
+			"name": "Pakwaan Indian Cuisine",
+			"imageurl": "images/directory/paka.jpg",
 			"phone": "804.608.1058",
-			"website": "https://www.pakwaanva.com",
+			"link": "https://www.pakwaanva.com",
 			"address": "14862 Hull Street Rd, Chesterfield, VA 23832"
 		},
 		{
-			"company": "The Fest Restaurant",
-			"image": "images/directory/fest.jpg",
+			"name": "The Fest Restaurant",
+			"imageurl": "images/directory/fest.jpg",
 			"phone": "804.818.2134",
-			"website": "http://www.festva.com",
+			"link": "http://www.festva.com",
 			"address": "7044 Woodlake Commons Loop, Midlothian, VA 23112"
 		},
 		{
-			"company": "Bird Watchers RVA",
-			"image": "images/directory/bird.jpg",
+			"name": "Bird Watchers RVA",
+			"imageurl": "images/directory/bird.jpg",
 			"phone": "804.763.3890",
-			"website": "https://birdwatchersrva.com",
+			"link": "https://birdwatchersrva.com",
 			"address": "6908 Woodlake Commons Loop, Midlothian, VA 23112"
 		},
 		{
-			"company": "Spotlight Studio of Dance",
-			"image": "images/directory/spot.jpg",
+			"name": "Spotlight Studio of Dance",
+			"imageurl": "images/directory/spot.jpg",
 			"phone": "804.639.1186",
-			"website": "https://spotlightstudio.net",
+			"link": "https://spotlightstudio.net",
 			"address": "6828 Woodlake Commons Loop, Midlothian, Virginia 23112"
 		},
 		{
-			"company": "Woodlake Animal Hospital",
-			"image": "images/directory/animal.jpg",
+			"name": "Woodlake Animal Hospital",
+			"imageurl": "images/directory/animal.jpg",
 			"phone": "804.639.1159",
-			"website": "https://woodlakeanimalhospital.net",
+			"link": "https://woodlakeanimalhospital.net",
 			"address": "6511 Woodlake Village Parkway, Midlothian, VA 23112"
 		},
 		{
-			"company": "Dynamic Afterschool Taekwondo",
-			"image": "images/directory/dat.jpg",
+			"name": "Dynamic Afterschool Taekwondo",
+			"imageurl": "images/directory/dat.jpg",
 			"phone": "804.608.0146",
-			"website": "https://www.leesdynamic.com",
+			"link": "https://www.leesdynamic.com",
 			"address": "14724 Village Square Place, Midlothian, VA 23112"
 		}
 	]

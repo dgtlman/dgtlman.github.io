@@ -245,8 +245,17 @@
   
   /* --- directory css --- */
 
-  button.directlist, #dirh2 {
-    margin-left:1rem;
-  }
+  .cards {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		margin-top: 20px;
+	}
+	
+	.gridbuttons button {
+		display: inline;
+		border-radius: 10px;
+	}
 
 }
