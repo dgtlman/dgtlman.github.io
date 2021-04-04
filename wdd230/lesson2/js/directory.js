@@ -24,8 +24,8 @@ fetch(requestURL)
 
         // output 
         h3.textContent = directory[i].name;
-        phone.textContent = 'Phone: '+ directory[i].phone;
-        address.textContent = 'Address: ' + directory[i].address;
+        phone.textContent = /*'Phone: '+ */ directory[i].phone;
+        address.textContent = /*'Address: ' + */ directory[i].address;
         image.setAttribute('src', directory[i].imageurl);
         image.setAttribute('alt', directory[i].name + 'Logo');
 
