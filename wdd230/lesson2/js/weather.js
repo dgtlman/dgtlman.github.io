@@ -1,4 +1,5 @@
-//city code: 4748726
+// city code: 4748726
+// lat=37.486809 lon=-77.662048
 
 const APIurl = 'https://api.openweathermap.org/data/2.5/onecall?lat=37.486809&lon=-77.662048&appid=4a75851e61f117f8c13325e07c980e53&units=imperial';
 fetch(APIurl)
