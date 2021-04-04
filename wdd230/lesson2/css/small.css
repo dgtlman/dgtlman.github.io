@@ -770,40 +770,44 @@ margin: 0 20px;
 
   /* --- directory css --- */
 
-  .cards {
-    margin-top: 20px;
-    margin: 0 auto;
-    display: block;
-    font-size: 1em;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    text-decoration: none;
-    }
-    
+.cards {
+  margin: 20px auto;
+  display: block;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  text-decoration: none;
+  }
 
-  .item {
-    box-shadow: 5px 10px 30px 1px var(-gray-color);
-    border-radius: 20px;
-    padding: 10px;
-    text-decoration: none;
-    height: 290px;
-    margin: auto;
+  .card p {
+    color: var(--dark-color);
+    font-size: 1em;
+  }
+  
+
+.item {
+  box-shadow: 5px 10px 30px 1px var(-gray-color);
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+  height: 290px;
+  margin: auto;
 }
 
 .item:hover{
-    box-shadow: 5px 10px 30px 1px var(--dark-color);
-    border-radius: 20px;
-    padding: 10px;
+  box-shadow: 5px 10px 30px 1px var(--dark-color);
+  border-radius: 20px;
+  padding: 10px;
 }
+
 .item img {
-    max-width:150px;
+  max-width:150px;
 }
 
 .gridbuttons button {
-    background-color: var(--cream-color);
-    color: var(--blue-color);
-    display: none;
-    /* border-radius: 10px; */
+  background-color: var(--cream-color);
+  color: var(--blue-color);
+  display: none;
+  /* border-radius: 10px; */
 }
 
 
