@@ -838,7 +838,7 @@ margin: 0 20px;
 }
 
 .item p {
-    font-size: .9em;
+    font-size: .8em;
     text-align: center;
     color: var(--dark-color);
 }
@@ -866,6 +866,10 @@ margin: 0 20px;
 
 .cards a {
     text-decoration: none;  
+}
+
+.gridbuttons button {
+  display: none;
 }
 
 
