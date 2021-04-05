@@ -95,7 +95,7 @@ h2 {
   color: var(--red-color);
 }
 
-h2.emphRed, h2.emphOrange, h2.emphContact, .item h3  {
+h2.emphRed, h2.emphOrange, h2.emphContact {
   margin-left: 0px;
   margin-right: 0px;
   padding: 0 10px;
@@ -113,7 +113,7 @@ h2.emphOrange {
   border-bottom: 4px solid var(--orange-color); 
 }
 
-h2.emphContact, .item h3 {
+h2.emphContact {
   font-size: 1.25rem;
   border-bottom: 4px solid var(--blue-color); 
 }
@@ -237,8 +237,12 @@ img {
 }
 
 .item image {
-  width: 50%;
+  width: 25%;
   display: inline-block;
+  border-bottom: 4px solid var(--blue-color); 
+  margin: 0 auto;
+  padding: 0 10px;
+  line-height: 2.5rem;
 }
 
 .chamber p, .chamber li, .item p {
