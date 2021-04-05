@@ -30,21 +30,15 @@
     background: url(../images/index/bridge-1024.jpg) center/cover no-repeat;
   }
 
-  .aboutChamber, .cards {
+  .aboutChamber {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;
   }
 
-  .chamber, .item {
+  .chamber {
     grid-template-columns: 100%;
     grid-template-rows: 55% 1fr;
   }
-
- .item img {
-    width: 50%;
-  }
-
-
 
   .adList {
     grid-template-columns: 1fr 1fr 1fr;
@@ -150,7 +144,7 @@
   }
 
   /* --- directory css --- */
-/* 
+
   .cards {
     margin: 0 auto;
     display: grid;
@@ -165,6 +159,6 @@
 .gridbuttons button {
 	display: inline;
     border-radius: 10px;
-} */
+}
 
 }

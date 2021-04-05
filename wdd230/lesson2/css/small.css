@@ -220,7 +220,7 @@ img {
   margin: 0 auto;
 }
 
-.chamber, .item {
+.chamber {
   background-color: var(--tan-color);
   /* background-color: var(--white-color); */
   max-width: 320px;
@@ -236,16 +236,7 @@ img {
   display: inline-block;
 }
 
-.item image {
-  width: 25%;
-  display: inline-block;
-  border-bottom: 4px solid var(--blue-color); 
-  margin: 0 auto;
-  padding: 0 10px;
-  line-height: 2.5rem;
-}
-
-.chamber p, .chamber li, .item p {
+.chamber p, .chamber li {
   text-align: left;
   font-size: .8rem;
   padding: 0 10px;
@@ -798,40 +789,38 @@ margin: 0 20px;
 
   /* --- directory css --- */
 
-/* 
+
 .cards {
-    margin-top: 20px;
-    margin: 0 auto;
-    display: block;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    text-decoration: none;
+  margin-top: 20px;
+  margin: 0 auto;
+  display: block;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  text-decoration: none;
   }
 
-item {
-  box-shadow: 5px 10px 30px 1px var(-gray-color);
-  border-radius: 20px;
-  padding: 10px;
-  text-decoration: none;
-  height: 290px;
-  margin: auto;
-} */
+.cards a {
+    text-decoration: none;  
+   
+}
 
-
+.item {
+    box-shadow: 5px 10px 30px 1px #888888;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    height: 290px;
+    margin: auto;
+   
+}
 
 .item:hover{
-  box-shadow: 5px 10px 30px 1px var(--dark-color);
-  border-radius: 5px;
-  padding: 5px;
+    box-shadow: 5px 10px 30px 1px #000000;
+    border-radius: 20px;
+    padding: 10px;
 }
-
-
-
-.gridbuttons button {
-  background-color: var(--cream-color);
-  color: var(--blue-color);
-  display: none;
-}
+.item img {
+    max-width:150px;
 
 
 /* Animations */
