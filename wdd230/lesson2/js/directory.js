@@ -32,9 +32,8 @@ fetch(requestURL)
         link.appendChild(card);
         card.appendChild(image);
         card.appendChild(h3);
-        card.appendChild(phone);
         card.appendChild(address);
-        
+        card.appendChild(phone);
         
         // send to html         
         document.querySelector('div.cards').appendChild(link);
