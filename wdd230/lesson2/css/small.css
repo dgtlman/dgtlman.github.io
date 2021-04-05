@@ -882,6 +882,11 @@ margin: 0 20px;
 }
 
 
+/* -- city --*/
+.iconColor {
+  color: var(--blue-color);
+}
+
 
 /* Animations */
 
