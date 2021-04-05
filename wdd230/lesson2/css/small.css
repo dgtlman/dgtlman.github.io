@@ -231,8 +231,13 @@ img {
   padding: 0 8px;
 }
 
-.chamber img, .item image {
+.chamber img {
   width: 80%;
+  display: inline-block;
+}
+
+.item image {
+  width: 50%;
   display: inline-block;
 }
 
