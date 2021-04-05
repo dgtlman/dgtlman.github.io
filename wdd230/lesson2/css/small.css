@@ -211,7 +211,7 @@ img {
   width: 100%;
 }
 
-.aboutChamber {
+.aboutChamber, .cards {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -789,7 +789,7 @@ margin: 0 20px;
 
   /* --- directory css --- */
 
-
+/* 
 .cards {
     margin-top: 20px;
     margin: 0 auto;
@@ -799,7 +799,7 @@ margin: 0 20px;
     text-decoration: none;
   }
 
-/* item {
+item {
   box-shadow: 5px 10px 30px 1px var(-gray-color);
   border-radius: 20px;
   padding: 10px;

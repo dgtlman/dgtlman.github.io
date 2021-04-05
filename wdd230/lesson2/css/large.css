@@ -30,7 +30,7 @@
     background: url(../images/index/bridge-1024.jpg) center/cover no-repeat;
   }
 
-  .aboutChamber {
+  .aboutChamber, .cards {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;
   }
