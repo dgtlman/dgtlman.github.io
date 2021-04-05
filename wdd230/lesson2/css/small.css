@@ -789,30 +789,30 @@ margin: 0 20px;
 
   /* --- directory css --- */
 
-/*
+
 .cards {
-  margin: 20px auto;
-  display: block;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
-  text-decoration: none;
+    margin-top: 20px;
+    margin: 0 auto;
+    display: block;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    text-decoration: none;
   }
 
-.card p {
-  color: var(--dark-color);
-  font-size: 1em;
-  line-height: 1;
-  margin: 0;
-}
-*/
-
-.item {
+/* item {
   box-shadow: 5px 10px 30px 1px var(-gray-color);
   border-radius: 20px;
   padding: 10px;
   text-decoration: none;
   height: 290px;
   margin: auto;
+} */
+
+.item p {
+  text-align: left;
+  font-size: .8rem;
+  padding: 0 10px;
+  margin: 0;
 }
 
 .item:hover{
@@ -823,6 +823,7 @@ margin: 0 20px;
 
 .item img {
   max-width:150px;
+  display: inline-block;
 }
 
 .gridbuttons button {
@@ -831,7 +832,7 @@ margin: 0 20px;
   display: none;
 }
 
-.cards {
+.item {
   background-color: var(--tan-color);
   /* background-color: var(--white-color); */
   max-width: 320px;
