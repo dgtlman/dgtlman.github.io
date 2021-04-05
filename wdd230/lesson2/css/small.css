@@ -827,6 +827,15 @@ margin: 0 20px;
 }
 */
 
+.cards {
+    margin-top: 20px;
+    margin: 0 auto;
+    display: block;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    text-decoration: none;
+}
+
 .item {
     background-color: var(--tan-color);
     box-shadow: 5px 1px 10px 1px var(--shadow-70);
