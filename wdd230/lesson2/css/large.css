@@ -35,12 +35,12 @@
     justify-items: stretch;
   }
 
-  .chamber {
+  .chamber, .item {
     grid-template-columns: 100%;
     grid-template-rows: 55% 1fr;
   }
 
-  .chamber img {
+  .chamber img, .item img {
     width: 100%;
   }
 
