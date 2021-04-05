@@ -255,7 +255,9 @@
 	
 	.gridbuttons button {
 		display: inline;
-		border-radius: 10px;
+		background-color: var(--cream-color);
+    color: var(--blue-color);
+    /* border-radius: 10px; */
 	}
   
 
