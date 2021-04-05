@@ -211,7 +211,7 @@ img {
   width: 100%;
 }
 
-.aboutChamber, .cards {
+.aboutChamber {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
