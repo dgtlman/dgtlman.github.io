@@ -828,8 +828,8 @@ margin: 0 20px;
 */
 
 .item {
-  background-color: var(--tan-color);
-  box-shadow: 5px 1px 10px 1px var(--shadow-70);
+    background-color: var(--tan-color);
+    box-shadow: 5px 1px 10px 1px var(--shadow-70);
     border-radius: 20px;
     padding: 10px;
     text-decoration: none;
@@ -838,16 +838,16 @@ margin: 0 20px;
 }
 
 .item p {
-  font-size: .9em;
-  text-align: center;
-  color: var(--dark-color);
+    font-size: .9em;
+    text-align: center;
+    color: var(--dark-color);
 }
 
 .item h3 {
-  border-bottom: 4px solid var(--blue-color); 
-  line-height: 2.5em;
-  text-align: center;
-  color: var(--dark-color);
+    border-bottom: 4px solid var(--blue-color); 
+    line-height: 2.5em;
+    text-align: center;
+    color: var(--dark-color);
 }
 
 .item:hover{
@@ -865,7 +865,7 @@ margin: 0 20px;
 }
 
 .cards a {
-  text-decoration: none;  
+    text-decoration: none;  
 }
 
 
