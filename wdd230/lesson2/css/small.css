@@ -106,7 +106,7 @@ h2.emphRed, h2.emphOrange, h2.emphContact {
 }
 
 h2.emphRed {
-  border-bottom: 4px solid var(--blue-color); 
+  border-bottom: 4px solid var(--red-color); 
 }
 
 h2.emphOrange {
@@ -789,7 +789,7 @@ margin: 0 20px;
 
   /* --- directory css --- */
 
-
+/*
 .cards {
   margin-top: 20px;
   margin: 0 auto;
@@ -801,7 +801,6 @@ margin: 0 20px;
 
 .cards a {
     text-decoration: none;  
-   
 }
 
 .item {
@@ -811,7 +810,6 @@ margin: 0 20px;
     text-decoration: none;
     height: 290px;
     margin: auto;
-   
 }
 
 .item:hover{
@@ -819,6 +817,7 @@ margin: 0 20px;
     border-radius: 20px;
     padding: 10px;
 }
+
 .item img {
     max-width:150px;
     display: block;
@@ -826,6 +825,49 @@ margin: 0 20px;
     margin-right: auto;
     width: 50%;
 }
+*/
+
+.item {
+  background-color: var(--tan-color);
+  box-shadow: 5px 1px 10px 1px var(--shadow-70);
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    height: 250px;
+    margin: 10px;
+}
+
+.item p {
+  font-size: .9em;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.item h3 {
+  border-bottom: 4px solid var(--blue-color); 
+  line-height: 2.5em;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.item:hover{
+    box-shadow: 5px 1px 10px 1px var(--shadow-50);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.item img {
+    max-width:25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.cards a {
+  text-decoration: none;  
+}
+
 
 
 /* Animations */
