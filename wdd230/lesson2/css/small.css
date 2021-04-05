@@ -817,8 +817,8 @@ item {
 
 .item:hover{
   box-shadow: 5px 10px 30px 1px var(--dark-color);
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 
