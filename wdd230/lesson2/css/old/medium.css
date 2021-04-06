@@ -35,8 +35,7 @@
   header {
     max-width: 225px;
   }
-
-.logo {
+  .logo {
     max-width: 125px;
   }
 
@@ -100,7 +99,9 @@
   .localAds p {
     font-size: 1rem;
   }
-
+  .tablecloth {
+    padding:0 15px;
+  }
 
   .weather {
     background: url(../images/index/bridge-600.jpg) center/cover no-repeat;
@@ -118,7 +119,12 @@
     padding: 55px 0;
   }
 
-
+  /*
+  .weathersummary,
+  .threeday ul {
+    background-color: rgba(175, 175, 175, 0.5);
+  }
+  */
 
   .threeday {
     grid-template-columns: 1fr;
@@ -127,7 +133,20 @@
     grid-row: 1;
   }
 
+  .location {
+    display: grid;
+    justify-items: center;
+    margin-bottom: 40px;
+  }
 
+  .location1,
+  .location2 {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    max-width: 768px;
+    margin: 20px 0;
+  }
 
   footer h2.contacthead {
     font-size: 1.5em;
@@ -174,20 +193,40 @@
   .email p {
     margin: 10px;
   }
-
-.info {
+  .info {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
     }
-
-
-
-  .form {
+  .specHero {
+    min-width: 600px;
+  }
+  form {
     max-width: 100%;
   }
-
-
+  .embededmap {
+    max-width: 768px;
+    text-align: center;
+  }
+  .embededmap iframe{
+    height: 600px;
+  }
+  .recommended {
+    display: flex;
+  }
+  .recommended img {
+    max-width: 300px;
+  }
+  .experiences {
+  margin: 0 auto;
+  }
+  .experiences h2 {
+    text-align: left;
+    margin: 40px 0 10px;
+  }
+  .about{
+    margin: 0px;
+  }
 
   .textBlock {
     margin: 20px 30px 20px 30px;

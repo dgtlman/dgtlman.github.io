@@ -184,6 +184,12 @@ img {
   max-width: 450px;
 }
 
+.moreinfo {
+  border: 1px solid var(--dark-color);
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
 .calltoaction {
   position: absolute;
   top: 20px;
@@ -346,6 +352,28 @@ img {
   margin: 0;
 }
 
+.location {
+  padding: 0 15px 10px;
+}
+
+.location1,
+.location2 {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 5px 15px var(--dshadow-50);
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.location1 img,
+.location2 img {
+  width: 100%;
+}
 
 footer {
   background-color: var(--dark-color);
@@ -428,7 +456,65 @@ footer h2.contacthead {
   /* padding-bottom: 20px; */
 }
 
+.back {
+  margin: 20px 0 0 20px;
+  display: inline-block;
+  font-size: .8rem;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+}
 
+.specHero {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.specHero img {
+  width: 100%;
+}
+
+.pricing table,
+.pricing th,
+.pricing td {
+  border: 1px solid var(--dark-color);
+  padding: 2px 4px;
+}
+
+.pricing {
+  border-collapse: collapse;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px var(--dark-color);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.pricing th {
+  background-color: var(--dark-color);
+  border-top: none;
+  color: var(--white-color);
+}
+
+th:first-of-type {
+  border-top-left-radius: 4px;
+}
+
+th:last-of-type {
+  border-top-right-radius: 4px;
+}
+
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 4px;
+}
+
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 4px;
+}
 
 form fieldset {
   margin: 3rem 0;
@@ -519,6 +605,14 @@ form {
   width: 75%;
 }
 
+
+.scoot {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  animation: slide-in-blurred-right 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
 .thankYouText1,
 .thankYouText2,
 .thankYouText3 {
@@ -534,7 +628,119 @@ form {
   animation-delay: .7s;
 }
 
+.embededmap {
+  margin: 0 auto;
+  max-width: 320px;
+}
+ /* --
+.embededmap iframe {
+  width: 100%;
+  height: 320px;
+} -- */
 
+
+.cozumelmap {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about {
+  margin: 0 20px;
+}
+
+.cozumelmap img{
+  width: 100%;
+  max-width: 600px;
+}
+
+.recommended {
+  background-color: var(--white-color);
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px var(--dshadow-50); /* .0.3 */
+  text-align: center;
+  padding:20px;
+  overflow: hidden;
+}
+
+.recommended img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.recommended .highlight {
+  grid-column: 2;
+  color: var(--blue-color);
+  font-size: 16px;
+  padding: 0px
+}
+
+.expimg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+  margin: 20px 0;
+  column-gap: 10px;
+}
+
+.expimg img:nth-child(1) {
+  width: 100%;
+  max-width: 300px;
+  grid-column: 1;
+}
+
+.expimg img:nth-child(2) {
+  width: 100%;
+  max-width: 300px;
+  grid-column: 2;
+}
+
+.expheader {
+display: flex;
+align-items:center;
+}
+
+.expheader .pill, .expheader .pill2 {
+  margin-left: 10px;
+  }
+
+.experiences {
+max-width: 600px;
+margin: 0 20px;
+}
+
+/*-- 
+.experiences iframe {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 382px;
+} --*/
+
+.pill {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  width: 64px;
+  padding:3px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.pill2 {
+  background-color: var(--yellow-color);
+  color: var(--dark-color);
+  width: 64px;
+  padding:3px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.headsup {
+  margin-top: 40px;
+}
 
 .atts {
   max-width: 320px;
@@ -597,6 +803,39 @@ form {
 
   /* --- directory css --- */
 
+/*
+.cards {
+  margin-top: 20px;
+  margin: 0 auto;
+  display: block;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  text-decoration: none;
+  }
+.cards a {
+    text-decoration: none;  
+}
+.item {
+    box-shadow: 5px 10px 30px 1px #888888;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    height: 290px;
+    margin: auto;
+}
+.item:hover{
+    box-shadow: 5px 10px 30px 1px #000000;
+    border-radius: 20px;
+    padding: 10px;
+}
+.item img {
+    max-width:150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+*/
 
 .cards {
     margin-top: 20px;
