@@ -18,6 +18,11 @@
     margin-right: 10px;
   }
 
+  .spacer {
+    display: none;
+    padding: 0;
+  }
+
   header h1 {
     font-size: 2.5rem;
   }
@@ -65,12 +70,12 @@
     padding: 15px 25px;
   }
 
-  .aboutChamber, .cards {
+  .aboutChamber, .localEvents, .memberLevels, .branchLocations, .chamberDirectors, .cards {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;
   }
 
-  .chamber {
+  .chamber, .events, .member, .branch, .directors {
     display: grid;
     max-width: 1000px;
     grid-template-columns: 60% 40%;
@@ -78,14 +83,23 @@
     padding: 15px 0 30px;
   }
 
-  .chamber p, .chamber li {
+  .chamber p, .chamber li, 
+  .events p, .events li, 
+  .member p, .member li, 
+  .branch p, .branch li, 
+  .directors p, .directors li {
     font-size: 1rem;
   }
 
-  .chamber li {
+  .chamber li, .events li, .member li, .branch li, .directors li  {
       font-size: 1rem;
       line-height: 1.4;
+      padding: 0;
     }
+  
+  .member li, .branch p, .directors p {
+    width: max-content;
+  }
 
 
   .localAds {

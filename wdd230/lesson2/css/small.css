@@ -68,6 +68,10 @@ nav ul.hide {
   display: none;
 }
 
+.spacer {
+  padding: 3px 0;
+}
+
 .logo {
   max-width: 100px;
   margin-top: 10px;
@@ -78,28 +82,38 @@ nav ul.hide {
   font-size: .75rem;
   padding: 0 12px;
 }
+
 h1 {
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   margin: 20px 10px;
   padding: 0 0 0 10px;
-  /* text-align: center; */
+  text-align: center;
   font-family: var(--heading-font);
   color: var(--red-color);
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
   margin: 20px 10px;
   padding: 0;
-  /* text-align: center; */
+  text-align: center;
   font-family: var(--heading-font);
   color: var(--red-color);
 }
 
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: .95rem;
+}
+
 h2.emphRed, h2.emphOrange, h2.emphContact {
   padding: 0 10px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 2.5rem;
   font-family: var(--heading-font);
   min-width: 275px;
@@ -116,7 +130,7 @@ h2.emphOrange {
 
 h2.emphContact {
   margin: 5px auto 5px auto;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   border-bottom: 4px solid var(--blue-color); 
 }
 
@@ -207,7 +221,7 @@ img {
   width: 100%;
 }
 
-.aboutChamber {
+.aboutChamber, .localEvents, .memberLevels, .branchLocations, .chamberDirectors {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -216,7 +230,7 @@ img {
   margin: 0 auto;
 }
 
-.chamber {
+.chamber, .events, .member, .branch, .directors {
   background-color: var(--tan-color);
   /* background-color: var(--white-color); */
   max-width: 320px;
@@ -225,22 +239,36 @@ img {
   margin: 0 16px 30px;
   text-align: center;
   padding: 0 8px;
-  height: 415px;
 }
 
-.chamber img {
+.chamber img, .events img, .member img, .branch img, .directors img {
   padding-top: 10px;
   width: 80%;
   display: inline-block;
 }
 
-.chamber p, .chamber li {
+.chamber p, .chamber li, 
+.events p, .events li, 
+.member p, .member li, 
+.branch p, .branch li, 
+.directors p, .directors li {
   text-align: left;
   font-size: .8rem;
   padding: 0 10px;
   margin: 0;
 }
 
+.chamber {
+  height: 415px;
+}
+
+.member {
+  height: 175px;
+}
+
+.branch {
+  height: 150px;
+}
 
 .adList {
   display: grid;
@@ -262,6 +290,7 @@ img {
 }
 
 .localAds img {
+  padding-top: 10px;
   width: 80%;
   display: inline-block;
 }
