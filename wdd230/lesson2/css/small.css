@@ -111,7 +111,7 @@ h4 {
   font-size: .95rem;
 }
 
-h2.emphRed, h2.emphOrange, h2.emphContact {
+h2.emphRed, h2.emphOrange, h2.emphBlue, h2.emphOrange2 {
   padding: 0 10px;
   font-size: 1.1rem;
   line-height: 2.5rem;
@@ -128,7 +128,12 @@ h2.emphOrange {
   border-bottom: 4px solid var(--orange-color); 
 }
 
-h2.emphContact {
+h2.emphOrange2 {
+  margin: 5px auto 5px auto;
+  border-bottom: 4px solid var(--orange-color); 
+}
+
+h2.emphBlue {
   margin: 5px auto 5px auto;
   font-size: 1.1rem;
   border-bottom: 4px solid var(--blue-color); 
@@ -262,13 +267,14 @@ img {
   height: 415px;
 }
 
-.member {
+.member, .directors {
   height: 175px;
 }
 
 .branch {
   height: 150px;
 }
+
 
 .adList {
   display: grid;
