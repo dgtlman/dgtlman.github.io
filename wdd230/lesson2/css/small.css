@@ -387,8 +387,7 @@ footer h2.contacthead {
   margin: 0;
 }
 
-.contact h3,
-.social {
+.contact h3, .social {
   grid-column: 1;
   color: var(--orange-color);
   text-align: center;
@@ -444,8 +443,7 @@ form legend {
   font-weight: bold;
 }
 
-form label.top,
-form div {
+form label.top, form div {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
@@ -453,9 +451,7 @@ form div {
   font-size: 1rem;
 }
 
-form label.top input,
-form label.top select,
-form label.top textarea {
+form label.top input, form label.top select, form label.top textarea {
   -webkit-appearance: none;
   display: flex;
   flex-wrap: wrap;
@@ -519,9 +515,7 @@ form {
   width: 75%;
 }
 
-.thankYouText1,
-.thankYouText2,
-.thankYouText3 {
+.thankYouText1, .thankYouText2, .thankYouText3 {
   animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
   text-align: center;
 }
@@ -533,8 +527,6 @@ form {
 .thankYouText3 {
   animation-delay: .7s;
 }
-
-
 
 .atts {
   max-width: 320px;

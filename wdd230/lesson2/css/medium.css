@@ -35,8 +35,7 @@
   header {
     max-width: 225px;
   }
-
-.logo {
+  .logo {
     max-width: 125px;
   }
 
@@ -100,7 +99,9 @@
   .localAds p {
     font-size: 1rem;
   }
-
+  .tablecloth {
+    padding:0 15px;
+  }
 
   .weather {
     background: url(../images/index/bridge-600.jpg) center/cover no-repeat;
@@ -118,16 +119,12 @@
     padding: 55px 0;
   }
 
-
-
   .threeday {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column: 3;
     grid-row: 1;
   }
-
-
 
   footer h2.contacthead {
     font-size: 1.5em;
@@ -167,6 +164,7 @@
     margin: 0 0 0 10px;
   }
 
+ 
   .phone p,
   .phone img,
   .address img,
@@ -175,19 +173,9 @@
     margin: 10px;
   }
 
-.info {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-    }
-
-
-
-  .form {
+  form {
     max-width: 100%;
   }
-
-
 
   .textBlock {
     margin: 20px 30px 20px 30px;
