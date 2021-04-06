@@ -120,10 +120,12 @@
     padding: 55px 0;
   }
 
+  /*
   .weathersummary,
   .threeday ul {
     background-color: rgba(175, 175, 175, 0.5);
   }
+  */
 
   .threeday {
     grid-template-columns: 1fr;

@@ -8,6 +8,8 @@ body {
   line-height: 1.5;
   color: var(--dark-color);
   font-family: var(--main-font);
+  min-width: 500px;
+  width: 100%;
 }
 
 header {
@@ -96,8 +98,6 @@ h2 {
 }
 
 h2.emphRed, h2.emphOrange, h2.emphContact {
-  margin-left: 0px;
-  margin-right: 0px;
   padding: 0 10px;
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -106,6 +106,7 @@ h2.emphRed, h2.emphOrange, h2.emphContact {
 }
 
 h2.emphRed {
+  margin: 5px auto 5px auto;
   border-bottom: 4px solid var(--red-color); 
 }
 
@@ -114,6 +115,7 @@ h2.emphOrange {
 }
 
 h2.emphContact {
+  margin: 5px auto 5px auto;
   font-size: 1.25rem;
   border-bottom: 4px solid var(--blue-color); 
 }
@@ -194,7 +196,7 @@ img {
   left: 20px;
   font-size: 1rem;
   padding: 10px 15px;
-  box-shadow: 0 5px 15px var(--shadow-50);
+  box-shadow: 0 5px 15px var(--dshadow-50);
 }
 
 .clearfix:after {
@@ -225,7 +227,7 @@ img {
   /* background-color: var(--white-color); */
   max-width: 320px;
   border-radius: 8px;
-  /* box-shadow: 0 5px 15px var(--shadow-50); /* .0.3 */
+  /* box-shadow: 0 5px 15px var(--dshadow-50); /* .0.3 */
   margin: 0 16px 30px;
   text-align: center;
   padding: 0 8px;
@@ -257,7 +259,7 @@ img {
   background-color: var(--white-color);
   max-width: 320px;
   border-radius: 8px;
-  box-shadow: 0 5px 15px var(--shadow-50); /* .0.3 */
+  box-shadow: 0 5px 15px var(--dshadow-50); /* .0.3 */
   margin: 0 16px 30px;
   text-align: center;
   padding: 0 8px;
@@ -286,6 +288,7 @@ img {
   align-items: center;
   justify-items: center;
   background: url(../images/index/bridge-320.jpg) center/cover no-repeat;
+  /* opacity: 0.85; */
   padding: 30px 15px 10px;
   margin-bottom: 40px;
 }
@@ -293,12 +296,12 @@ img {
 .weathersummary {
   width: 100%;
   max-width: 320px;
-  background-color: --shadow-70;
-  color: var(--cream-color);
+  background-color: var(--dshadow-60);
+  color: var(--tan-color);
   font-size: 1rem;
   padding: 20px 0;
   text-align: center;
-  box-shadow: 0 5px 15px --shadow-50;
+  box-shadow: 0 5px 15px var(--dshadow-85);
   border-radius: 5px;
 }
 
@@ -324,9 +327,9 @@ img {
 }
 
 .threeday ul {
-  background-color: --shadow-70;
-  color: var(--white-color);
-  box-shadow: 0 5px 15px var(--shadow-50);
+  background-color: var(--dshadow-60);
+  color: var(--tan-color);
+  box-shadow: 0 5px 15px var(--dshadow-85);
   border-radius: 5px;
   list-style-type: none;
   padding: 10px 0;
@@ -357,7 +360,7 @@ img {
   grid-template-rows: 50% 50%;
   width: 100%;
   max-width: 320px;
-  box-shadow: 0 5px 15px var(--shadow-50);
+  box-shadow: 0 5px 15px var(--dshadow-50);
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 0;
@@ -653,7 +656,7 @@ form {
   background-color: var(--white-color);
   max-width: 600px;
   border-radius: 8px;
-  box-shadow: 0 5px 15px var(--shadow-50); /* .0.3 */
+  box-shadow: 0 5px 15px var(--dshadow-50); /* .0.3 */
   text-align: center;
   padding:20px;
   overflow: hidden;
@@ -748,6 +751,12 @@ margin: 0 20px;
 
 /* --- span styles --- */
 
+.iRed {
+  font-style: italic;
+  color: var(--red-color);
+  text-align: center;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -838,7 +847,7 @@ margin: 0 20px;
 
 .item {
     background-color: var(--tan-color);
-    box-shadow: 5px 1px 10px 1px var(--shadow-70);
+    box-shadow: 5px 1px 10px 1px var(--gshadow-70);
     border-radius: 20px;
     padding: 10px;
     text-decoration: none;
@@ -860,7 +869,7 @@ margin: 0 20px;
 }
 
 .item:hover{
-    box-shadow: 5px 1px 10px 1px var(--shadow-50);
+    box-shadow: 5px 1px 10px 1px var(--dshadow-50);
     border-radius: 20px;
     padding: 10px;
 }
