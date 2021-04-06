@@ -1,10 +1,10 @@
 /* all variables are defined in the global.css file */
 @import "global.css";
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 50em) {
 
 
-  /* everything over 600px */
+  /* viewport of 600px - 800px */
   body {
     max-width: 1024px;
   }
@@ -71,14 +71,15 @@
   }
 
   .aboutChamber, .localEvents, .memberLevels, .branchLocations, .chamberDirectors, .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
     justify-items: stretch;
   }
 
   .chamber, .events, .member, .branch, .directors {
     display: grid;
     max-width: 1000px;
-    grid-template-columns: 60% 40%;
+    /* grid-template-columns: 60% 40%; */
     margin: 0 16px 30px;
     padding: 15px 0 30px;
   }
@@ -101,6 +102,10 @@
     width: max-content;
   }
 
+  .chamber img, .events img, .member img, .branch img, .directors img {
+    width: 55%;
+  }
+
 
   .localAds {
     display: grid;
@@ -113,9 +118,7 @@
   .localAds p {
     font-size: 1rem;
   }
-  .tablecloth {
-    padding:0 15px;
-  }
+
 
   .weather {
     background: url(../images/index/bridge-600.jpg) center/cover no-repeat;

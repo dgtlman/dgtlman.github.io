@@ -1,7 +1,7 @@
 /* all variables are defined in the global.css file */
 @import "global.css";
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 64rem) {
 
   /* everything over 1024px */
   body {
@@ -29,7 +29,7 @@
   .weather {
     background: url(../images/index/bridge-1024.jpg) center/cover no-repeat;
   }
-
+/*
   .aboutChamber {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;
@@ -39,7 +39,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 55% 1fr;
   }
-
+*/
   .adList {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;

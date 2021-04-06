@@ -2,7 +2,7 @@
 @import "global.css";
 
 
-/* everything under 600px */
+/* viewport of less than 800px */
 
 body {
   line-height: 1.5;
@@ -248,7 +248,7 @@ img {
 
 .chamber img, .events img, .member img, .branch img, .directors img {
   padding-top: 10px;
-  width: 80%;
+  width: 60%;
   display: inline-block;
 }
 
