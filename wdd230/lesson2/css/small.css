@@ -775,11 +775,14 @@ margin: 0 20px;
   color: var(--dark-color);
 }
 
+
 .textBlock {
   /* text-align: justify; */
   background-color: var(--cream-color);
-  margin: 0 auto;
+  margin: 10px 20px;
   padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--tan-color);
 }
 
 .textBlock img{
