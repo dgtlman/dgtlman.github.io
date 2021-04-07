@@ -574,6 +574,12 @@ form {
   text-align: center;
   color: var(--blue-color);
 }
+  h2.tyHeader {
+  margin: 0 0 15px 5px;
+  padding: 0;
+  text-align: center;
+  font-size: 1.1em;
+  }
 
 .tyText {
   animation-delay: .6s;

@@ -219,7 +219,7 @@
       margin: 0 0 15px 50px;
   }
 
-  .textBlock h2 {
+  .textBlock h2, h2.tyHeader {
     font-size: 1.25em;
   }
   
