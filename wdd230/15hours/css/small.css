@@ -458,7 +458,6 @@ iframe {
 
 .info {
   margin: 20px;
-  /* padding-bottom: 20px; */
 }
 
 
@@ -569,10 +568,11 @@ form {
   min-width: 320px;
   padding: 10px 30px;
   margin: 0 auto;
+  font-size: 1.2em
 }
 
 .atts a {
-  color: var(--orange-color);
+  color: var(--blue-color);
 }
 
 /* --- span styles --- */
