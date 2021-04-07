@@ -659,6 +659,7 @@ form {
     color: var(--dark-color);
     font-size: 1.1em;
     margin: 20px auto;
+    line-height: 2em;
 }
 
 .item:hover{
