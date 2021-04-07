@@ -316,6 +316,7 @@ img {
   text-align: center;
   box-shadow: 0 5px 15px var(--dshadow-85);
   border-radius: 5px;
+  border: 1px solid var(--tan-color);
 }
 
 .weathersummary h2 {
@@ -337,6 +338,7 @@ img {
   justify-items: stretch;
   width: 100%;
   max-width: 320px;
+  border: 1px solid var(--tan-color);
 }
 
 .threeday ul {
