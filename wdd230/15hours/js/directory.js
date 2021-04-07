@@ -17,13 +17,13 @@ fetch(requestURL)
         link.setAttribute("href", directory[i].link);
         let card = document.createElement('div');
         card.setAttribute("class","item");
-        let h3 = document.createElement('h3');
+        let h2 = document.createElement('h2');
         let phone = document.createElement('p');
         let address= document.createElement('p');
         let image = document.createElement('img');
 
         // output 
-        h3.textContent = directory[i].name;
+        h2.textContent = directory[i].name;
         phone.textContent = /*'Phone: '+ */ directory[i].phone;
         address.textContent = /*'Address: ' + */ directory[i].address;
         image.setAttribute('src', directory[i].imageurl);
@@ -31,7 +31,7 @@ fetch(requestURL)
 
         link.appendChild(card);
         card.appendChild(image);
-        card.appendChild(h3);
+        card.appendChild(h2);
         card.appendChild(address);
         card.appendChild(phone);
         

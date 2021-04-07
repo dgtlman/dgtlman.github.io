@@ -211,6 +211,10 @@
   .textBlock h2, h2.tyHeader {
     font-size: 1.25em;
   }
+
+  .atts {
+    font-size: 1.15em
+  }
   
   /* --- directory css --- */
   
@@ -228,4 +232,8 @@
 		background-color: var(--cream-color);
     color: var(--blue-color);
 	}
+
+  .item h2 {
+    font-size: 1.25em;
+  }
 }

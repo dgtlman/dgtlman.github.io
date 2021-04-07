@@ -1,7 +1,6 @@
 /* all variables are defined in the global.css file */
 @import "global.css";
 
-
 /* viewport of less than 800px */
 
 body {
@@ -206,7 +205,8 @@ img {
   width: 100%;
 }
 
-.aboutChamber, .localEvents, .memberLevels, .branchLocations, .chamberDirectors {
+.aboutChamber, .localEvents, .memberLevels, 
+.branchLocations, .chamberDirectors {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -226,7 +226,8 @@ img {
   min-width: 350px;
 }
 
-.chamber img, .events img, .member img, .branch img, .directors img {
+.chamber img, .events img, 
+.member img, .branch img, .directors img {
   padding-top: 10px;
   max-height: 200px;
   display: inline-block;
@@ -272,7 +273,7 @@ img {
   background-color: var(--white-color);
   max-width: 320px;
   border-radius: 8px;
-  box-shadow: 0 5px 15px var(--dshadow-50); /* .0.3 */
+  box-shadow: 0 5px 15px var(--dshadow-50);
   margin: 0 16px 30px;
   text-align: center;
   padding: 0 8px;
@@ -302,7 +303,6 @@ img {
   align-items: center;
   justify-items: center;
   background: url(../images/index/bridge-320.jpg) center/cover no-repeat;
-  /* opacity: 0.85; */
   padding: 30px 15px 10px;
   margin-bottom: 40px;
 }
@@ -320,7 +320,6 @@ img {
 }
 
 .weathersummary h2 {
-    /* font-size: 1.1rem; */
   margin: 0;
   text-align: center;
   font-size: 1.2rem;
@@ -378,7 +377,6 @@ footer {
 footer h2.contacthead {
   font-family: var(--heading-font);
   font-weight: 400;
-    /* font-size: 1.1rem; */
   color: var(--white-color);
   border-bottom: 2px solid var(--orange-color);
   width: 70%;
@@ -397,7 +395,6 @@ footer h2.contacthead {
 
 .contact p {
   text-align: center;
-  /* font-size: 1.25em; */
   font-size: .9em;
 }
 
@@ -568,7 +565,7 @@ form {
   min-width: 320px;
   padding: 10px 30px;
   margin: 0 auto;
-  font-size: 1.2em
+  font-size: 1em
 }
 
 .atts a {
@@ -655,11 +652,12 @@ form {
     color: var(--dark-color);
 }
 
-.item h3 {
+.item h2 {
     border-bottom: 4px solid var(--blue-color); 
     line-height: 2.5em;
     text-align: center;
     color: var(--dark-color);
+    font-size: 1.1em;
 }
 
 .item:hover{
