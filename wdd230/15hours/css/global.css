@@ -12,10 +12,8 @@
 :root {
 	/* site colors: var(--color-name) */
 /* CSS HEX */
-        --black-color: #000000;
         --dark-color: #003049;
         --blue-color: #0077b8;
-        --sky-color: #33B8FF;
         --red-color: #d62828;
         --orange-color: #E07400;
         --yellow-color: #FEDB9A;
