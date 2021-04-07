@@ -4,7 +4,7 @@
 
 /* google font import */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Recursive:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto+Condensed&display=swap');
 /* varibales for font and colors
  * coolors link - https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7-fdf8ec
  */
@@ -32,7 +32,7 @@
         --gshadow-85: rgba(175, 175, 175, 0.85);
 
   /* site fonts var(--style-font) */
-        --heading-font: 'Recursive', sans-serif;;
-        --main-font: 'Oxygen', sans-serif;
+        --heading-font: 'Roboto Condensed', sans-serif;;
+        --main-font: 'Nanum Gothic', sans-serif;
 
 }
