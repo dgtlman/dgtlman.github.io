@@ -643,7 +643,7 @@ form {
     border-radius: 20px;
     padding: 10px;
     text-decoration: none;
-    height: 250px;
+    min-height: 300px;
     margin: 10px;
 }
 
