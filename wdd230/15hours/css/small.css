@@ -658,8 +658,7 @@ form {
     text-align: center;
     color: var(--dark-color);
     font-size: 1.1em;
-    margin: 5px;
-    padding: 15px auto; 
+    margin: 20px auto;
 }
 
 .item:hover{
