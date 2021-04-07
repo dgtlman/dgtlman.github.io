@@ -51,12 +51,12 @@ nav ul li a {
 }
 
 nav ul li.active a {
-  background-color: var(--orange-color);
+  background-color: var(--blue-color);
   color: var(--cream-color);
 }
 
 nav ul li a:hover {
-  background-color: var(--blue-color);
+  background-color: var(--orange-color);
   color: var(--white-color);
   -webkit-transition: background-color 1s;
   -moz-transition: background-color 1s;
@@ -186,7 +186,7 @@ img {
   display: inline-block;
   font-size: .8rem;
   color: var(--white-color);
-  background: var(--orange-color);
+  background: var(--blue-color);
   padding: 8px 15px;
   border-radius: 5px;
   border: none;
