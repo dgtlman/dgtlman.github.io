@@ -12,14 +12,15 @@
 :root {
 	/* site colors: var(--color-name) */
 /* CSS HEX */
-        --dark-color: #003049ff;
-        --blue-color: #0077b8ff;
+        --black-color: #000000;
+        --dark-color: #003049;
+        --blue-color: #0077b8;
         --sky-color: #33B8FF;
-        --red-color: #d62828ff;
+        --red-color: #d62828;
         --orange-color: #E07400;
         --yellow-color: #FEDB9A;
         --tan-color: #EDE7C0;
-        --cream-color: #fdf8ecff;
+        --cream-color: #fdf8ec;
         --gray-color: #e5e5e5;
         --white-color: #ffffff;
 
