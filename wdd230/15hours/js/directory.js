@@ -24,10 +24,10 @@ fetch(requestURL)
 
         // output 
         h2.textContent = directory[i].name;
-        phone.textContent = /*'Phone: '+ */ directory[i].phone;
-        address.textContent = /*'Address: ' + */ directory[i].address;
+        phone.textContent = directory[i].phone;
+        address.textContent = directory[i].address;
         image.setAttribute('src', directory[i].imageurl);
-        image.setAttribute('alt', directory[i].name + 'Logo');
+        image.setAttribute('alt', directory[i].name + ' Logo');
 
         link.appendChild(card);
         card.appendChild(image);
