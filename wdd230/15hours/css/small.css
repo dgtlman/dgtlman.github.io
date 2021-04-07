@@ -216,11 +216,10 @@ img {
 }
 
 .chamber, .events, .member, .branch, .directors {
-  background-color: var(--tan-color);
-  /* background-color: var(--white-color); */
+  background-color: var(--cream-color);
+  border: 1px solid var(--tan-color);
   min-width: 400px;
   border-radius: 8px;
-  /* box-shadow: 0 5px 15px var(--dshadow-50); /* .0.3 */
   margin: 0 16px 30px;
   text-align: center;
   padding: 0 15px;
@@ -640,7 +639,8 @@ form {
 }
 
 .item {
-    background-color: var(--tan-color);
+    background-color: var(--cream-color);
+    border: 1px solid var(--tan-color);
     box-shadow: 5px 1px 10px 1px var(--gshadow-70);
     border-radius: 20px;
     padding: 10px;
