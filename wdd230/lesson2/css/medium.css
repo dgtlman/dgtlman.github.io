@@ -23,8 +23,8 @@
     padding: 0;
   }
 
-  header h1 {
-    font-size: 2.5rem;
+  h1, header h1 {
+    font-size: 1.5rem;
   }
 
   nav {
@@ -48,14 +48,26 @@
     font-size: .8rem;
   }
 
+  /* h1 {
+    font-size: 1.5rem;
+  } */
+
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     margin: 50px 10px 30px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
   }
 
   h2.emphasized {
     padding: 5px 10px;
-    font-size: 1.75rem;
+    /* font-size: 1.25rem; */
   }
 
   .button {
@@ -98,7 +110,7 @@
       padding: 0;
     }
   
-  .member li, .branch p, .directors p {
+  .member li, .directors p {
     width: max-content;
   }
 
@@ -144,7 +156,7 @@
   }
 
   footer h2.contacthead {
-    font-size: 1.5em;
+    /* font-size: 1.25rem; */
     margin-top: 20px;
   }
 
@@ -157,6 +169,7 @@
   }
 
   .contact h3 {
+    /* font-size: 1.1em; */
     text-align: left;
     padding-left: 35px;
   }
@@ -208,6 +221,7 @@
   }
 
   .textBlock h4 {
+      font-size: 1em;
       text-align: left;
   }
   

@@ -113,7 +113,7 @@ h4 {
 
 h2.emphRed, h2.emphOrange, h2.emphBlue, h2.emphOrange2 {
   padding: 0 10px;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   line-height: 2.5rem;
   font-family: var(--heading-font);
   min-width: 275px;
@@ -135,7 +135,7 @@ h2.emphOrange2 {
 
 h2.emphBlue {
   margin: 5px auto 5px auto;
-  font-size: 1.1rem;
+    /* font-size: 1.1rem; */
   border-bottom: 4px solid var(--blue-color); 
 }
 
@@ -272,9 +272,12 @@ img {
 }
 
 .branch {
-  height: 150px;
+  height: 125px;
 }
 
+.branch p {
+  text-align: center;
+}
 
 .adList {
   display: grid;
@@ -337,6 +340,7 @@ img {
 }
 
 .weathersummary h2 {
+    /* font-size: 1.1rem; */
   margin: 0;
   text-align: center;
   font-size: 1.2rem;
@@ -394,7 +398,7 @@ footer {
 footer h2.contacthead {
   font-family: var(--heading-font);
   font-weight: 400;
-  font-size: 1rem;
+    /* font-size: 1.1rem; */
   color: var(--white-color);
   border-bottom: 2px solid var(--orange-color);
   width: 70%;
@@ -452,6 +456,19 @@ footer h2.contacthead {
 .map {
   background-color: transparent;
   margin-right: 10px;
+}
+
+.map2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.map3 {
+  display: none;
+}
+
+iframe {
+  margin: 0 auto;
 }
 
 .social img {
@@ -552,17 +569,14 @@ form {
   width: 75%;
 }
 
-.thankYouText1, .thankYouText2, .thankYouText3 {
+.tyHeader, .tyText {
   animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
   text-align: center;
+  color: var(--blue-color);
 }
 
-.thankYouText2 {
+.tyText {
   animation-delay: .6s;
-}
-
-.thankYouText3 {
-  animation-delay: .7s;
 }
 
 .atts {
