@@ -256,6 +256,10 @@ img {
   height: 125px;
 }
 
+.member {
+  height: 200px;
+}
+
 .branch p {
   text-align: center;
 }
