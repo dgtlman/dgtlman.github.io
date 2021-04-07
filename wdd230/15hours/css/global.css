@@ -25,12 +25,9 @@
         --white-color: #ffffff;
 
   /* site transparent colors: var(--color-##) */
-        --dshadow-50: rgba(2, 48, 71, 0.5);
-        --dshadow-60: rgba(2, 48, 71, 0.6);
+        --dshadow-55: rgba(2, 48, 71, 0.55);
         --dshadow-75: rgba(2, 48, 71, 0.75);
-        --dshadow-90: rgba(2, 48, 71, 0.90);
         --gshadow-70: rgba(175, 175, 175, 0.7);
-        --gshadow-85: rgba(175, 175, 175, 0.85);
 
   /* site fonts var(--style-font) */
         --heading-font: 'Roboto Condensed', sans-serif;;

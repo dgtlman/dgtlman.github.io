@@ -188,7 +188,7 @@ img {
   left: 20px;
   font-size: 1rem;
   padding: 10px 15px;
-  box-shadow: 0 5px 15px var(--dshadow-50);
+  box-shadow: 0 5px 15px var(--dshadow-55);
 }
 
 .clearfix:after {
@@ -273,7 +273,7 @@ img {
   background-color: var(--white-color);
   max-width: 320px;
   border-radius: 8px;
-  box-shadow: 0 5px 15px var(--dshadow-50);
+  box-shadow: 0 5px 15px var(--dshadow-55);
   margin: 0 16px 30px;
   text-align: center;
   padding: 0 8px;
@@ -310,7 +310,7 @@ img {
 .weathersummary {
   width: 100%;
   max-width: 320px;
-  background-color: var(--dshadow-60);
+  background-color: var(--dshadow-55);
   color: var(--yellow-color);
   font-size: 1rem;
   padding: 20px 0;
@@ -341,7 +341,7 @@ img {
 }
 
 .threeday ul {
-  background-color: var(--dshadow-60);
+  background-color: var(--dshadow-55);
   color: var(--yellow-color);
   box-shadow: 0 5px 15px var(--dshadow-85);
   border-radius: 5px;
@@ -462,7 +462,7 @@ iframe {
 form fieldset {
   margin: 3rem 0;
   border: 1px solid transparent;
-  background-color: var(--gray-color);
+  background-color: var(--cream-color);
   border-radius: 10px;
 }
 
@@ -661,7 +661,7 @@ form {
 }
 
 .item:hover{
-    box-shadow: 5px 1px 10px 1px var(--dshadow-50);
+    box-shadow: 5px 1px 10px 1px var(--dshadow-55);
     border-radius: 20px;
     padding: 10px;
 }
