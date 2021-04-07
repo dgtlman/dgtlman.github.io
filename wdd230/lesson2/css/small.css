@@ -593,7 +593,7 @@ form {
 .redText {
   padding-top: 5px;
   font-weight: 700;
-  color: var(--orange-color);
+  color: var(--blue-color);
 }
 
 .bold {
@@ -626,9 +626,11 @@ form {
   box-shadow: 0 0 10px var(--dark-color);
 }
 
-.textBlock h4 {
+.textBlock h2 {
   margin: 0 0 15px 5px;
   padding: 0;
+  text-align: left;
+  font-size: 1.1em;
 }
 
 #directoryButtons {

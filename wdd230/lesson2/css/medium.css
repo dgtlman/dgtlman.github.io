@@ -211,7 +211,6 @@
 
   .textBlock {
     max-width: 86%;
-
 }
 
   .textBlock img {
@@ -220,9 +219,8 @@
       margin: 0 0 15px 50px;
   }
 
-  .textBlock h4 {
-      font-size: 1em;
-      text-align: left;
+  .textBlock h2 {
+    font-size: 1.25em;
   }
   
   /* --- directory css --- */
