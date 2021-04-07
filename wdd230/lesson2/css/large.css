@@ -41,17 +41,11 @@
   .weather {
     background: url(../images/index/bridge-1024.jpg) center/cover no-repeat;
   }
-/*
-  .aboutChamber {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: stretch;
+
+  .chamber, .events, .member, .branch, .directors {
+    max-width: none;
   }
 
-  .chamber {
-    grid-template-columns: 100%;
-    grid-template-rows: 55% 1fr;
-  }
-*/
   .adList {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: stretch;

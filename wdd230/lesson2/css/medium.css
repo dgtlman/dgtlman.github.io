@@ -94,6 +94,7 @@
     /* grid-template-columns: 60% 40%; */
     margin: 0 16px 30px;
     padding: 15px 0 30px;
+    max-width: 600px;
   }
 
   .chamber p, .chamber li, 
@@ -116,6 +117,10 @@
 
   .chamber img, .events img, .member img, .branch img, .directors img {
     width: 55%;
+  }
+
+  h2.emphBlue {
+    min-width: none;
   }
 
 
