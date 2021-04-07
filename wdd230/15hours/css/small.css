@@ -613,7 +613,7 @@ form {
 
 .textBlock h2 {
   margin: 0 0 15px 5px;
-  padding: 0;
+  padding: 10px 0 0 0;
   text-align: left;
   font-size: 1.1em;
 }

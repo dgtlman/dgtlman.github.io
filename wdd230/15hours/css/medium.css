@@ -208,8 +208,13 @@
       margin: 0 0 15px 50px;
   }
 
-  .textBlock h2, h2.tyHeader {
+  h2.tyHeader {
     font-size: 1.25em;
+  }
+
+  .textBlock h2 {
+    font-size: 1.25em;
+    padding: 0;
   }
 
   .atts {
