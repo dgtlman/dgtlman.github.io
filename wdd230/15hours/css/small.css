@@ -599,7 +599,7 @@ form {
 
 .textBlock {
   background-color: var(--cream-color);
-  color: var(--black-color);
+  color: var(--dark-color);
   margin: 20px auto;
   padding: 30px;
   border-radius: 10px;
