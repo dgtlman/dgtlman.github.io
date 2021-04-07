@@ -218,7 +218,6 @@ img {
 .chamber, .events, .member, .branch, .directors {
   background-color: var(--cream-color);
   border: 1px solid var(--tan-color);
-  min-width: 400px;
   border-radius: 8px;
   margin: 0 16px 30px;
   text-align: center;
