@@ -655,10 +655,11 @@ form {
 
 .item h2 {
     border-bottom: 4px solid var(--blue-color); 
-    line-height: 2.5em;
     text-align: center;
     color: var(--dark-color);
     font-size: 1.1em;
+    margin: 5px;
+    padding: 5px; 
 }
 
 .item:hover{
