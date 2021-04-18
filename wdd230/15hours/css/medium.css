@@ -1,0 +1,244 @@
+/* all variables are defined in the global.css file */
+@import "global.css";
+
+@media only screen and (min-width: 50em) {
+
+
+  /* viewport of 600px - 800px */
+  body {
+    max-width: 1024px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .spacer {
+    display: none;
+    padding: 0;
+  }
+
+  h1, header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    float: right;
+    margin: -88px 0 5px 20px;
+  }
+
+  nav ul li a {
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  header {
+    max-width: 225px;
+  }
+  .logo {
+    max-width: 125px;
+  }
+
+  .subhead {
+    font-size: .8rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin: 50px 10px 30px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h2.emphasized {
+    padding: 5px 10px;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+
+  .calltoaction {
+    font-weight: bold;
+    top: 40px;
+    left: 40px;
+    font-size: 1.25rem;
+    padding: 15px 25px;
+  }
+
+  .aboutChamber, .localEvents, .memberLevels, .branchLocations, .chamberDirectors, .cards {
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+  }
+
+  .chamber, .events, .member, .branch, .directors {
+    display: grid;
+    margin: 0 16px 30px;
+    padding: 15px 0 30px;
+    max-width: 600px;
+  }
+
+  .chamber p, .chamber li, 
+  .events p, .events li, 
+  .member p, .member li, 
+  .branch p, .branch li, 
+  .directors p, .directors li {
+    font-size: 1rem;
+  }
+
+  .chamber li, .events li, .member li, .branch li, .directors li  {
+      font-size: 1rem;
+      line-height: 1.4;
+      padding: 0;
+    }
+  
+  .member li, .directors p {
+    width: max-content;
+  }
+
+  .chamber img, .events img, .member img, .branch img, .directors img {
+    max-height: 225px;
+  }
+
+  .localAds {
+    display: grid;
+    max-width: 1024px;
+    min-width: 700px;
+    grid-template-columns: 60% 40%;
+    margin: 0 16px 30px;
+    padding: 15px 0 30px;
+  }
+
+  .localAds p {
+    font-size: 1rem;
+  }
+
+
+  .weather {
+    background: url(../images/index/bridge-600.jpg) center/cover no-repeat;
+    grid-template-columns: 1fr 30% 10% 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 60px;
+    grid-gap: 15px;
+    padding-bottom: 30px;
+  }
+
+  .weathersummary {
+    justify-self: stretch;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 55px 0;
+  }
+
+  .threeday {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  footer h2.contacthead {
+    margin-top: 20px;
+  }
+
+  .contact {
+    display: block;
+    justify-self: stretch;
+    max-width: 800px;
+  }
+
+  .contact h3 {
+    text-align: left;
+    padding-left: 35px;
+  }
+
+  .contact p {
+    font-size: 1.1em;
+  }
+
+  .formMap {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: 60% 35%;
+    margin: 0 auto;
+    padding: 15px 0 30px;
+  }
+
+  .map {
+    margin: 10px 0 0 0;
+  }
+
+  .social {
+    grid-column: 2;
+    text-align: left;
+    margin: 0 0 0 10px;
+  }
+
+ 
+  .phone p,
+  .phone img,
+  .address img,
+  .email img,
+  .email p {
+    margin: 10px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .textBlock {
+    max-width: 86%;
+}
+
+  .textBlock img {
+      float: right;
+      width: 300px;
+      margin: 0 0 15px 50px;
+  }
+
+  h2.tyHeader {
+    font-size: 1.25em;
+  }
+
+  .textBlock h2 {
+    font-size: 1.25em;
+    padding: 0;
+  }
+
+  .atts {
+    font-size: 1.15em
+  }
+  
+  /* --- directory css --- */
+  
+  .cards {
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		margin-top: 20px;
+	}
+	
+	.gridbuttons button {
+    margin-left: 20px;
+		display: inline;
+		background-color: var(--cream-color);
+    color: var(--blue-color);
+	}
+
+  .item h2 {
+    font-size: 1.25em;
+  }
+}

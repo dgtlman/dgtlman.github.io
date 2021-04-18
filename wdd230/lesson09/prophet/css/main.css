@@ -1,0 +1,138 @@
+/* all variables are defined in the global.css file */
+@import "global.css";
+
+p { 
+font-family: var(--main-font);
+font-size: 1em;
+color: var(--dark-color);
+font-weight: 200;
+padding: 0;
+margin: 0;
+margin-bottom: 5px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  text-align: center;
+  justify-items: stretch;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 15px var(--dark-75);
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: var(--subhead-font);
+  font-weight: 500;
+}
+
+h1 {
+  color: var(--dark-color);
+}
+
+h2 {
+  color: var(--pink-color);
+  margin-bottom: 10px;
+}
+
+.cards section {
+  border: 2px solid var(--pink-color);
+  background-color: var(--silver-color);
+  padding: 10px 20px 20px;
+}
+
+.cards img {
+  margin-top: 15px;
+  object-fit: cover;
+  height: 280px;
+  width: 200px;
+  box-shadow: 0 5px 30px var(--dark-50);
+}
+
+footer {
+  background-color: var(--dark-75);
+  color: var(--white-color);
+  text-align: center;
+  padding: 20px;
+}
+
+/* footer box - main text */
+.foot {
+  color: var(--white-color);
+  padding: 5px 0 0 0;
+  text-align: center;
+  margin: 0px;
+}
+
+/* footer box - styles date text*/
+.update {
+  color: var(--peach-color);
+  font-weight: 500;
+  padding: 0 0 5px 0;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+/* CONTACTBLOCK ONLY: unvisited link, visited link, selected link  */
+.contactBlock a, .contactBlock a:link, .contactBlock a:visited {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+/* FOOTER ONLY: mouse over link */
+.contactBlock a:hover {
+  color: var(--pink-color);
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+}
+
+/* FOOTER ONLY: link clicked, link focused */
+.contactBlock a:active, footer a:focus {
+  color: var(--yellow-color);
+}
+
+
+/* FOOTER ONLY: unvisited link, visited link, selected link  */
+footer a, footer a:link, footer a:visited {
+  color: var(--white-color);
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* FOOTER ONLY: mouse over link */
+footer a:hover {
+  color: var(--yellow-color);
+}
+
+/* FOOTER ONLY: link clicked, link focused */
+footer a:active, footer a:focus {
+  color: var(--peach-color);
+}
+
+
+
+/* --- media query medium sized (2 cards per row) --- */
+@media only screen and (min-width: 35em) {
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* --- media query large sized (4 cards per row) --- */
+@media only screen and (min-width: 64rem) {
+
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

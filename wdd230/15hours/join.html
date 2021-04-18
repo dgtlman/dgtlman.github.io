@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join the Midlothian Chamber of Commerce</title>
+  <meta name="description" content="Sign up for annual memberships with the Midlothian Chamber of Commerce. This includes membership level description and annual price."/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="images/global/logo.png" loading="lazy" alt="logo for Richmond VA, Chamber of Commerce: Midlothian Chapter">
+    <p class="subhead">RVA Chamber of Commerce</p>
+  </header>
+  <main>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">home</a></li>
+        <li><a href="midlothian.html">midlothian</a></li>
+        <li class="active"><a href="join.html">join</a></li>
+        <li><a href="directory.html">directory</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <div class="herodiv">
+      <picture>
+        <source srcset="images/global/rva-small.jpg" media="(max-width:600px)"/>
+        <source srcset="images/global/rva-medium.jpg" media="(max-width:1024px)"/>
+        <img class="hero-ph" src="images/global/rva-large.jpg" loading="lazy" alt="Richmond, Virginia Skyline overlooking downtown and the James River at sunset"/>
+      </picture>
+    </div>
+
+        <h1>Membership Levels and Features:</h1>
+        <section class="memberLevels">
+            <div class="member">
+              <div class="info">
+                <h2 class="emphBlue">501c Non-Profit</h2>
+                <ul>
+                  <li>Marketing assistance</li>
+                  <li>Invitation to all Mixers</li>
+                  <li>Reduced fees for Ads.</li>
+                  <li>Fishstick & Bean Casserole</li>
+                </ul>
+              </div>
+            </div>
+            <div class="member">
+              <div class="info">
+                <h2 class="emphBlue">Bronze</h2>
+                <ul>
+                  <li>Non-Profit features</li>
+                  <li>1:1 business coaching.</li>
+                  <li>Access to workshops</li>
+                  <li>Member Plaque.</li>
+                </ul>
+              </div>
+            </div>
+          <div class="member">
+              <div class="info">
+                  <h2 class="emphBlue">Silver</h2>
+                  <ul>
+                    <li>Bronze level features</li>
+                    <li>Two uses of directory.</li>
+                    <li>Intro to 5 members.</li>
+                    <li>Member Luncheon.</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="member">
+            <div class="info">
+              <h2 class="emphBlue">Gold</h2>
+                <ul>
+                  <li>Silver level features</li>
+                  <li>Executive Events.</li>
+                  <li>Use of our media room.</li>
+                  <li>Free ad on our homepage.</li>
+                </ul>
+            </div>
+          </div>
+        </section>  
+
+
+
+    <h2>Join the Chamber of Commerce</h2>
+    <form method="get" action="thanksjoin.html">
+      
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label class="top" for="fname"> First Name* <input type="text" id="fname" name="firstname" placeholder="First Name" pattern="[\sA-Za-z]{5,}" required></label>
+        <label class="top" for="lname"> Last Name* <input type="text" id="lname" name="lastname" placeholder="Last Name" pattern="[\sA-Za-z]{5,}" required></label>
+        <label class="top" for="title"> Title* <input type="text" id="title" name="title" placeholder="Title" pattern="[\sA-Za-z]{5,}" required></label>
+        <label class="top" for="email"> Email* <input type="email" id="email" name="email" placeholder="name@domain.com" required></label>
+        <label class="top" for="cphone"> Phone* <input type="tel" id="cphone" name="cphone" placeholder="123-555-1234" required></label>
+      </fieldset>
+      
+      <fieldset>
+          <legend>Company Information</legend>
+        <label class="top" for="business"> Business Name* <input type="text" id="business" name="business" placeholder="Business Name" pattern="[\sA-Za-z]{5,}" required></label>
+        <label class="top" for="adr"> Address* <input type="text" id="adr" name="address" placeholder="123 Hull St Rd" required></label>
+        <label class="top" for="city"> City* <input type="text" id="city" name="city" placeholder="Midlothian" required></label>
+        <label class="top" for="state"> State* <input type="text" id="state" name="state" placeholder="Virginia" required></label>
+        <label class="top" for="zip"> Zip* <input type="text" id="zip" name="zip" placeholder="23114" required></label>
+        <label class="top" for="bphone"> Company Phone* <input type="tel" id="bphone" name="bphone" placeholder="123-555-1234" required></label>
+        <label class="top">Business Description <textarea name="comment01" rows="3"></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose Level and Payment</legend>
+        <div class="radio">
+          <p>PIck your membership level:</p>
+          <div>
+            <label class="sbs"><input type="radio" name="danger" value="Gold" checked> Gold ($1000) </label>
+            <label class="sbs"><input type="radio" name="danger" value="Silver"> Silver ($500) </label>
+            <label class="sbs"><input type="radio" name="danger" value="Bronze"> Bronze ($250) </label>
+            <label class="sbs"><input type="radio" name="danger" value="Non-Profit"> Non-Profit ($150) </label>
+          </div>
+        </div>
+        <label class="top" for="cname">Name on Card<input type="text" id="cname" name="cardname" placeholder="Full Name" required></label>
+        <label class="top" for="ccnum">Credit card number<input type="text" id="ccnum" name="cardnumber" placeholder="1234-2345-3456-4567" required></label>
+        <label class="top" for="expmo">Exp Month<input type="text" id="expmo" name="expmo" placeholder="January" required></label>
+        <label class="top" for="expireyear">Exp Year<input type="text" id="expireyear" name="expireyear" placeholder="2021" required></label>
+        <label class="top" for="cvv">CVV<input type="text" id="cvv" name="cvv" placeholder="123" required></label>
+        <input type="submit" value="Submit Annual Dues" class="submitBtn">
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <h2 class="contacthead">Richmond Virginia Chamber of Commerce: Midlothian Chapter</h2>
+      <div class="contact">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/global/facebook32.png" loading="lazy" alt="facebook icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/global/pinterest32.png" loading="lazy" alt="pinterest icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/global/twitter32.png" loading="lazy" alt="twitter icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/global/instagram32.png" loading="lazy" alt="instagram icon"/></a>
+        <p><a class="attribute" href="contact.html">804.867.5309 &nbsp;|&nbsp; 800 Charter Colony Pkwy &nbsp;|&nbsp; Midlothian, VA 23114</a></p>
+        <p> &copy;<span id="current-date"></span> Eric Garofalo &nbsp; &nbsp;|&nbsp; &nbsp;
+        <a class="attribute" href="attributes.html"> Attributions</a> &nbsp; &nbsp;|&nbsp; &nbsp; Last Updated: &nbsp;<span id="last-updated"></span></p>
+      </div>    
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/site.js"></script>
+</body>
+
+</html>

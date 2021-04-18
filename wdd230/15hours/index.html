@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Homepage of Midlothian Virginia Chamber of Commerce</title>
+  <meta name="description" content="The Midlothian Virginia Chamber of Commerce serves local businesses and the community of the southside of Richmond Virginia"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <div class="weatheralert">
+    <span id="alert"></span>
+    <span id="alertdesc"></span>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  </div>
+
+  <header>
+    <img class="logo" src="images/global/logo.png" loading="lazy" alt="logo for Richmond VA, Chamber of Commerce: Midlothian Chapter">
+    <p class="subhead">RVA Chamber of Commerce</p>
+  </header>
+
+  <main>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">home</a></li>
+        <li><a href="midlothian.html">midlothian</a></li>
+        <li><a href="join.html">join</a></li>
+        <li><a href="directory.html">directory</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="herodiv">
+      <picture>
+        <source srcset="images/global/rva-small.jpg" media="(max-width:600px)"/>
+        <source srcset="images/global/rva-medium.jpg" media="(max-width:1024px)"/>
+        <img class="hero-ph" src="images/global/rva-large.jpg" loading="lazy" alt="Richmond, Virginia Skyline overlooking downtown and the James River at sunset"/>
+      </picture>
+      <a class="button calltoaction" href="join.html">join</a>
+    </div>
+
+    <h1>About the Chamber of Commerce</h1>
+    <section class="aboutChamber">
+      <div class="chamber">
+        <picture>
+          <source srcset="images/index/goals-480.jpg" media="(max-width:600px)"/>
+          <source srcset="images/index/goals-640.jpg" media="(max-width:1024px)"/>
+          <img src="images/index/goals-800.jpg" loading="lazy" alt="Inside the office of the Midlothian Chamber of Commerce"/>
+        </picture>
+        <div class="info">
+          <h2 class="emphBlue">Goals</h2>
+          <p>Our team of officials and mentors can assist you to make good 
+            business decisions, provide targeted advertisement opportunities and link you with related businesses. 
+          </p>
+        </div>
+      </div>
+      <div class="chamber">
+        <picture>
+          <source srcset="images/index/purpose-480.jpg" media="(max-width:600px)"/>
+          <source srcset="images/index/purpose-640.jpg" media="(max-width:1024px)"/>
+          <img src="images/index/purpose-800.jpg" loading="lazy" alt="Ribbon cutting event for the Midlothian Chamber of Commerce"/>
+        </picture>
+        <div class="info">
+          <h2 class="emphBlue">Purpose</h2>
+          <p>We assist businesses, commercial interests, and help prevent laws that may impede
+            the community’s business interests. We are advocates for you and community at large.</p>
+        </div>
+      </div>
+      <div class="chamber">
+        <picture>
+          <source srcset="images/index/membership-480.jpg" media="(max-width:600px)"/>
+          <source srcset="images/index/membership-640.jpg" media="(max-width:1024px)"/>
+          <img src="images/index/membership-800.jpg" loading="lazy" alt="New members of the Midlothian Chamber of Commerce"/>
+        </picture>
+        <div class="info">
+          <h2 class="emphBlue">Membership</h2>
+          <p>By joining the Midlothian Chamber of Commerce, you can benefit from many of the services that we offer. 
+             Our <a href="join.html">membership page</a> has a comprehensive list of the advantages of joining.</p>
+        </div>
+      </div>
+      <div class="chamber">
+        <picture>
+          <source srcset="images/index/events-480.jpg" media="(max-width:600px)"/>
+          <source srcset="images/index/events-640.jpg" media="(max-width:1024px)"/>
+          <img src="images/index/events-800.jpg" loading="lazy" alt="An event hosted by Midlothian Chamber of Commerce"/>
+        </picture>
+        <div class="info">
+          <h2 class="emphBlue">Next Chamber Event</h2>
+          <p>On April 8th, we will be hosting a member mixer to conclude the end of this season. All in attendance will enjoy a break,
+             light appetizers, and live music. Come and mingle with other local businesses.</p>
+        </div>
+      </div>
+    </section>
+
+    <h2>Weather</h2>
+    <section class="weather">
+      <div class="weathersummary">
+        <h2>Today's Weather</h2>
+        <img id="icon" src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+          loading="lazy" alt="unknown">
+        <p>Currently: <span id="weather"></span> </p>
+        <p>Current Temp: <span id="current-temp"></span></p>
+        <p>Feels Like: <span id="feels_like"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+      </div>
+      <div class="threeday">
+        <ul>
+          <li><span id="dayofweek1"></span></li>
+          <li class="icon"><img id="icon1"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              loading="lazy" alt="unknown"/></li>
+          <li><span id="forecast1"></span>&#8457;</li>
+        </ul>
+        <ul>
+          <li><span id="dayofweek2"></span></li>
+          <li class="icon"><img id="icon2"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              loading="lazy" alt="unknown"></li>
+          <li><span id="forecast2"></span>&#8457;</li>
+        </ul>
+        <ul>
+          <li><span id="dayofweek3"></span></li>
+          <li class="icon"><img id="icon3"
+              src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+              loading="lazy" alt="unknown"></li>
+          <li><span id="forecast3"></span>&#8457;</li>
+        </ul>
+      </div>
+    </section>
+
+    <h2>Local Advertisements</h2>
+    <section class="adList">
+      <div class="localAds">
+        <picture>
+          <img src="images/directory/sals.jpg" loading="lazy" alt="logo for sals pizza in midlothian, va"/>
+        </picture>
+        <div class="info">
+          <h2 class="emphBlue">Sals Pizza & Subs</h2>
+          <p>Pizza, Pasta, Subs & More!</p>
+          <p>Call - 804.533.7827</p>
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/mrsubmarineandsalspizza/" class="button">visit website</a>
+        </div>
+      </div>
+      <div class="localAds">
+        <picture>
+          <img src="images/directory/vatire.jpg" loading="lazy" alt="logo for virginia auto and tire in midlothian, va"/>
+        </picture>
+        <div class="info">
+          <h2 class="emphBlue">Virginia Auto and Tire</h2>
+          <p>More than great auto service!</p>
+          <p>Call - 804.293.8833</p>
+          <a target="_blank" rel="noreferrer" href="https://vatire.com/stores/virginia-tire-auto-of-chesterfield/" class="button">visit website</a>
+        </div>
+      </div>
+      <div class="localAds">
+        <picture>
+          <img src="images/directory/paka.jpg" loading="lazy" alt="logo for pakawan indian cuisine in midlothian, va"/>
+        </picture>
+        <div class="info">
+          <h2 class="emphBlue">Pakwaan Restaurant</h2>
+          <p>Authentic Indian food.</p>
+          <p>Call - 804.608.1058</p>
+          <a target="_blank" rel="noreferrer" href="https://www.pakwaanva.com" class="button">visit website</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2 class="contacthead">Richmond Virginia Chamber of Commerce: Midlothian Chapter</h2>
+      <div class="contact">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/global/facebook32.png" loading="lazy" alt="facebook icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/global/pinterest32.png" loading="lazy" alt="pinterest icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/global/twitter32.png" loading="lazy" alt="twitter icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/global/instagram32.png" loading="lazy" alt="instagram icon"/></a>
+        <p><a class="attribute" href="contact.html">804.867.5309 &nbsp;|&nbsp; 800 Charter Colony Pkwy &nbsp;|&nbsp; Midlothian, VA 23114</a></p>
+        <p> &copy;<span id="current-date"></span> Eric Garofalo &nbsp; &nbsp;|&nbsp; &nbsp;
+        <a class="attribute" href="attributes.html"> Attributions</a> &nbsp; &nbsp;|&nbsp; &nbsp; Last Updated: &nbsp;<span id="last-updated"></span></p>
+      </div>    
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/alert.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/midloWeather.js"></script>
+</body>
+
+</html>

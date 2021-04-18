@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wdd230 l03 - weather project planning site - index</title>
+    <meta name="description" content="This site wil serve the greater eastern  metropolitan area of Idaho (Preston, Soda Springs and Fish Haven) to provide weather and other local information.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <script src='script/year-update.js'></script>
+  </head>
+
+  <body>
+
+    <header>
+      <picture>
+        <img class="logo" src="images/logo.png" alt="GEMi logo"/>
+      </picture>
+      <section>
+        <h1>Greater Eastern Metropolitan Idaho (GEMi)</h1>
+        <h2>eric garofalo: site planning typography</h2>
+      </section>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="color-scheme.html">colors</a></li>
+        <li class="active"><a href="typography.html">typography</a></li>
+        <li><a href="target-audience.html">audience</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h3>Site Typography</h3>
+
+      <!-- <rant> I am not a fan of tables. There should be an easier way to do this. It works, but it feels like going back in time. </rant> -->
+
+      <table>
+        <tr>
+          <th>font location</th>
+          <th>font name</th>
+          <th>size</th>
+          <th>color</th>
+          <th>example</th>
+        </tr>
+        <tr>
+          <td>site heading (h1)</td>
+          <td>Poiret One</td>
+          <td>32px</td>
+          <td>#F5F5F5</td>
+          <td class="td-umbra"><p class="headfont1">Sample</p></td>
+        </tr>
+        <tr>
+          <td>heading 2 (h2)</td>
+          <td>Poiret One</td>
+          <td>28px</td>
+          <td>#F5F5F5</td>
+          <td class="td-umbra"><p class="headfont2">Sample</p></td>
+        </tr>
+        <tr>
+          <td>heading 3 (h3)</td>
+          <td>Ubuntu Condensed</td>
+          <td>24px</td>
+          <td>#DB3896</td>
+          <td><p class="headfont3">Sample</p></td>
+        </tr>
+        <tr>
+          <td>heading 4 (h4)</td>
+          <td>Ubuntu Condensed</td>
+          <td>20px</td>
+          <td>#DB3896</td>
+          <td><p class="headfont4">Sample</p></td>
+        </tr>
+        <tr>
+          <td>main navigation</td>
+          <td>Ubuntu</td>
+          <td>16px</td>
+          <td>#DB3896</td>
+          <td class="td-dark"><p class="mnav">Sample</p></td>
+        </tr>
+        <tr>
+          <td>footer navigation</td>
+          <td>Ubuntu</td>
+          <td>16px</td>
+          <td>#F5F5F5</td>
+          <td class="td-umbra"><p class="fnav">Sample</p></td>
+        </tr>
+        <tr>
+          <td>paragraph (p)</td>
+          <td>Ubuntu</td>
+          <td>16px</td>
+          <td>#161032</td>
+          <td><p class="parafont">Sample</p></td>
+        </tr>
+      </table>
+
+      <!-- its the end of the table as we know it -->
+
+    </main>
+
+    <footer>
+      <p class="foot">
+        <!-- javascript insert - dymanically add copyright year to footer (id='copyrightyear') -->
+        <a href="https://en.wikipedia.org/wiki/2021" target="_blank">&copy; <span id='copyrightyear'></span></a>  &nbsp; | &nbsp;
+        <a href="https://dgtlman.github.io/" target="_blank">Eric Garofalo</a>  &nbsp; | &nbsp;
+        <a href="https://www.virginiacapitaltrail.org" target="_blank">Virginia</a>  &nbsp; | &nbsp;
+        <a href="https://www.byui.edu/online" target="_blank">BYUi Online</a>
+      </p>
+
+      <!-- javascript insert - dymanically add date and time of last github update (id='lastupdated') -->
+      <p class="update">Last Updated: <span id='lastupdated'></span></p>
+    </footer>
+
+  </body>
+</html>

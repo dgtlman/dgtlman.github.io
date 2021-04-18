@@ -1,0 +1,78 @@
+/* all variables are defined in the global.css file */
+@import "global.css";
+
+@media only screen and (min-width: 64rem) {
+
+  /* everything over 1024px */
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .logo {
+    max-width: 150px;
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  h2.emphasized {
+    margin: 0 0 30px;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  .weather {
+    background: url(../images/index/bridge-1024.jpg) center/cover no-repeat;
+  }
+
+  .chamber, .events, .member, .branch, .directors {
+    max-width: none;
+  }
+
+  .adList {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: stretch;
+  }
+
+  .localAds {
+    grid-template-columns: 100%;
+    grid-template-rows: 55% 1fr;
+    min-width: 300px;
+    
+  }
+
+  .localAds img {
+    width: 90%;
+  }
+
+  /* --- directory css --- */
+
+  .cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+	  margin-top: 20px;
+}
+
+.item img {
+    max-width:100px;
+  }
+}

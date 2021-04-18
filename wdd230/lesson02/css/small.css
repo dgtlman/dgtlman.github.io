@@ -1,0 +1,109 @@
+/* comments
+color link - https://coolors.co/0e1c36-fffffc-#A27E8E-8c1c13
+1/6/2021 @ 9:01pm
+*/
+
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap');
+
+/* varibales for vont and colors */
+:root {
+	
+	/* site colors: var(--color-name) */
+	--red-color: #8C1C13;
+	--blue-color: #0E1C36;
+	--gray-color: #A27E8E;
+	--white-color: #FFFFFC;
+	--orange-color: #FFC07F;
+	
+
+	/* site fonts var(--style-font) */
+	--heading-font: 'Ubuntu Condensed', sans-serif;
+	--paragraph-font: 'Ubuntu', sans-serif;
+}
+body {
+    background-color: var(--red-color);
+}
+
+header, nav, main, footer {
+    margin: 0 auto;
+    padding: 2%;
+    max-width: 1140px;
+}
+
+header, footer {
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+/* text styles */
+p, ul, li, script {
+    font-family: var(--paragraph-font);
+    text-align: justify;
+}
+
+/* unvisited link, visited link, selected link  */
+a:link, a:visited, a:active {
+    color: var(--red-color);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--blue-color);
+  }
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+
+img {
+    max-width: 250px;
+    /* max-height: auto; */
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+    background-color: var(--white-color);
+    text-align: center;
+    color: var(--blue-color);
+    border-radius: 10px;
+    /* align-content: center; */
+    margin: 10px;
+
+}
+
+/* text for footer box */
+.foot {
+	text-align: center;
+	color: var(--white-color);
+}
+
+/* text for footer box */
+.update {
+	text-align: center;
+	color: var(--orange-color);
+}
+
+/* FOOTER ONLY: unvisited link, visited link, selected link  */
+footer a, footer a:link, footer a:visited {
+    color: var(--white-color);
+}
+
+/* FOOTER ONLY: mouse over link */
+footer a:hover {
+    color: var(--red-color);
+}
+
+/* FOOTER ONLY: link clicked, link focused */
+footer a:active, footer a:focus {
+    color: var(--gray-color);
+}

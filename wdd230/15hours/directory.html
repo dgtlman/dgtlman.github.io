@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Midlothian Virginia Chamber of Commerce - Member Directory</title>
+  <meta name="description" content="The Midlothian Virginia Chamber of Commerce serves local businesses and the community of the southside of Richmond Virginia"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="images/global/logo.png" loading="lazy" alt="logo for Richmond VA, Chamber of Commerce: Midlothian Chapter">
+    <p class="subhead">RVA Chamber of CommVerce</p>
+  </header>
+  <main>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">home</a></li>
+        <li><a href="midlothian.html">midlothian</a></li>
+        <li><a href="join.html">join</a></li>
+        <li class="active"><a href="directory.html">directory</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <div class="herodiv">
+      <picture>
+        <source srcset="images/global/rva-small.jpg" media="(max-width:600px)"/>
+        <source srcset="images/global/rva-medium.jpg" media="(max-width:1024px)"/>
+        <img class="hero-ph" src="images/global/rva-large.jpg" loading="lazy" alt="Richmond, Virginia Skyline overlooking downtown and the James River at sunset"/>
+      </picture>
+      <a class="button calltoaction" href="join.html">join</a>
+    </div>
+    
+      <h1>Featured Member Directory</h1>
+      <div class="gridbuttons">
+        <button onclick="listView()"><i class="fas fa-list"></i> &nbsp;View as List</button>
+        <button onclick="gridView()"><i class="fas fa-th-large"></i> &nbsp;View as Grid</button>
+      </div>
+      
+      <div class="cards"></div>
+  </main>
+
+  <footer>
+    <h2 class="contacthead">Richmond Virginia Chamber of Commerce: Midlothian Chapter</h2>
+      <div class="contact">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><img src="images/global/facebook32.png" loading="lazy" alt="facebook icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://www.pinterest.com/"><img src="images/global/pinterest32.png" loading="lazy" alt="pinterest icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com//"><img src="images/global/twitter32.png" loading="lazy" alt="twitter icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><img src="images/global/instagram32.png" loading="lazy" alt="instagram icon"/></a>
+        <p><a class="attribute" href="contact.html">804.867.5309 &nbsp;|&nbsp; 800 Charter Colony Pkwy &nbsp;|&nbsp; Midlothian, VA 23114</a></p>
+        <p> &copy;<span id="current-date"></span> Eric Garofalo &nbsp; &nbsp;|&nbsp; &nbsp;
+        <a class="attribute" href="attributes.html"> Attributions</a> &nbsp; &nbsp;|&nbsp; &nbsp; Last Updated: &nbsp;<span id="last-updated"></span></p>
+      </div>    
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/directory.js"></script>
+  <script src="js/gridlist.js"></script>
+  <script src="https://kit.fontawesome.com/e9beb20fb8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
