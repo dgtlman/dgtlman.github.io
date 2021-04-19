@@ -1,0 +1,173 @@
+/* ---- GOOGLE FONT IMPORT LINK ---- */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* ---- GLOBAL STYLES: ---- */
+:root {
+	/* ---- SITE COLORS: ---- */
+        --blue-color: #6495ED;
+        --cream-color: #FAEBD7;
+        --orange-color: #DEB887;
+        --white-color: #ffffff;
+        --graycolor: #666666;
+        --black-color: #000000;
+
+    /* ---- SITE TRANSPARENT COLOR: ---- */
+        --shadow: rgba(0, 0, 0, 0.2);
+
+    /* ---- SITE FONTS ---- */
+        --heading-font: 'Lora', serif;
+        --main-font: Helvetica, Arial, sans-serif;
+}
+
+/* -- GENERAL STYLES -- */
+body {
+    line-height: 1.25;
+    background-color: var(--blue-color);
+    font-family: var(--main-font);
+    margin: 0;
+    min-width: 500px;
+    font-size: 1em;
+}
+
+header {
+    background-color: var(--blue-color);
+    padding: 20px 50px;
+}
+
+main {
+    background-color: var(--cream-color);
+    padding: 5px;
+}
+
+/* -- GLOBAL LINKS STYLES -- */
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* -- MAIN NAVIGATION -- */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:link, nav a:visited {
+    display: block;
+    color: var(--cream-color);
+    text-align: right;
+    padding: 10px 0 0 0;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: var(--white-color);
+}
+
+nav a:active {
+    color: var(--orange-color);
+}
+
+/* -- ARTICLE STYLES -- */
+article {
+    width: 400px;
+    padding: 25px;
+    margin: 40px auto 20px auto;
+    background-color: var(--white-color);
+    -webkit-box-shadow: 8px 8px 10px -6px var(--shadow);
+	-moz-box-shadow: 8px 8px 10px -6px var(--shadow);
+	box-shadow: 8px 8px 10px -6px var(--shadow);
+}
+
+.post-date {
+    color: var(--graycolor);
+    background-color: var(--white-color);
+    padding: 0 0 5px 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 30px 0 10px 0;
+}
+
+/* -- H1 FONT & LINK STYLES -- */
+h1 {
+    font-family: var(--heading-font);
+    text-align: right;
+    font-size: 2em;
+    padding: 10px 0 0 0;
+}
+
+h1 a:link, h1 a:visited  {
+    color: var(--cream-color);
+}
+
+h1 a:hover {
+    color: var(--white-color);
+}
+
+h1 a:active {
+    color: var(--orange-color);
+}
+
+/* -- H2 FONT & LINK STYLES -- */
+h2 {
+    font-family: var(--heading-font);
+    text-align: left;
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0;
+}
+
+h2 a:link,  a:visited {
+    color: var(--black-color);
+}
+
+h2 a:hover {
+    color: var(--blue-color);
+}
+
+h2 a:active {
+    color: var(--orange-color);
+}
+
+/* -- PARAGRAPH FONT & LINK STYLES -- */
+p a:link, p a:visited {
+    color: var(--blue-color);
+}
+
+p a:active {
+    color: var(--orange-color);
+}
+
+/* ----- VIEWPORT > 900 STYLES ----- */
+
+@media screen and (min-width : 900px) {
+    body {
+        border-left: 300px solid var(--blue-color);
+    }
+
+    header {
+        top: 0;
+        left: 0;
+        width: 200px;
+        position: absolute;
+    }
+
+    h1 {
+        font-size: 2.25em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    article {
+        width: 550px;
+    }
+}
