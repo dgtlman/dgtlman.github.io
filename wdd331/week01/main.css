@@ -39,11 +39,6 @@ main {
     padding: 5px;
 }
 
-hr {
-    background-color: green;
-    color:crimson;
-}
-
 /* -- GLOBAL LINKS STYLES -- */
 a:link {
     text-decoration: none;
